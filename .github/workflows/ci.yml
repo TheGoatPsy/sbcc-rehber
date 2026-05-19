@@ -55,7 +55,7 @@ jobs:
           failed=0
           # Booklets live at booklets/KKK-name/KKK-AA-SSSS/{tr,en}.md
           while IFS= read -r -d '' dir; do
-            if [ ! -f "${dir}tr.md" ] || [ ! -f "${dir}en.md" ]; then
+            if [ ! -f "${dir}/tr.md" ] || [ ! -f "${dir}/en.md" ]; then
               echo "MISSING bilingual pair: ${dir}"
               failed=1
             fi
