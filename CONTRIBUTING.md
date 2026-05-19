@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for considering a contribution to `sbcc-rehber`. This document describes how to propose changes, the bilingual pairing rule that this repository enforces, and the AI disclosure expectations.
+Thank you for considering a contribution to `claude-code-for-social-scientists`. This document describes how to propose changes, the bilingual pairing rule that this repository enforces, and the AI disclosure expectations.
 
 If you read Turkish, the Turkish version is in [`CONTRIBUTING.tr.md`](./CONTRIBUTING.tr.md).
 

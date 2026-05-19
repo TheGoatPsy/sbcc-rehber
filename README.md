@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/banner.svg" alt="Claude Code for Social Scientists — Sosyal Bilimciler İçin Claude Code Rehberi banner. Author Onour Impram, ORCID 0000-0003-1076-3928, Zenodo concept DOI 10.5281/zenodo.20289687, dual licensed Apache 2.0 plus CC-BY-NC-SA 4.0, v0.1.0-alpha, ECPP Dublin July 2026.">
+</p>
+
 # Claude Code for Social Scientists
 
 A bilingual, open-source guide for social scientists who want to use Anthropic's Claude Code in their research, teaching, and academic writing. Written for researchers outside the English-speaking world as well as inside it, by a working clinical psychologist and PhD candidate who uses these tools in real academic production.
@@ -48,7 +52,7 @@ Claude Code is used as a drafting and verification assistant. Each booklet carri
 ## Repository layout
 
 ```
-sbcc-rehber/
+claude-code-for-social-scientists/
 ├── README.md                  (this file, EN)
 ├── README.tr.md               (TR main)
 ├── LICENSE                    (dual-license header)

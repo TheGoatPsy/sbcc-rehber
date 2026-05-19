@@ -15,8 +15,8 @@ authors:
     orcid: "https://orcid.org/0000-0003-1076-3928"
     email: onuribram@outlook.com
     affiliation: "Istanbul University, Department of Clinical and Health Psychology"
-url: "https://github.com/TheGoatPsy/sbcc-rehber"
-repository-code: "https://github.com/TheGoatPsy/sbcc-rehber"
+url: "https://github.com/TheGoatPsy/claude-code-for-social-scientists"
+repository-code: "https://github.com/TheGoatPsy/claude-code-for-social-scientists"
 version: "0.1.0-alpha"
 date-released: "2026-05-19"
 license:
@@ -49,7 +49,7 @@ preferred-citation:
       orcid: "https://orcid.org/0000-0003-1076-3928"
   year: 2026
   version: "0.1.0-alpha"
-  url: "https://github.com/TheGoatPsy/sbcc-rehber"
+  url: "https://github.com/TheGoatPsy/claude-code-for-social-scientists"
   license:
     - Apache-2.0
     - CC-BY-NC-SA-4.0

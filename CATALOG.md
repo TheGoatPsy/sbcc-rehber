@@ -1,6 +1,6 @@
 # Catalog
 
-This catalog lists every booklet in `sbcc-rehber`, grouped by category, with a stable identifier of the form `KKK-AA-SSSS` (category, subcategory, serial), a short description in English and Turkish, and a status. The v1.0 target is thirty booklets across twelve categories, in time for the announcement at the European Congress of Psychology (ECPP) in Dublin, July 2026.
+This catalog lists every booklet in `claude-code-for-social-scientists`, grouped by category, with a stable identifier of the form `KKK-AA-SSSS` (category, subcategory, serial), a short description in English and Turkish, and a status. The v1.0 target is thirty booklets across twelve categories, in time for the announcement at the European Congress of Psychology (ECPP) in Dublin, July 2026.
 
 ## Status legend
 

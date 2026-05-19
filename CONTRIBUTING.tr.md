@@ -1,6 +1,6 @@
 # Katkıda Bulunma
 
-`sbcc-rehber` deposuna katkıda bulunmayı düşündüğünüz için teşekkürler. Bu belge, değişikliklerin nasıl önerileceğini, deponun zorunlu kıldığı iki dilli eşleşme kuralını ve yapay zekâ ifşa beklentilerini açıklar.
+`claude-code-for-social-scientists` deposuna katkıda bulunmayı düşündüğünüz için teşekkürler. Bu belge, değişikliklerin nasıl önerileceğini, deponun zorunlu kıldığı iki dilli eşleşme kuralını ve yapay zekâ ifşa beklentilerini açıklar.
 
 İngilizce sürüm için [`CONTRIBUTING.md`](./CONTRIBUTING.md) dosyasına bakınız.
 

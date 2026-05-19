@@ -8,7 +8,7 @@ A safe, public-friendly version of the helper may be published in this directory
 
 ## Operating principle
 
-Any file or fragment from the private vault that becomes part of `sbcc-rehber` must:
+Any file or fragment from the private vault that becomes part of `claude-code-for-social-scientists` must:
 
 1. Be reviewed against the four-category sanitization triage (SAFE, SANITIZE, BLOCKED, SKIP) documented in the working notes.
 2. Have regex-based secret patterns scanned (API keys, OAuth tokens, personal identifiers) before staging for commit.

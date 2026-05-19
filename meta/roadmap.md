@@ -1,6 +1,6 @@
 # Roadmap
 
-The public phase plan for `sbcc-rehber`. Dates are targets, not commitments. The author is a working clinical psychologist and PhD candidate, and academic work takes precedence over the repository when the two conflict.
+The public phase plan for `claude-code-for-social-scientists`. Dates are targets, not commitments. The author is a working clinical psychologist and PhD candidate, and academic work takes precedence over the repository when the two conflict.
 
 ## v0.1.0-alpha — Scaffold
 

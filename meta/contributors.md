@@ -1,6 +1,6 @@
 # Contributors
 
-This file lists the people and tools that have contributed to `sbcc-rehber`. Human contributors are listed by name. AI tools are listed as tools with a stated role, not as authors.
+This file lists the people and tools that have contributed to `claude-code-for-social-scientists`. Human contributors are listed by name. AI tools are listed as tools with a stated role, not as authors.
 
 ## Human author and maintainer
 
