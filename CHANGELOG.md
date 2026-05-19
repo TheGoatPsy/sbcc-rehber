@@ -8,6 +8,10 @@ Citations of this work should use the Zenodo concept DOI [10.5281/zenodo.2028968
 
 ## [Unreleased]
 
+No unreleased changes at this moment. New work will be recorded here as it lands.
+
+## [0.2.0] - 2026-05-19
+
 The work since the v0.1.0-alpha tag (commit `4999222`) is grouped below into four phases, each corresponding to a discrete review or remediation cycle. The phase labels also match the vault diary entries for 2026-05-19.
 
 ### Phase 0 — Post-tag setup (commits `1272b0d` to `04ceaa3`)

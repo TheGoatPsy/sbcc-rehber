@@ -13,7 +13,7 @@ If you find a security issue, please do not open a public GitHub issue. Suspecte
 - An attempt to embed harmful content (malicious links, encoded payloads) in any document or CI workflow.
 - A supply-chain risk in any GitHub Action used by the CI workflows (compromised tag, force-pushed branch, etc.).
 
-Report by email to **onurb693 at gmail dot com** with the subject line **SECURITY: claude-code-for-social-scientists**. Include the affected file path, the commit SHA, and a short description of the concern. Maintainer acknowledgment within seven days, action within thirty days, public statement (if appropriate) after remediation.
+Report by email to **onuribram at outlook dot com** with the subject line **SECURITY: claude-code-for-social-scientists**. Include the affected file path, the commit SHA, and a short description of the concern. Maintainer acknowledgment within seven days, action within thirty days, public statement (if appropriate) after remediation.
 
 ## Vault sanitization principles
 
