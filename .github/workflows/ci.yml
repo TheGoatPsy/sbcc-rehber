@@ -84,16 +84,18 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          required_fields=("ai_assisted" "ai_contribution_level" "human_review" "booklet_id" "version")
+          required_fields=("ai_assisted" "ai_contribution_level" "human_review" "human_review_date" "booklet_id" "version" "date_published" "verified_citations_count" "fabricated_citations_count" "disclosure_standard")
           failed=0
           while IFS= read -r -d '' md_file; do
+            # Extract the YAML frontmatter block (lines between the first two --- delimiters)
+            frontmatter=$(awk '/^---$/{c++; if(c==2) exit; next} c==1 {print}' "${md_file}")
             for field in "${required_fields[@]}"; do
-              if ! head -n 60 "${md_file}" | grep -Eq "^${field}:"; then
+              if ! printf '%s\n' "${frontmatter}" | grep -Eq "^${field}:"; then
                 echo "MISSING frontmatter field '${field}' in: ${md_file}"
                 failed=1
               fi
             done
-            if head -n 60 "${md_file}" | grep -Eq "^human_review: pending"; then
+            if printf '%s\n' "${frontmatter}" | grep -Eq "^human_review: pending"; then
               echo "BLOCKED on main: ${md_file} has human_review: pending"
               failed=1
             fi

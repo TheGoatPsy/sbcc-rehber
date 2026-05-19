@@ -12,7 +12,7 @@ The public phase plan for `claude-code-for-social-scientists`. Dates are targets
 - Repository skeleton with the twelve-category booklet directory tree.
 - Dual-license header (Apache 2.0 for code, CC-BY-NC-SA 4.0 for content) with both full-text license files committed.
 - `CITATION.cff` with a Zenodo placeholder DOI at scaffold time, replaced by the real concept DOI `10.5281/zenodo.20289687` and version DOI `10.5281/zenodo.20289688` immediately after the v0.1.0-alpha tag fired the Zenodo webhook on 2026-05-19.
-- `AI-AUTHORSHIP.md` with the NISO 2025 draft alignment statement and the per-booklet disclosure schema.
+- `AI-AUTHORSHIP.md` with the publishing-consensus alignment statement (COPE 2023, WAME 2023, ICMJE 2024, STM 2025, EU AI Act 2024/1689 Art. 50, ENAI) and the per-booklet disclosure schema.
 - `CATALOG.md` enumerating thirty planned booklets across the twelve categories.
 - Three CI workflows: markdown lint with bilingual coverage and AI disclosure audit, CFF validation, and gitleaks secret scan.
 - First booklet `001-01-0001` Turkish full draft. English draft follows in Phase 1.
@@ -34,7 +34,7 @@ The public phase plan for `claude-code-for-social-scientists`. Dates are targets
 
 ## Phase 1 — Bilingual completion of category 001 and first booklets in 002
 
-**Target.** Hafta 1 to 2 after v0.1.0.
+**Target.** Weeks 1 to 2 after v0.1.0.
 
 **Scope.**
 
@@ -45,7 +45,7 @@ The public phase plan for `claude-code-for-social-scientists`. Dates are targets
 
 ## Phase 2 — End of Month 1
 
-**Target.** Ay 1 of post-release work.
+**Target.** Month 1 of post-release work.
 
 **Scope.**
 
@@ -55,7 +55,7 @@ The public phase plan for `claude-code-for-social-scientists`. Dates are targets
 
 ## Phase 3 — End of Month 2
 
-**Target.** Ay 2 of post-release work.
+**Target.** Month 2 of post-release work.
 
 **Scope.**
 

@@ -1,6 +1,6 @@
 # AI Authorship and Disclosure Policy
 
-This document explains how this repository handles AI co-authorship, what disclosure each booklet carries, and how readers can verify the human review status of any given file. It is written to be compatible with the National Information Standards Organization (NISO) draft recommended practice **"CCM Working Group: Recommended Practice on the Use of Generative AI and Large Language Models in Scholarly Communications Workflows"** (NISO-RP-2025), with EU AI Act 2024/1689 transparency obligations for high-risk and general-purpose AI usage, and with the European Network of Academic Integrity (ENAI) recommendations on the use of AI tools.
+This document explains how this repository handles AI co-authorship, what disclosure each booklet carries, and how readers can verify the human review status of any given file. It is written to align with the consolidating consensus among scholarly publishing bodies on the disclosure of AI use, specifically the **COPE Authorship and AI Tools Position Statement (February 2023)**, the **WAME Recommendations on Chatbots and Generative AI in Scholarly Publications (May 2023)**, the **ICMJE Recommendations on AI-Assisted Technology (January 2024)**, and the **STM Classification of AI Use in Manuscript Preparation (September 2025)**. It additionally honors the transparency obligations of the **EU AI Act 2024/1689 Article 50** on AI-generated content, and the **European Network for Academic Integrity (ENAI) Recommendations on the Ethical Use of AI in Education and Research**. A National Information Standards Organization (NISO) recommended practice on AI in scholarly communications was in development as of 2024 to 2025; when it is published with a final RP number, this document will cite it directly.
 
 It also goes one step beyond the minimum. Each booklet is timestamped, model-versioned, and assigned a contribution level that distinguishes between assistance and substantive content generation. Readers can audit AI involvement booklet by booklet.
 
@@ -39,7 +39,7 @@ The following uses **do not** require disclosure on a per-booklet basis (they ar
 
 ## 3. Per-booklet frontmatter schema
 
-Every booklet (`booklets/KKK-CC/KKK-CC-SSSS/{tr,en}.md`) carries a YAML frontmatter block at the top of the file with at least the following fields.
+Every booklet (`booklets/KKK-slug/KKK-AA-SSSS/{tr,en}.md`, where `KKK` is the three-digit category code, `slug` is the human-readable category name, and `AA-SSSS` is the subcategory-and-serial pair) carries a YAML frontmatter block at the top of the file with at least the following fields.
 
 ```yaml
 ---
@@ -67,7 +67,7 @@ human_review: "complete"
 human_review_date: "2026-05-19"
 verified_citations_count: 12
 fabricated_citations_count: 0
-disclosure_standard: "NISO-RP-2025-draft + EU AI Act 2024/1689 Art. 50"
+disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
 license:
   - "Apache-2.0 (code blocks)"
   - "CC-BY-NC-SA-4.0 (prose)"
@@ -131,11 +131,12 @@ A reader who wants to audit AI involvement can do the following.
 
 | Date | Version | Change |
 |---|---|---|
-| 2026-05-19 | 0.1.0 | Initial policy. NISO 2025 draft + EU AI Act 2024/1689 + ENAI recommendations alignment. |
+| 2026-05-19 | 0.1.0 | Initial policy. COPE 2023, WAME 2023, ICMJE 2024, STM 2025, EU AI Act 2024/1689 Art. 50, ENAI consensus alignment. |
 
 ## 10. References
 
-- National Information Standards Organization (NISO). Draft recommended practice on AI in scholarly communication workflows (in development, 2024 to 2025).
+- STM. Classification of AI Use in Manuscript Preparation. Working Paper, September 2025. International Association of Scientific, Technical and Medical Publishers.
+- International Committee of Medical Journal Editors (ICMJE). Recommendations for the Conduct, Reporting, Editing, and Publication of Scholarly Work in Medical Journals, updated January 2024 (AI-assisted technology guidance).
 - European Parliament. Regulation (EU) 2024/1689 (Artificial Intelligence Act). Official Journal of the European Union, 12 July 2024.
 - European Network for Academic Integrity (ENAI). Recommendations on the ethical use of AI and machine learning in academia (multiple versions, 2023 to 2025).
 - Committee on Publication Ethics (COPE). Authorship and AI tools position statement (February 2023).

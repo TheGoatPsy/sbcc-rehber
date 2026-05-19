@@ -15,7 +15,7 @@ This page is updated by the maintainer at each release. Readers who want the lat
 | 001-01-0003 | tr | n/a (placeholder) | n/a | 0 | 0 | n/a |
 | 001-01-0003 | en | n/a (placeholder) | n/a | 0 | 0 | n/a |
 
-The remaining twenty-four booklets in [`CATALOG.md`](../CATALOG.md) are at `planned` status and have no AI disclosure yet because no AI work has been performed on them.
+Twenty-seven booklets in [`CATALOG.md`](../CATALOG.md) are at `planned` status and have no AI disclosure yet because no AI work has been performed on them. Two further booklets (`001-01-0002`, `001-01-0003`) are present in the repository as placeholder files so that CI exercises the full bilingual pairing constraint, and they are also counted under the `planned` status row in the catalog summary table.
 
 ## Citation discipline summary
 

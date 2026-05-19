@@ -26,7 +26,7 @@ Rehber, sosyal bilimcinin gerçekte karşılaştığı soruları on iki tematik 
 6. **MCP ve eklentiler.** Akademik iş akışları için Model Context Protocol sunucularını yazma, denetleme, küratörlük etme.
 7. **Akademik yazım.** Türkçe ve İngilizce IMRAD iskeleti, DOI disiplini ile APA 7, dergi uyumu, makale revizyonu.
 8. **Veri analizi.** Yeniden üretilebilir iş akışları, istatistiksel test seçimi, nitel kodlama, karma yöntem disiplini.
-9. **Etik ve IRB.** Helsinki Bildirgesi, COPE, NISO 2024 AI ifşa standartı, AB Yapay Zekâ Yasası 2024/1689, KVKK ve GDPR.
+9. **Etik ve IRB.** Helsinki Bildirgesi, COPE, WAME, ICMJE, STM 2025, AB Yapay Zekâ Yasası 2024/1689 Madde 50, ENAI, KVKK ve GDPR.
 10. **Hakem değerlendirmesi.** Geri dönüş mektupları, izlenebilirlik matrisi, hakem yanıt disiplini, AI iz silme yazımı.
 11. **Konferans sunumu.** Slayt, poster, lightning talk, ağ kurma protokolleri.
 12. **Sorun giderme.** Araç çalışmadığında, çalışmalar çeliştiğinde, hakem yanlış soru sorduğunda.
@@ -41,13 +41,13 @@ Türkçe ve İngilizce tam paralel sunulur. Dünya genelinde yaklaşık doksan m
 
 Anket çalışması yürüten yardımcı doçent için, sistematik derleme yazan doktora öğrencisi için, R&R hazırlayan doktora sonrası araştırmacı için, müfredat tasarlayan öğretim üyesi için, IRB sürecinde gezinen klinik araştırmacı için. Kod okuyabilen, ancak tek bir paragraf yazmak için bir hafta yeni bir araç zincirini öğrenmek istemeyen insanlar için.
 
-Bir Claude Code başvuru kılavuzu değil. Anthropic kendi belgelerini yayımlıyor. Bir yapay zekâ abartı belgesi değil. Yapay zekânın makalenizi sizin için yazacağı sözünü vermez. Aynı zamanda 2026 yılında yapay zekânın akademik üretimde hiçbir rol oynamadığını da varsaymaz. Konum, NISO 2024 ifşa çerçevesi altında dürüst ortak yazarlıktır.
+Bir Claude Code başvuru kılavuzu değil. Anthropic kendi belgelerini yayımlıyor. Bir yapay zekâ abartı belgesi değil. Yapay zekânın makalenizi sizin için yazacağı sözünü vermez. Aynı zamanda 2026 yılında yapay zekânın akademik üretimde hiçbir rol oynamadığını da varsaymaz. Konum, akademik yayıncılığın uzlaşı çerçevesi altında (COPE 2023, WAME 2023, ICMJE 2024, STM 2025) ve AB Yapay Zekâ Yasası 2024/1689 şeffaflık yükümlülükleri ile dürüst ortak yazarlıktır.
 
 ## Yazarlık ve yapay zekâ ortak yazarlığı
 
 Yazar Onour Impram, Türkiye, Yunanistan ve İrlanda lisanslı klinik psikolog, İstanbul Üniversitesi Klinik ve Sağlık Psikolojisi doktora adayı, Biruni Üniversitesi dış öğretim görevlisi, yapay zekâ ve ruh sağlığı araştırmacısıdır. ORCID. [0000-0003-1076-3928](https://orcid.org/0000-0003-1076-3928).
 
-Claude Code bir taslak ve doğrulama yardımcısı olarak kullanılır. Her broşür, NISO 2024 yapay zekâ kullanımının bilimsel iletişimde ifşası tavsiyesi çerçevesinde katkı düzeyini belirten bir frontmatter bloğu taşır (`ai_assisted`, `model`, `ai_contribution_level`, `human_review`). Tam politika için [`AI-AUTHORSHIP.md`](./AI-AUTHORSHIP.md) dosyasına bakınız.
+Claude Code bir taslak ve doğrulama yardımcısı olarak kullanılır. Her broşür, akademik yayıncılığın uzlaşı çerçevesi (COPE 2023, WAME 2023, ICMJE 2024, STM 2025) ile AB Yapay Zekâ Yasası 2024/1689 Madde 50 şeffaflık yükümlülükleri ve ENAI etik kullanım önerileri çerçevesinde katkı düzeyini belirten bir frontmatter bloğu taşır (`ai_assisted`, `model`, `ai_contribution_level`, `human_review`). Tam politika için [`AI-AUTHORSHIP.md`](./AI-AUTHORSHIP.md) dosyasına bakınız.
 
 ## Depo düzeni
 

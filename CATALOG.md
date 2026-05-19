@@ -96,7 +96,7 @@ Reproducible workflows, statistical test selection, qualitative coding, mixed-me
 
 ## 009 — Ethics and IRB / Etik ve IRB
 
-Helsinki Declaration, COPE, NISO 2024 disclosure, EU AI Act, KVKK, GDPR.
+Helsinki Declaration, COPE, WAME, ICMJE, STM 2025, EU AI Act 2024/1689 Art. 50, ENAI, KVKK, GDPR.
 
 | Identifier | Title (EN) | Title (TR) | Status |
 |---|---|---|---|

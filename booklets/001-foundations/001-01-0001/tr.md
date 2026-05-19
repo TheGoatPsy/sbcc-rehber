@@ -21,12 +21,12 @@ ai_tools:
 ai_contribution_level: "substantial-drafting"
 human_review: "complete"
 human_review_date: "2026-05-19"
-verified_citations_count: 12
+verified_citations_count: 10
 fabricated_citations_count: 0
-disclosure_standard: "NISO-RP-2025-draft + EU AI Act 2024/1689 Art. 50"
+disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
 license:
   - "CC-BY-NC-SA-4.0 (prose)"
-status: "draft"
+status: "paired"
 ---
 
 # Claude Code Nedir? Sosyal Bilimci Bakışıyla
@@ -135,11 +135,7 @@ Bundan sonraki broşür dizisinin tamamı, bu ilk broşürdeki yapısal pozisyon
 
 Atıflar APA 7 biçimindedir. Her DOI 2026-05-19 tarihinde Crossref üzerinden bağımsız olarak doğrulanmıştır.
 
-Bail, C. A. (2024). Can generative AI improve social science? *Proceedings of the National Academy of Sciences*, 121(21), e2314021121. https://doi.org/10.1073/pnas.2314021121
-
 Bender, E. M., Gebru, T., McMillan-Major, A., & Shmitchell, S. (2021). On the dangers of stochastic parrots: Can language models be too big? In *Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency (FAccT '21)* (pp. 610-623). Association for Computing Machinery. https://doi.org/10.1145/3442188.3445922
-
-Birhane, A., Kalluri, P., Card, D., Agnew, W., Dotan, R., & Bao, M. (2022). The values encoded in machine learning research. In *2022 ACM Conference on Fairness, Accountability, and Transparency* (pp. 173-184). Association for Computing Machinery. https://doi.org/10.1145/3531146.3533083
 
 Else, H. (2023). Abstracts written by ChatGPT fool scientists. *Nature*, 613(7944), 423. https://doi.org/10.1038/d41586-023-00056-7
 
@@ -150,8 +146,6 @@ Hosseini, M., Rasmussen, L. M., & Resnik, D. B. (2023). Using AI to write schola
 Milano, S., McGrane, J. A., & Leonelli, S. (2023). Large language models challenge the future of higher education. *Nature Machine Intelligence*, 5(4), 333-334. https://doi.org/10.1038/s42256-023-00644-2
 
 Noy, S., & Zhang, W. (2023). Experimental evidence on the productivity effects of generative artificial intelligence. *Science*, 381(6654), 187-192. https://doi.org/10.1126/science.adh2586
-
-Sallam, M. (2023). ChatGPT utility in healthcare education, research, and practice: Systematic review on the promising perspectives and valid concerns. *Healthcare*, 11(6), 887. https://doi.org/10.3390/healthcare11060887
 
 Stokel-Walker, C. (2023). ChatGPT listed as author on research papers: Many scientists disapprove. *Nature*, 613(7945), 620-621. https://doi.org/10.1038/d41586-023-00107-z
 
@@ -167,7 +161,7 @@ Ziems, C., Held, W., Shaikh, O., Chen, J., Zhang, Z., & Yang, D. (2024). Can lar
 **Sürüm.** `0.1.0`
 **Tarih.** 2026-05-19
 **Sözcük sayısı (yaklaşık).** 2900 (Türkçe gövde metni)
-**Doğrulanmış atıf sayısı.** 12
+**Doğrulanmış atıf sayısı.** 10
 **Halüsinasyon atıf sayısı.** 0
 **Önceki broşür.** Yok (ilk broşür)
 **Sonraki broşür.** [`001-01-0002`](../001-01-0002/tr.md) — Aracın Ötesine Geçiş: Sohbet Penceresinden İş Ortağına

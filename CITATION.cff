@@ -7,7 +7,7 @@ abstract: >-
   categories cover foundations, academic access, memory systems, vault architecture, hooks and
   automation, MCP and plugins, academic writing, data analysis, ethics and IRB, peer review,
   conference presentation, and troubleshooting. Authored by a working clinical psychologist and
-  PhD candidate, with explicit AI co-authorship disclosure under NISO 2024 guidance.
+  PhD candidate, with explicit AI co-authorship disclosure under the consolidating publishing consensus (COPE 2023, WAME 2023, ICMJE 2024, STM 2025, EU AI Act 2024/1689 Art. 50, ENAI).
 type: software
 authors:
   - given-names: Onour
@@ -32,7 +32,7 @@ keywords:
   - bilingual
   - irb-ethics
   - ai-disclosure
-  - niso-2024
+  - ai-disclosure-consensus
 identifiers:
   - type: doi
     value: "10.5281/zenodo.20289687"

@@ -26,7 +26,7 @@ The guide covers, across twelve thematic categories, the questions a social scie
 6. **MCP and plugins.** Authoring, auditing, and curating Model Context Protocol servers for academic workflows.
 7. **Academic writing.** IMRAD scaffolding in Turkish and English, APA 7 with DOI discipline, journal fit, manuscript revision.
 8. **Data analysis.** Reproducible workflows, statistical test selection, qualitative coding, mixed-methods discipline.
-9. **Ethics and IRB.** Helsinki Declaration, COPE, NISO 2024 AI disclosure, EU AI Act 2024/1689, KVKK and GDPR.
+9. **Ethics and IRB.** Helsinki Declaration, COPE, WAME, ICMJE, STM 2025, EU AI Act 2024/1689 Art. 50, ENAI, KVKK, GDPR.
 10. **Peer review.** Rebuttal letters with traceability matrices, reviewer-response discipline, anti-AI-trace writing.
 11. **Conference presentation.** Slides, posters, lightning talks, networking sequences.
 12. **Troubleshooting.** When tools fail, when papers disagree, when reviewers ask the wrong question.
@@ -41,13 +41,13 @@ Turkish and English are presented in full parallel. There are roughly ninety mil
 
 It is for the assistant professor running a survey study, the PhD student writing a systematic review, the postdoc preparing an R&R, the lecturer designing a syllabus, the clinical researcher navigating IRB. It is for people who can read code but who do not want to spend a week learning a new toolchain to write one paragraph.
 
-It is not a Claude Code reference manual (Anthropic publishes those). It is not an AI hype document. It does not promise that AI will write your paper for you. It also does not pretend AI plays no role in academic work in 2026; the position is honest co-authorship under the NISO 2024 disclosure framework.
+It is not a Claude Code reference manual (Anthropic publishes those). It is not an AI hype document. It does not promise that AI will write your paper for you. It also does not pretend AI plays no role in academic work in 2026; the position is honest co-authorship under the consolidating publishing consensus on AI disclosure (COPE 2023, WAME 2023, ICMJE 2024, STM 2025) and the transparency obligations of the EU AI Act 2024/1689.
 
 ## Authorship and AI co-authorship
 
 The author is Onour Impram, a clinical psychologist licensed in Türkiye, Greece, and Ireland, a PhD candidate in Clinical and Health Psychology at Istanbul University, an external lecturer at Biruni University, and an AI and mental health researcher. ORCID: [0000-0003-1076-3928](https://orcid.org/0000-0003-1076-3928).
 
-Claude Code is used as a drafting and verification assistant. Each booklet carries a frontmatter block declaring the contribution level (`ai_assisted`, `model`, `ai_contribution_level`, `human_review`) in the spirit of the [NISO 2024](https://www.niso.org) recommended practice on disclosure of AI use in scholarly communication. See [`AI-AUTHORSHIP.md`](./AI-AUTHORSHIP.md) for the full policy.
+Claude Code is used as a drafting and verification assistant. Each booklet carries a frontmatter block declaring the contribution level (`ai_assisted`, `model`, `ai_contribution_level`, `human_review`) in the spirit of the consolidating publishing consensus on AI disclosure (COPE 2023, WAME 2023, ICMJE 2024, STM 2025) combined with EU AI Act 2024/1689 Article 50 transparency obligations and ENAI recommendations on the ethical use of AI in research. See [`AI-AUTHORSHIP.md`](./AI-AUTHORSHIP.md) for the full policy.
 
 ## Repository layout
 
@@ -137,7 +137,7 @@ Onour Impram — `onuribram@outlook.com` — Istanbul, Türkiye / Komotini, Gree
 
 Bu depo, sosyal bilim alanındaki araştırmacıların Anthropic Claude Code aracını akademik üretim sürecine nasıl entegre edebileceğini anlatan iki dilli açık kaynak bir rehberdir. Hedef kitle psikoloji, sosyoloji, eğitim, halk sağlığı, iletişim, siyaset bilimi, antropoloji ve yakın disiplinlerde çalışan, özellikle Türkiye, Yunanistan, Akdeniz havzası, Ortadoğu, Latin Amerika, Güney ve Güneydoğu Asya, Sahra Altı Afrika gibi İngilizce dışı akademik ekosistemlerde üretim yapan araştırmacılardır.
 
-Her broşür Türkçe ve İngilizce paralel yayımlanır. Lisanslama çift katmanlıdır. Kod ve yapılandırma için Apache 2.0, broşür ve düz yazı için CC-BY-NC-SA 4.0. Yapay zekâ ortak yazarlığı NISO 2024 standardı çerçevesinde her broşürün başlığında açıkça beyan edilir.
+Her broşür Türkçe ve İngilizce paralel yayımlanır. Lisanslama çift katmanlıdır. Kod ve yapılandırma için Apache 2.0, broşür ve düz yazı için CC-BY-NC-SA 4.0. Yapay zekâ ortak yazarlığı yayın camiasının uzlaşı çerçevesinde (COPE, WAME, ICMJE, STM 2025, AB Yapay Zekâ Yasası 2024/1689 Madde 50, ENAI) her broşürün başlığında açıkça beyan edilir.
 
 Yazar Onour Impram, Türkiye, Yunanistan ve İrlanda lisanslı klinik psikolog, İstanbul Üniversitesi Klinik ve Sağlık Psikolojisi doktora adayıdır. Tam Türkçe tanıtım için [`README.tr.md`](./README.tr.md) dosyasını inceleyin. Katkı kuralları ve dil paritesi politikası için [`CONTRIBUTING.tr.md`](./CONTRIBUTING.tr.md).
 

@@ -18,7 +18,7 @@ human_review: "complete"
 human_review_date: "2026-05-19"
 verified_citations_count: 0
 fabricated_citations_count: 0
-disclosure_standard: "NISO-RP-2025-draft + EU AI Act 2024/1689 Art. 50"
+disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
 license:
   - "CC-BY-NC-SA-4.0 (prose)"
 status: "planned"

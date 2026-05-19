@@ -32,4 +32,4 @@ jobs:
           persist-credentials: false
 
       - name: Validate CITATION.cff against the CFF schema
-        uses: dieghernan/cff-validator@v3
+        uses: dieghernan/cff-validator@7b3c5e27c65c08af9f0c4a9c5e424aa281834e25 # v3
