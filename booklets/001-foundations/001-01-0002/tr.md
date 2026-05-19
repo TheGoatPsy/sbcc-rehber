@@ -1,5 +1,5 @@
 ---
-title: "The Agentic Shift: From Chat Window to Working Partner"
+title_en: "The Agentic Shift: From Chat Window to Working Partner"
 title_tr: "Aracın Ötesine Geçiş: Sohbet Penceresinden İş Ortağına"
 booklet_id: "001-01-0002"
 category: "001-foundations"

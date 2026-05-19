@@ -84,7 +84,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          required_fields=("ai_assisted" "ai_contribution_level" "human_review" "human_review_date" "booklet_id" "version" "date_published" "verified_citations_count" "fabricated_citations_count" "disclosure_standard")
+          required_fields=("title_en" "title_tr" "ai_assisted" "ai_contribution_level" "human_review" "human_review_date" "booklet_id" "version" "date_published" "verified_citations_count" "fabricated_citations_count" "disclosure_standard")
           failed=0
           while IFS= read -r -d '' md_file; do
             # Extract the YAML frontmatter block (lines between the first two --- delimiters)

@@ -43,7 +43,7 @@ Every booklet (`booklets/KKK-slug/KKK-AA-SSSS/{tr,en}.md`, where `KKK` is the th
 
 ```yaml
 ---
-title: "..."
+title_en: "..."
 title_tr: "..."
 booklet_id: "001-01-0001"
 category: "001-foundations"
@@ -59,7 +59,8 @@ ai_assisted: true
 ai_tools:
   - name: "Claude Code"
     vendor: "Anthropic"
-    model: "claude-opus-4-7"
+    model_alias: "claude-opus-4-7"
+    model_dated: null  # set to the dated identifier (e.g., "claude-opus-4-7-20260403") when Anthropic publishes one; null until then
     role: "drafting, verification, citation lookup"
     interaction_mode: "interactive console + agent SDK"
 ai_contribution_level: "substantial-drafting"
@@ -75,6 +76,10 @@ license:
 ```
 
 All fields are mandatory. The contribution level is one of five values defined in section 4. The human review status is one of three values defined in section 5.
+
+**Title fields.** Every booklet carries `title_en` and `title_tr` so that the title is unambiguous regardless of which file (`tr.md` or `en.md`) the reader opens. The `language` field declares which version is primary in that file. Tooling that renders a single language picks the corresponding title without inspecting the file's prose.
+
+**Model identifier fields.** Model identifiers can drift over time when only an alias is recorded (an alias like `claude-opus-4-7` may point to a different checkpoint a year later). For reproducibility, every `ai_tools` entry carries both `model_alias` (human-friendly current identifier) and `model_dated` (the immutable dated identifier such as `claude-opus-4-7-20260403`). When Anthropic has not yet published a dated identifier for the alias used, `model_dated` is set to `null` and a comment notes the cutoff date.
 
 ## 4. Contribution levels
 

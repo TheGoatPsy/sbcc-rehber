@@ -1,5 +1,5 @@
 ---
-title: "Installation, First Session, and Sanity Checks"
+title_en: "Installation, First Session, and Sanity Checks"
 title_tr: "Kurulum, İlk Oturum, Sağlık Testleri"
 booklet_id: "001-01-0003"
 category: "001-foundations"
