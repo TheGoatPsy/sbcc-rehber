@@ -10,7 +10,7 @@
     "siblings_only": true
   },
   "MD033": {
-    "allowed_elements": ["details", "summary", "br", "kbd", "sub", "sup", "strong", "em", "b", "i", "u"]
+    "allowed_elements": ["details", "summary", "br", "kbd", "sub", "sup", "strong", "em", "b", "i", "u", "p", "img", "div", "a"]
   },
   "MD041": false,
   "MD046": {
