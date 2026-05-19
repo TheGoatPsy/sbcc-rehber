@@ -11,7 +11,7 @@ This catalog lists every booklet in `sbcc-rehber`, grouped by category, with a s
 | `paired` | Both `tr.md` and `en.md` drafted, human review pending |
 | `release` | Human-reviewed, version-tagged, included in a public release |
 
-The current version (`v0.1.0-alpha`) contains one booklet at `draft` status. Twenty-nine booklets are at `planned` status as of 2026-05-19.
+The current version (`v0.1.0-alpha`) contains one booklet at `paired` status (Turkish and English drafts both complete, awaiting public release). Twenty-nine booklets are at `planned` status as of 2026-05-19.
 
 ---
 
@@ -21,7 +21,7 @@ The conceptual introduction. What Claude Code is, how it differs from a chat win
 
 | Identifier | Title (EN) | Title (TR) | Status |
 |---|---|---|---|
-| 001-01-0001 | What is Claude Code? A Social Scientist's Perspective | Claude Code Nedir? Sosyal Bilimci Bakışıyla | `draft` |
+| 001-01-0001 | What is Claude Code? A Social Scientist's Perspective | Claude Code Nedir? Sosyal Bilimci Bakışıyla | `paired` |
 | 001-01-0002 | The Agentic Shift: From Chat Window to Working Partner | Aracın Ötesine Geçiş: Sohbet Penceresinden İş Ortağına | `planned` |
 | 001-01-0003 | Installation, First Session, and Sanity Checks | Kurulum, İlk Oturum, Sağlık Testleri | `planned` |
 
@@ -136,8 +136,8 @@ When tools fail, when papers disagree, when reviewers ask the wrong question.
 | Status | Count |
 |---|---|
 | `release` | 0 |
-| `paired` | 0 |
-| `draft` | 1 |
+| `paired` | 1 |
+| `draft` | 0 |
 | `planned` | 29 |
 | **Total v1.0 target** | **30** |
 

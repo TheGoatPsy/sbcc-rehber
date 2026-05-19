@@ -9,7 +9,7 @@ This page is updated by the maintainer at each release. Readers who want the lat
 | Booklet ID | Language | Contribution level | Human review | Verified citations | Fabricated citations | Last reviewed |
 |---|---|---|---|---|---|---|
 | 001-01-0001 | tr | substantial-drafting | complete | 12 | 0 | 2026-05-19 |
-| 001-01-0001 | en | n/a (planned) | n/a | 0 | 0 | n/a |
+| 001-01-0001 | en | substantial-drafting | complete | 12 | 0 | 2026-05-19 |
 | 001-01-0002 | tr | n/a (placeholder) | n/a | 0 | 0 | n/a |
 | 001-01-0002 | en | n/a (placeholder) | n/a | 0 | 0 | n/a |
 | 001-01-0003 | tr | n/a (placeholder) | n/a | 0 | 0 | n/a |
@@ -21,9 +21,10 @@ The remaining twenty-four booklets in [`CATALOG.md`](../CATALOG.md) are at `plan
 
 | Metric | Value |
 |---|---|
-| Booklets at `paired` or `release` status | 0 |
-| Booklets at `draft` status | 1 (001-01-0001 tr) |
-| Total verified citations across drafted booklets | 12 |
+| Booklets at `paired` status | 1 (001-01-0001 tr + en both drafted) |
+| Booklets at `release` status | 0 |
+| Booklets at `draft` status | 0 |
+| Total verified citations across drafted booklets | 24 (12 unique, citations shared between tr and en) |
 | Total fabricated citations across drafted booklets | 0 |
 | Fabrication rate (fabricated / total) | 0% |
 
@@ -31,17 +32,17 @@ The remaining twenty-four booklets in [`CATALOG.md`](../CATALOG.md) are at `plan
 
 | Level | Count |
 |---|---|
-| 1 — editing-only | 0 |
-| 2 — light-assistance | 0 |
-| 3 — co-drafting | 0 |
-| 4 — substantial-drafting | 1 |
-| 5 — full-draft | 0 |
+| 1, editing-only | 0 |
+| 2, light-assistance | 0 |
+| 3, co-drafting | 0 |
+| 4, substantial-drafting | 2 (001-01-0001 tr + en) |
+| 5, full-draft | 0 |
 
 ## Human review state distribution (drafted booklets only)
 
 | State | Count |
 |---|---|
-| complete | 1 |
+| complete | 2 (001-01-0001 tr + en) |
 | partial | 0 |
 | pending | 0 |
 
@@ -51,7 +52,8 @@ The CI workflow refuses any commit to `main` that introduces a booklet with `hum
 
 | Date | Trigger | Change |
 |---|---|---|
-| 2026-05-19 | v0.1.0-alpha scaffold | Initial table. Booklet 001-01-0001 Turkish draft entered as `substantial-drafting / complete`. |
+| 2026-05-19 | v0.1.0-alpha scaffold | Initial table. Booklet 001-01-0001 Turkish draft entered as `substantial-drafting, complete`. |
+| 2026-05-19 | EN draft commit f3c2a2c | Booklet 001-01-0001 English draft entered as `substantial-drafting, complete`. Pair status reached. |
 
 ---
 
