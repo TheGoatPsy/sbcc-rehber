@@ -54,7 +54,7 @@ sbcc-rehber/
 ├── LICENSE                    (dual-license header)
 ├── LICENSE.code               (Apache 2.0 full text)
 ├── LICENSE.content            (CC-BY-NC-SA 4.0 full text)
-├── CITATION.cff               (Zenodo DOI placeholder, updated on release)
+├── CITATION.cff               (Zenodo concept DOI: 10.5281/zenodo.20289687)
 ├── AI-AUTHORSHIP.md           (disclosure policy)
 ├── CATALOG.md                 (catalog of all planned and drafted booklets)
 ├── CODE_OF_CONDUCT.md
@@ -94,7 +94,7 @@ Code and configuration are under the **Apache License, Version 2.0** ([`LICENSE.
 
 ## Citation
 
-If you cite this work, use the machine-readable record in [`CITATION.cff`](./CITATION.cff), or the "Cite this repository" button on GitHub. Once the v0.1 release is tagged, Zenodo will mint a DOI and the citation file will be updated accordingly.
+If you cite this work, use the machine-readable record in [`CITATION.cff`](./CITATION.cff), or the "Cite this repository" button on GitHub. The Zenodo concept DOI (resolves to the latest version) is **10.5281/zenodo.20289687** and the v0.1.0-alpha version DOI is **10.5281/zenodo.20289688**. See <https://doi.org/10.5281/zenodo.20289687> for the canonical record.
 
 ## International protection
 

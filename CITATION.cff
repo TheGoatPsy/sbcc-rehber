@@ -33,6 +33,13 @@ keywords:
   - irb-ethics
   - ai-disclosure
   - niso-2024
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.20289687"
+    description: "Zenodo concept DOI, resolves to the latest version"
+  - type: doi
+    value: "10.5281/zenodo.20289688"
+    description: "Zenodo version DOI for v0.1.0-alpha (2026-05-19)"
 preferred-citation:
   type: software
   title: "Sosyal Bilimciler İçin Claude Code Rehberi (Claude Code for Social Scientists)"

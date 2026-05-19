@@ -11,7 +11,7 @@ The public phase plan for `sbcc-rehber`. Dates are targets, not commitments. The
 
 - Repository skeleton with the twelve-category booklet directory tree.
 - Dual-license header (Apache 2.0 for code, CC-BY-NC-SA 4.0 for content) with both full-text license files committed.
-- `CITATION.cff` with a Zenodo placeholder DOI.
+- `CITATION.cff` with a Zenodo placeholder DOI at scaffold time, replaced by the real concept DOI `10.5281/zenodo.20289687` and version DOI `10.5281/zenodo.20289688` immediately after the v0.1.0-alpha tag fired the Zenodo webhook on 2026-05-19.
 - `AI-AUTHORSHIP.md` with the NISO 2025 draft alignment statement and the per-booklet disclosure schema.
 - `CATALOG.md` enumerating thirty planned booklets across the twelve categories.
 - Three CI workflows: markdown lint with bilingual coverage and AI disclosure audit, CFF validation, and gitleaks secret scan.

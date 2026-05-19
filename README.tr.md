@@ -54,7 +54,7 @@ sbcc-rehber/
 ├── LICENSE                    (çift lisans başlığı)
 ├── LICENSE.code               (Apache 2.0 tam metni)
 ├── LICENSE.content            (CC-BY-NC-SA 4.0 tam metni)
-├── CITATION.cff               (Zenodo DOI yer tutucusu, sürüm sırasında güncellenir)
+├── CITATION.cff               (Zenodo concept DOI: 10.5281/zenodo.20289687)
 ├── AI-AUTHORSHIP.md           (ifşa politikası)
 ├── CATALOG.md                 (planlanan ve taslak haldeki tüm broşürlerin kataloğu)
 ├── CODE_OF_CONDUCT.md
@@ -94,7 +94,7 @@ Kod ve yapılandırma **Apache License, Version 2.0** kapsamındadır ([`LICENSE
 
 ## Atıf
 
-Bu çalışmayı atıf gösterecekseniz [`CITATION.cff`](./CITATION.cff) dosyasındaki makine okunabilir kaydı veya GitHub üzerindeki "Cite this repository" düğmesini kullanınız. v0.1 sürümü etiketlendikten sonra Zenodo bir DOI üretecek ve atıf dosyası güncellenecektir.
+Bu çalışmayı atıf gösterecekseniz [`CITATION.cff`](./CITATION.cff) dosyasındaki makine okunabilir kaydı veya GitHub üzerindeki "Cite this repository" düğmesini kullanınız. Zenodo concept DOI (en son sürüme çözümlenir) **10.5281/zenodo.20289687**, v0.1.0-alpha sürüm DOI'si **10.5281/zenodo.20289688**. Kanonik kayıt için bkz. <https://doi.org/10.5281/zenodo.20289687>.
 
 ## Uluslararası koruma
 
