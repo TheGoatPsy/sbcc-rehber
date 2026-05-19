@@ -30,7 +30,9 @@ If you are a native Turkish speaker contributing the Turkish version, please wri
 
 ## AI disclosure expectations
 
-Every contributor who uses AI assistance in drafting must populate the AI disclosure frontmatter for the booklet they touch. The schema is documented in [`AI-AUTHORSHIP.md`](./AI-AUTHORSHIP.md). The minimum required fields are.
+Every contributor who uses AI assistance in drafting must populate the AI disclosure frontmatter for the booklet they touch. The schema is documented in [`AI-AUTHORSHIP.md`](./AI-AUTHORSHIP.md). The booklet template files at `template/booklet-template.{tr,en}.md` carry the schema pre-filled with `human_review: "pending"` so contributors can copy and adapt. Replace `pending` with `partial` or `complete` before the merge to `main`; CI refuses any booklet on `main` that still carries `pending`.
+
+The minimum required fields are.
 
 - `ai_assisted: true` (if AI was used) or `false`.
 - `ai_tools` (list of tools with model versions).

@@ -119,7 +119,7 @@ Contributions are welcome from social science researchers, clinicians, instructi
 
 ## Contact
 
-Onour Impram — `onuribram@outlook.com` — Istanbul, Türkiye / Komotini, Greece.
+Onour Impram. `onuribram@outlook.com`. Istanbul, Türkiye / Komotini, Greece.
 
 ---
 

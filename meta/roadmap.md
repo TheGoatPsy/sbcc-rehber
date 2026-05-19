@@ -5,7 +5,7 @@ The public phase plan for `claude-code-for-social-scientists`. Dates are targets
 ## v0.1.0-alpha — Scaffold
 
 **Target.** 2026-05.
-**Status.** In progress as of 2026-05-19.
+**Status.** Complete (tagged 2026-05-19, commit `4999222`). The work captured under this version is the public scaffold and the first paired booklet. Subsequent work, including the four phases of post-tag remediation and polish, is tracked in `CHANGELOG.md`.
 
 **Scope.**
 
@@ -24,6 +24,7 @@ The public phase plan for `claude-code-for-social-scientists`. Dates are targets
 ## v0.1.0 — First public release
 
 **Target.** 2026-05.
+**Status.** In progress. The manual prerequisites for v0.1.0 (Zenodo binding and DOI mintage) completed on 2026-05-19 during Phase 0 of the post-tag remediation. The remaining manual prerequisites (Software Heritage enrollment, U.S. Copyright Office eCO application) are tracked separately in the maintainer's vault.
 
 **Scope.**
 

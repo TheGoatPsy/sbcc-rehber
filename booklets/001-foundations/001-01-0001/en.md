@@ -170,4 +170,4 @@ Ziems, C., Held, W., Shaikh, O., Chen, J., Zhang, Z., & Yang, D. (2024). Can lar
 **Verified citations.** 12
 **Fabricated citations.** 0
 **Previous booklet.** None (first booklet)
-**Next booklet.** [`001-01-0002`](../001-01-0002/en.md) - The Agentic Shift: From Chat Window to Working Partner
+**Next booklet.** [`001-01-0002`](../001-01-0002/en.md). The Agentic Shift: From Chat Window to Working Partner

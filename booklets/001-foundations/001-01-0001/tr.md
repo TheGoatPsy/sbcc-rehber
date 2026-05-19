@@ -169,4 +169,4 @@ Ziems, C., Held, W., Shaikh, O., Chen, J., Zhang, Z., & Yang, D. (2024). Can lar
 **Doğrulanmış atıf sayısı.** 12
 **Halüsinasyon atıf sayısı.** 0
 **Önceki broşür.** Yok (ilk broşür)
-**Sonraki broşür.** [`001-01-0002`](../001-01-0002/tr.md) — Aracın Ötesine Geçiş: Sohbet Penceresinden İş Ortağına
+**Sonraki broşür.** [`001-01-0002`](../001-01-0002/tr.md). Aracın Ötesine Geçiş: Sohbet Penceresinden İş Ortağına
