@@ -98,7 +98,7 @@ Code and configuration are under the **Apache License, Version 2.0** ([`LICENSE.
 
 ## Citation
 
-If you cite this work, use the machine-readable record in [`CITATION.cff`](./CITATION.cff), or the "Cite this repository" button on GitHub. The Zenodo concept DOI (resolves to the latest version) is **10.5281/zenodo.20289687** and the v0.1.0-alpha version DOI is **10.5281/zenodo.20289688**. See <https://doi.org/10.5281/zenodo.20289687> for the canonical record.
+If you cite this work, use the machine-readable record in [`CITATION.cff`](./CITATION.cff), or the "Cite this repository" button on GitHub. The Zenodo concept DOI (resolves to the latest version) is **10.5281/zenodo.20289687**. See <https://doi.org/10.5281/zenodo.20289687> for the canonical record. Version-specific DOIs for each release (currently v0.2.0 and v0.1.0-alpha) are recorded in [`CITATION.cff`](./CITATION.cff) under `identifiers`, so the README stays current as new versions are tagged.
 
 ## International protection
 

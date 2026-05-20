@@ -98,7 +98,7 @@ Kod ve yapılandırma **Apache License, Version 2.0** kapsamındadır ([`LICENSE
 
 ## Atıf
 
-Bu çalışmayı atıf gösterecekseniz [`CITATION.cff`](./CITATION.cff) dosyasındaki makine okunabilir kaydı veya GitHub üzerindeki "Cite this repository" düğmesini kullanınız. Zenodo concept DOI (en son sürüme çözümlenir) **10.5281/zenodo.20289687**, v0.1.0-alpha sürüm DOI'si **10.5281/zenodo.20289688**. Kanonik kayıt için bkz. <https://doi.org/10.5281/zenodo.20289687>.
+Bu çalışmayı atıf gösterecekseniz [`CITATION.cff`](./CITATION.cff) dosyasındaki makine okunabilir kaydı veya GitHub üzerindeki "Cite this repository" düğmesini kullanınız. Zenodo concept DOI (en son sürüme çözümlenir) **10.5281/zenodo.20289687**. Kanonik kayıt için bkz. <https://doi.org/10.5281/zenodo.20289687>. Her sürümün kendi DOI'si (şu an v0.2.0 ve v0.1.0-alpha) [`CITATION.cff`](./CITATION.cff) içindeki `identifiers` alanında tutulur, böylece README yeni sürümler taglendiğinde eskimemiş olur.
 
 ## Uluslararası koruma
 

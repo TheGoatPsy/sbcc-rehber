@@ -95,7 +95,9 @@ jobs:
                 failed=1
               fi
             done
-            if printf '%s\n' "${frontmatter}" | grep -Eq "^human_review: pending"; then
+            # Match human_review: pending in any form (unquoted, single-quoted, double-quoted, with optional whitespace).
+            # Codex adversarial review v0.2.0 surfaced that templates use quoted form, original regex only caught unquoted.
+            if printf '%s\n' "${frontmatter}" | grep -Eq "^human_review:[[:space:]]*[\"']?pending[\"']?[[:space:]]*$"; then
               echo "BLOCKED on main: ${md_file} has human_review: pending"
               failed=1
             fi
