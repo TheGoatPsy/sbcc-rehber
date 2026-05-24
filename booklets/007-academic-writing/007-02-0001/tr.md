@@ -27,7 +27,7 @@ fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
 license:
   - "CC-BY-NC-SA-4.0 (prose)"
-status: "paired"
+status: "release"
 ---
 
 # DOI Disiplini ile APA 7
@@ -89,7 +89,7 @@ APA 7, Türkçe yazar isimleri için soyadı ve baş harf biçimini korur, örne
 ```text
 Yazar, A. A., & Yazar, B. B. (Yıl). Makalenin Türkçe başlığı
 [Makalenin İngilizce çevirisi]. Derginin Türkçe Adı, Cilt(Sayı),
-Sayfa-Sayfa. https://doi.org/10.XXXXX/XXXXX
+Sayfa-Sayfa. https://doi.org/{doğrulanmış-doi}
 ```
 
 Bu künye, DergiPark üzerinden alınan DOI ile doğrulanır. Türkçe başlığın İngilizce çevirisi, alan terminolojisine duyarlı olduğu için yazarın sorumluluğundadır, model bir taslak çeviri önerse de son karar araştırmacınındır.

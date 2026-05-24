@@ -28,7 +28,7 @@ disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 
 translation_notes: "English re-authored from the Turkish source, not a literal translation. The original concept term Memory as Vault is presented as the author's own coinage in both languages."
 license:
   - "CC-BY-NC-SA-4.0 (prose)"
-status: "paired"
+status: "release"
 original_concept: true
 ---
 

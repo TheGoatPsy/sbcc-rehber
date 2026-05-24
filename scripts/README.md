@@ -14,11 +14,23 @@ Any file or fragment from the private vault that becomes part of `claude-code-fo
 2. Have regex-based secret patterns scanned (API keys, OAuth tokens, personal identifiers) before staging for commit.
 3. Be verified by a second pass after editing, not before.
 
-This three-step protocol is enforced manually for v0.1.0-alpha. Phase 1 will introduce a pre-commit hook that automates the verify pass.
+This three-step protocol remains mandatory for private-vault material. Public repository integrity checks are automated through the Node validator described below.
 
 ## Public scripts in this directory
 
-None at v0.1.0-alpha.
+- [`validate-repo.mjs`](./validate-repo.mjs) validates bilingual booklet pairing, required frontmatter fields, release metadata, AI disclosure aggregate counts, placeholder DOI absence, internal Markdown links, catalog counts, and Claude project skill discovery.
+
+Run locally:
+
+```bash
+npm run validate
+```
+
+Run the full local check:
+
+```bash
+npm run verify
+```
 
 ## Local-only scripts
 
@@ -33,4 +45,4 @@ These are local working artifacts written by the private sanitize helper when in
 
 ---
 
-**Last updated.** 2026-05-19.
+**Last updated.** 2026-05-24.

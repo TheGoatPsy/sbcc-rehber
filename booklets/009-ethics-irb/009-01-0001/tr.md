@@ -27,7 +27,7 @@ fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
 license:
   - "CC-BY-NC-SA-4.0 (prose)"
-status: "paired"
+status: "release"
 spine_booklet: true
 ---
 
@@ -77,7 +77,7 @@ Temel kural, iki cümlede özetlenir. Yapay zeka bir yazar olamaz, ama kullanım
 
 ## 8. Davranış Belgesi, Bu Broşürün Kendisi
 
-Bu broşür, anlattığı ilkeyi kendi üzerinde uygular, ve bu uygulama en güçlü davranış örneğidir. Bu metnin başında, yapılandırılmış bir ifşa bloğu bulunur. O blok, hangi yapay zeka aracının kullanıldığını, hangi rolde, hangi katkı düzeyinde kullanıldığını, ve insan incelemesinin durumunu açıkça belirtir. Bu broşürün ifşa düzeyi, yazarın klinik psikoloji uzmanlığının doğrudan içerikte olması nedeniyle ortak taslak olarak kaydedilmiştir. İnsan inceleme durumu, asıl yazar incelemesi tamamlanana kadar beklemede olarak işaretlidir.
+Bu broşür, anlattığı ilkeyi kendi üzerinde uygular, ve bu uygulama en güçlü davranış örneğidir. Bu metnin başında, yapılandırılmış bir ifşa bloğu bulunur. O blok, hangi yapay zeka aracının kullanıldığını, hangi rolde, hangi katkı düzeyinde kullanıldığını, ve insan incelemesinin durumunu açıkça belirtir. Bu broşürün ifşa düzeyi, yazarın klinik psikoloji uzmanlığının doğrudan içerikte olması nedeniyle ortak taslak olarak kaydedilmiştir. İnsan inceleme durumu, v1.0.0 sürümü için asıl yazar incelemesi tamamlandıktan sonra tamamlandı olarak işaretlidir.
 
 Bu, soyut bir ilkenin somut bir davranışa dönüşmüş halidir. Bir araştırmacı, bir makaleyi yapay zeka yardımıyla hazırladığında, aynı disiplini uygular. Yöntem bölümünde ya da bir ifşa notunda, kullanılan aracı, rolü ve katkı düzeyini belirtir. Bu ifşa, makaleyi zayıflatmaz, aksine güçlendirir, çünkü okur tam olarak neyin nasıl üretildiğini bilir. Şeffaflık, bir zayıflık itirafı değil, bir bütünlük göstergesidir.
 

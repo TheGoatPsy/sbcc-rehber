@@ -31,14 +31,18 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
 
       - name: Run markdownlint-cli2
-        run: npx markdownlint-cli2 "**/*.md" "#node_modules" "#.git"
+        run: npm run lint
 
-  bilingual-coverage:
-    name: Bilingual coverage (tr.md and en.md pairing)
+  repo-integrity:
+    name: Repository integrity validation
     runs-on: ubuntu-latest
-    timeout-minutes: 3
+    timeout-minutes: 5
     permissions:
       contents: read
     steps:
@@ -48,63 +52,14 @@ jobs:
           fetch-depth: 1
           persist-credentials: false
 
-      - name: Verify every booklet has both tr.md and en.md
-        shell: bash
-        run: |
-          set -euo pipefail
-          failed=0
-          # Booklets live at booklets/KKK-name/KKK-AA-SSSS/{tr,en}.md
-          while IFS= read -r -d '' dir; do
-            if [ ! -f "${dir}/tr.md" ] || [ ! -f "${dir}/en.md" ]; then
-              echo "MISSING bilingual pair: ${dir}"
-              failed=1
-            fi
-          done < <(find booklets -mindepth 2 -maxdepth 2 -type d -print0 2>/dev/null || true)
-          if [ "${failed}" -ne 0 ]; then
-            echo ""
-            echo "Bilingual coverage check FAILED. Every booklet directory must contain both tr.md and en.md."
-            exit 1
-          fi
-          echo "Bilingual coverage check PASSED."
-
-  ai-disclosure-frontmatter:
-    name: AI disclosure frontmatter audit
-    runs-on: ubuntu-latest
-    timeout-minutes: 3
-    permissions:
-      contents: read
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          fetch-depth: 1
-          persist-credentials: false
+          node-version: "20"
+          cache: npm
 
-      - name: Verify every booklet has required AI disclosure fields
-        shell: bash
-        run: |
-          set -euo pipefail
-          required_fields=("title_en" "title_tr" "ai_assisted" "ai_contribution_level" "human_review" "human_review_date" "booklet_id" "version" "date_published" "verified_citations_count" "fabricated_citations_count" "disclosure_standard")
-          failed=0
-          while IFS= read -r -d '' md_file; do
-            # Extract the YAML frontmatter block (lines between the first two --- delimiters)
-            frontmatter=$(awk '/^---$/{c++; if(c==2) exit; next} c==1 {print}' "${md_file}")
-            for field in "${required_fields[@]}"; do
-              if ! printf '%s\n' "${frontmatter}" | grep -Eq "^${field}:"; then
-                echo "MISSING frontmatter field '${field}' in: ${md_file}"
-                failed=1
-              fi
-            done
-            # Match human_review: pending in any form (unquoted, single-quoted, double-quoted, with optional whitespace).
-            # Codex adversarial review v0.2.0 surfaced that templates use quoted form, original regex only caught unquoted.
-            if printf '%s\n' "${frontmatter}" | grep -Eq "^human_review:[[:space:]]*[\"']?pending[\"']?[[:space:]]*$"; then
-              echo "BLOCKED on main: ${md_file} has human_review: pending"
-              failed=1
-            fi
-          done < <(find booklets -mindepth 3 -maxdepth 3 -type f \( -name "tr.md" -o -name "en.md" \) -print0 2>/dev/null || true)
-          if [ "${failed}" -ne 0 ]; then
-            echo ""
-            echo "AI disclosure audit FAILED. See AI-AUTHORSHIP.md section 3 for the required frontmatter schema."
-            exit 1
-          fi
-          echo "AI disclosure audit PASSED."
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate repository metadata
+        run: npm run validate

@@ -28,7 +28,7 @@ disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 
 translation_notes: "English re-authored from the Turkish source, not a literal translation. Regional terminology (DergiPark, TR Dizin, HEAL-Link, akademik teşvik) preserved with explanatory glosses for an international reader."
 license:
   - "CC-BY-NC-SA-4.0 (prose)"
-status: "paired"
+status: "release"
 signature_booklet: true
 ---
 
@@ -50,7 +50,7 @@ In practice this works as follows. If you have the DOI of a DergiPark article, y
 
 ```bash
 # Retrieve the metadata of a DergiPark DOI as BibTeX
-curl -LH "Accept: application/x-bibtex" https://doi.org/10.XXXXX/XXXXX
+curl -LH "Accept: application/x-bibtex" https://doi.org/10.3390/publications7010018
 ```
 
 This command goes through doi.org to Crossref and returns the article's record as BibTeX. Once the record arrives, Claude Code can convert it to APA 7 format, add it to a reference file in your vault, or check its consistency against your bibliography. DergiPark's Crossref integration is the bridge that connects Turkish literature to the international bibliographic infrastructure. Without this bridge, Turkish sources would have to be entered manually every time.

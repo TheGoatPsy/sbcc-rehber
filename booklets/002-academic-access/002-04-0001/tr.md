@@ -27,7 +27,7 @@ fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
 license:
   - "CC-BY-NC-SA-4.0 (prose)"
-status: "paired"
+status: "release"
 signature_booklet: true
 ---
 
@@ -49,7 +49,7 @@ Pratikte bu şöyle çalışır. Bir DergiPark makalesinin DOI'sine sahipseniz, 
 
 ```bash
 # Bir DergiPark DOI'sinin künyesini BibTeX olarak çek
-curl -LH "Accept: application/x-bibtex" https://doi.org/10.XXXXX/XXXXX
+curl -LH "Accept: application/x-bibtex" https://doi.org/10.3390/publications7010018
 ```
 
 Bu komut, doi.org üzerinden Crossref'e gider ve makalenin künyesini BibTeX olarak getirir. Künye geldikten sonra Claude Code, bu kaydı APA 7 biçimine çevirebilir, kasanızdaki bir referans dosyasına ekleyebilir ya da kaynakçanızla tutarlılığını kontrol edebilir. DergiPark'ın Crossref entegrasyonu, Türkçe literatürü uluslararası bibliyografik altyapıya bağlayan köprüdür. Bu köprü olmasaydı, Türkçe kaynaklar her seferinde manuel olarak girilmek zorunda kalırdı.

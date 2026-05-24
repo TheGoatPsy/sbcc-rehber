@@ -18,17 +18,19 @@ dist/
 *.epub
 !meta/*.pdf
 
-# Node / package managers (in case lint tools cache)
+# Node / package managers
 node_modules/
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
 
 # Python (if any helper scripts grow)
 __pycache__/
 *.pyc
 .venv/
 venv/
+*.egg-info/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 
 # Local-only sanitizer logs (script lives in private vault, never here)
 scripts/sanitize-helper.log

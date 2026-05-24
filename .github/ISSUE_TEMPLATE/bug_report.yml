@@ -1,0 +1,45 @@
+name: Bug report
+description: Report a repository, workflow, validation, or rendering problem.
+title: "Bug: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for repository mechanics, CI, links, rendering, release metadata, or project skill discovery problems.
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: File path, workflow name, URL, or command.
+      placeholder: "scripts/validate-repo.mjs"
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behavior
+      description: What happened.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should have happened.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Logs, screenshots, command output, or exact error text. Redact secrets.
+    validations:
+      required: false
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: I have removed passwords, tokens, private participant data, and institution secrets.
+          required: true

@@ -25,14 +25,11 @@ The following AI tools have contributed to the prose, structure, or verification
 |---|---|---|---|
 | Claude Code | Anthropic | claude-opus-4-7, claude-sonnet-4-6 | Drafting, verification, citation lookup, bilingual review assistance |
 
-The model version applied to each booklet is recorded in that booklet's frontmatter (`ai_tools.model`).
+The model version applied to each booklet is recorded in that booklet's frontmatter under `ai_tools.model_alias` and `ai_tools.model_dated`.
 
 ## Acknowledgement of upstream work
 
-This repository was shaped by, but diverged from, two earlier academic Claude Code repositories. Their structural ideas are credited in [`README.md`](../README.md) and in the working notes maintained by the author. Selected patterns adapted for Turkish and social-science contexts.
-
-- **Galaxy-Dawn/claude-scholar** (MIT) — multilingual (English, Chinese, Japanese) skill bundle with planning, expression, and citation-verification skills. Cherry-picked patterns reframed for social science.
-- **Imbad0202/academic-research-skills** (CC-BY-NC 4.0) — ten-stage academic pipeline, Material Passport pattern, three-index triangulation (Semantic Scholar, OpenAlex, Crossref), Devil's Advocate counter-position pattern. Selected components integrated; the Devil's Advocate adversarial style was deliberately not adopted for clinical psychology booklets in deference to anti-adversarial peer review norms in the discipline.
+This repository's public guide structure and methodological framing are original to the maintainer. Earlier comparative working notes reviewed adjacent academic Claude Code repositories during private remediation, but they are not listed as public influences in the README and are not treated as contributors.
 
 ## How to be listed
 
@@ -44,4 +41,4 @@ This file is updated by the maintainer at each release. Pending contributions li
 
 ---
 
-**Last updated.** 2026-05-19.
+**Last updated.** 2026-05-24.

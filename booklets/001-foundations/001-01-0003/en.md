@@ -28,7 +28,7 @@ disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 
 translation_notes: "Re-authored from the Turkish version (tr.md) against the same outline and the same verified citation set. Commands kept minimal and principle-level on both sides because CLI syntax drifts between versions. Turkish and Greek payment and connectivity specifics preserved."
 license:
   - "CC-BY-NC-SA-4.0 (prose)"
-status: "paired"
+status: "release"
 ---
 
 # Installation, First Session, and Sanity Checks
