@@ -2,13 +2,9 @@ name: Citation Check
 
 on:
   push:
-    paths:
-      - "CITATION.cff"
-      - ".github/workflows/citation-check.yml"
+    branches: [main]
   pull_request:
-    paths:
-      - "CITATION.cff"
-      - ".github/workflows/citation-check.yml"
+    branches: [main]
 
 permissions:
   contents: read

@@ -1,0 +1,54 @@
+name: Content correction
+description: Report a conceptual, translation, ethics, regional access, or pedagogy issue.
+title: "Content: "
+labels: ["content", "triage"]
+body:
+  - type: input
+    id: booklet
+    attributes:
+      label: Booklet or file
+      placeholder: "booklets/009-ethics-irb/009-01-0001/tr.md"
+    validations:
+      required: true
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: Issue type
+      options:
+        - Conceptual accuracy
+        - Translation parity
+        - Cultural adaptation
+        - Ethics or IRB framing
+        - Regional access
+        - AI disclosure
+        - Pedagogical clarity
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Explain the issue and quote the smallest necessary excerpt.
+    validations:
+      required: true
+  - type: textarea
+    id: recommendation
+    attributes:
+      label: Recommended change
+      description: Suggest a correction or review direction.
+    validations:
+      required: false
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence or rationale
+      description: Cite standards, official guidance, peer-reviewed sources, or language-specific reasoning.
+    validations:
+      required: false
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: I have anonymized clinical, participant, student, and institutional details.
+          required: true

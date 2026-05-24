@@ -28,7 +28,7 @@ disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 
 translation_notes: "English re-authored from the Turkish source, not a literal translation. The reflexive disclosure in Section 8 points to this booklet's own frontmatter in both languages. Institutional author names rendered in English."
 license:
   - "CC-BY-NC-SA-4.0 (prose)"
-status: "paired"
+status: "release"
 spine_booklet: true
 ---
 
@@ -78,7 +78,7 @@ Disclosure, on the other hand, is mandatory. A text written with artificial inte
 
 ## 8. The Behavior Document, This Booklet Itself
 
-This booklet applies the principle it describes to itself, and this application is the strongest behavioral example. At the head of this text there is a structured disclosure block. That block states clearly which artificial intelligence tool was used, in which role, at which contribution level, and the status of human review. The disclosure level of this booklet is recorded as co-drafting, because the author's clinical psychology expertise is directly in the content. The human review status is marked as pending until the principal author review is complete.
+This booklet applies the principle it describes to itself, and this application is the strongest behavioral example. At the head of this text there is a structured disclosure block. That block states clearly which artificial intelligence tool was used, in which role, at which contribution level, and the status of human review. The disclosure level of this booklet is recorded as co-drafting, because the author's clinical psychology expertise is directly in the content. The human review status is marked as complete after principal author review for the v1.0.0 release.
 
 This is an abstract principle turned into a concrete behavior. When a researcher prepares an article with artificial intelligence assistance, they apply the same discipline. In the methods section or a disclosure note, they state the tool used, its role, and the contribution level. This disclosure does not weaken the article, it strengthens it, because the reader knows exactly what was produced and how. Transparency is not a confession of weakness but an indicator of integrity.
 

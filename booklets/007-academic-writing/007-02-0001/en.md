@@ -28,7 +28,7 @@ disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 
 translation_notes: "English re-authored from the Turkish source, not a literal translation. The Crossref command examples use a generic institutional placeholder email, not a personal address."
 license:
   - "CC-BY-NC-SA-4.0 (prose)"
-status: "paired"
+status: "release"
 ---
 
 # APA 7 with DOI Discipline
@@ -90,7 +90,7 @@ APA 7 preserves the surname and initial form for Turkish author names, for examp
 ```text
 Author, A. A., & Author, B. B. (Year). Article title in Turkish
 [English translation of the article title]. Journal Name in Turkish,
-Volume(Issue), Page-Page. https://doi.org/10.XXXXX/XXXXX
+Volume(Issue), Page-Page. https://doi.org/{verified-doi}
 ```
 
 This record is verified with the DOI obtained through DergiPark. The English translation of the Turkish title, being sensitive to field terminology, is the author's responsibility, and even when the model offers a draft translation the final decision belongs to the researcher.

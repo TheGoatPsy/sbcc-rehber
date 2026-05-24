@@ -1,0 +1,52 @@
+name: Citation correction
+description: Report an APA, DOI, metadata, source, or fabricated citation concern.
+title: "Citation: "
+labels: ["citation", "triage"]
+body:
+  - type: input
+    id: booklet
+    attributes:
+      label: Booklet or file
+      placeholder: "booklets/007-academic-writing/007-02-0001/en.md"
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current citation text
+      description: Paste the exact reference or citation line.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Proposed correction
+      description: Provide the corrected APA 7 entry or metadata.
+    validations:
+      required: false
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Verification evidence
+      description: DOI URL, Crossref record, PubMed record, publisher page, library record, or other reliable source.
+    validations:
+      required: true
+  - type: dropdown
+    id: risk
+    attributes:
+      label: Citation risk
+      options:
+        - Metadata typo
+        - DOI missing
+        - DOI resolves to different work
+        - Source not found
+        - Possible fabricated citation
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: I have not included paywalled full text, credentials, or private library session data.
+          required: true

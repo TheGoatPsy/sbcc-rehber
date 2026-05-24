@@ -28,7 +28,7 @@ disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 
 translation_notes: "Re-authored from the Turkish version (tr.md) against the same outline and the same verified citation set. Examples and academic infrastructure references domesticated for an international audience while preserving the Turkish and Greek specificity where relevant."
 license:
   - "CC-BY-NC-SA-4.0 (prose)"
-status: "paired"
+status: "release"
 ---
 
 # What is Claude Code? A Social Scientist's Perspective

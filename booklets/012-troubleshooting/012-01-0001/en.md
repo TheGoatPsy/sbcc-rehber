@@ -29,7 +29,7 @@ translation_notes: "English re-authored from the Turkish source, not a literal t
 closing_booklet: true
 license:
   - "CC-BY-NC-SA-4.0 (prose)"
-status: "paired"
+status: "release"
 ---
 
 # When Things Go Wrong, A Working Troubleshooting Protocol

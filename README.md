@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="./assets/banner.svg" alt="Claude Code for Social Scientists — Sosyal Bilimciler İçin Claude Code Rehberi banner. Author Onour Impram, ORCID 0000-0003-1076-3928, Zenodo concept DOI 10.5281/zenodo.20289687, dual licensed Apache 2.0 plus CC-BY-NC-SA 4.0, v0.1.0-alpha.">
+  <img src="./assets/banner.svg" alt="Claude Code for Social Scientists — Sosyal Bilimciler İçin Claude Code Rehberi banner. Author Onour Impram, ORCID 0000-0003-1076-3928, Zenodo concept DOI 10.5281/zenodo.20289687, dual licensed Apache 2.0 plus CC-BY-NC-SA 4.0, v1.1.0.">
 </p>
 
 # Claude Code for Social Scientists
 
 A bilingual, open-source guide for social scientists who want to use Anthropic's Claude Code in their research, teaching, and academic writing. Written for researchers outside the English-speaking world as well as inside it, by a working clinical psychologist and PhD candidate who uses these tools in real academic production.
 
-> **Status:** v0.1 scaffold. First full booklet (Booklet 001-01-0001) drafted in Turkish and English. Additional booklets follow in Phase 1.
+> **Status:** v1.1.0 release. Ten core booklets in Turkish and English, human-reviewed and citation-audited, plus ten companion Claude Code project skills that turn the booklets into reusable workflows. The skills install with pip (`social-cc-plugin`) or as a Claude Code plugin.
 
 > **TR readers:** A Turkish overview lives at the bottom of this file. The full Turkish version is in [`README.tr.md`](./README.tr.md). Every booklet exists as `tr.md` and `en.md` side by side.
 
@@ -47,7 +47,7 @@ It is not a Claude Code reference manual (Anthropic publishes those). It is not 
 
 The author is Onour Impram, a clinical psychologist licensed in Türkiye, Greece, and Ireland, a PhD candidate in Clinical and Health Psychology at Istanbul University, an external lecturer at Biruni University, and an AI and mental health researcher. ORCID: [0000-0003-1076-3928](https://orcid.org/0000-0003-1076-3928).
 
-Claude Code is used as a drafting and verification assistant. Each booklet carries a frontmatter block declaring the contribution level (`ai_assisted`, `model`, `ai_contribution_level`, `human_review`) in the spirit of the consolidating publishing consensus on AI disclosure (COPE 2023, WAME 2023, ICMJE 2024, STM 2025) combined with EU AI Act 2024/1689 Article 50 transparency obligations and ENAI recommendations on the ethical use of AI in research. See [`AI-AUTHORSHIP.md`](./AI-AUTHORSHIP.md) for the full policy.
+Claude Code is used as a drafting and verification assistant. Each booklet carries a frontmatter block declaring the contribution level (`ai_assisted`, `ai_tools.model_alias`, `ai_tools.model_dated`, `ai_contribution_level`, `human_review`) in the spirit of the consolidating publishing consensus on AI disclosure (COPE 2023, WAME 2023, ICMJE 2024, STM 2025) combined with EU AI Act 2024/1689 Article 50 transparency obligations and ENAI recommendations on the ethical use of AI in research. See [`AI-AUTHORSHIP.md`](./AI-AUTHORSHIP.md) for the full policy.
 
 ## Repository layout
 
@@ -61,9 +61,12 @@ claude-code-for-social-scientists/
 ├── CITATION.cff               (Zenodo concept DOI: 10.5281/zenodo.20289687)
 ├── AI-AUTHORSHIP.md           (disclosure policy)
 ├── CATALOG.md                 (catalog of all planned and drafted booklets)
+├── package.json               (local lint and validation commands)
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md            (EN)
 ├── CONTRIBUTING.tr.md         (TR)
+├── .claude/
+│   └── skills/                (project skills for Claude Code)
 ├── booklets/
 │   ├── 001-foundations/
 │   ├── 002-academic-access/
@@ -74,10 +77,11 @@ claude-code-for-social-scientists/
 │   ├── contributors.md
 │   └── ai-disclosure.md
 ├── scripts/
-│   └── README.md
+│   ├── README.md
+│   └── validate-repo.mjs
 └── .github/
     └── workflows/
-        ├── ci.yml             (markdownlint + bilingual coverage)
+        ├── ci.yml             (markdownlint + repo integrity validation)
         ├── citation-check.yml (cff-validator)
         └── secret-scan.yml    (gitleaks)
 ```
@@ -92,13 +96,39 @@ Each booklet has a stable identifier of the form `KKK-AA-SSSS`:
 
 So `001-01-0001` is the first booklet, in the first subcategory, of the Foundations category. The full catalog lives in [`CATALOG.md`](./CATALOG.md). Identifiers do not change after release, even if the booklet is later revised; revisions are tracked in the booklet's own frontmatter and changelog.
 
+## Project Skills
+
+The v1.1.0 surface adds ten Claude Code project skills under [`.claude/skills/`](./.claude/skills/). The booklets carry theory, pedagogy, and scholarly framing. The skills carry repeatable workflows, audit checklists, and safe operating boundaries.
+
+| Skill | Companion booklets | Purpose |
+|---|---|---|
+| `social-science-literature-triage` | 002, 007 | Scope database selection, language layers, DOI status, and inclusion criteria before a review starts. |
+| `apa-doi-verifier` | 007 | Clean APA 7 references, check DOI metadata, and classify fabricated citation risk. |
+| `bilingual-booklet-pairing` | all booklet pairs | Check `tr.md` and `en.md` parity, frontmatter alignment, headings, and adaptation notes. |
+| `ai-disclosure-auditor` | all booklet pairs | Audit AI contribution fields, human review, citation counts, model metadata, and disclosure standard. |
+| `ethics-irb-ai-protocol` | 009 | Produce ethics, KVKK, GDPR, EU AI Act, disclosure, and data-minimization checklists. |
+| `rebuttal-traceability-matrix` | 010 | Convert reviewer comments into response categories, manuscript change mapping, and editor reply drafts. |
+| `memory-vault-architect` | 003, 004 | Design research vault folders, MOCs, frontmatter, source passports, and retrieval patterns. |
+| `regional-access-workflow` | 002 | Plan lawful access through DergiPark, ULAKBIM TR Dizin, HEAL-Link, YOK Thesis Center, VPN, and library routes. |
+| `agentic-session-debugger` | 012 | Diagnose Claude Code scope drift, loop traps, hidden state, context limits, PATH, and permission failures. |
+| `repo-release-integrity-check` | whole repository | Check README, catalog, changelog, citation files, Zenodo DOI, release notes, AI disclosure, and booklet metadata before release. |
+
+### Installing the skills
+
+The skills ship two ways, and both read from the same `.claude/skills/` source.
+
+- **pip.** Run `pip install social-cc-plugin`, then `social-cc install` to copy the skills into your Claude configuration. Use `social-cc install --project` to write them into the current project's `.claude/skills/` instead, and `social-cc list` to see what is bundled.
+- **Claude Code plugin.** Install the repository through the Claude Code plugin system. The manifest at [`.claude-plugin/plugin.json`](./.claude-plugin/plugin.json) exposes the same skills.
+
+The installer code is Apache 2.0. The skill content it copies stays under CC-BY-NC-SA 4.0, so the non-commercial and attribution terms apply to the prose. See [Licensing](#licensing).
+
 ## Licensing
 
 Code and configuration are under the **Apache License, Version 2.0** ([`LICENSE.code`](./LICENSE.code)). Booklets, guides, prose, and instructional content are under **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International** ([`LICENSE.content`](./LICENSE.content)). The dual-license model is summarized in [`LICENSE`](./LICENSE) at the repository root. Commercial use of the prose content requires prior written permission; see the LICENSE file for the contact procedure.
 
 ## Citation
 
-If you cite this work, use the machine-readable record in [`CITATION.cff`](./CITATION.cff), or the "Cite this repository" button on GitHub. The Zenodo concept DOI (resolves to the latest version) is **10.5281/zenodo.20289687**. See <https://doi.org/10.5281/zenodo.20289687> for the canonical record. Version-specific DOIs for each release (currently v0.2.0 and v0.1.0-alpha) are recorded in [`CITATION.cff`](./CITATION.cff) under `identifiers`, so the README stays current as new versions are tagged.
+If you cite this work, use the machine-readable record in [`CITATION.cff`](./CITATION.cff), or the "Cite this repository" button on GitHub. The Zenodo concept DOI (resolves to the latest version) is **10.5281/zenodo.20289687**. See <https://doi.org/10.5281/zenodo.20289687> for the canonical record. Version-specific DOIs for each release, including v1.1.0, v1.0.0, v0.2.0, and v0.1.0-alpha, are recorded in [`CITATION.cff`](./CITATION.cff) under `identifiers`, so the README stays current as new versions are tagged.
 
 ## International protection
 
@@ -111,7 +141,7 @@ This work is registered through:
 
 ## Roadmap
 
-See [`meta/roadmap.md`](./meta/roadmap.md) for the public phase plan. The headline targets are v0.1 (scaffold + first booklet, 2026-05), v1.0 (ten core booklets across the foundational and highest-value categories), v1.5 (community discussions opened, additional categories drafted), v2.0 (full thirty-booklet catalog, living lab, conference citations, instructional use). Specific release dates are tracked in the roadmap.
+See [`meta/roadmap.md`](./meta/roadmap.md) for the public phase plan. The current release is v1.1.0, ten released core booklets across the foundational and highest-value categories plus ten companion project skills for repeatable Claude Code workflows. Later targets remain v1.5 for community discussions and additional categories, and v2.0 for the full thirty-booklet catalog, living lab, conference citations, and instructional use.
 
 ## Contributing
 

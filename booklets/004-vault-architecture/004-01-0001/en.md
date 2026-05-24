@@ -28,7 +28,7 @@ disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 
 translation_notes: "English re-authored from the Turkish source, not a literal translation. Folder and MOC examples preserve the Memory as Vault conventions established in the Turkish version."
 license:
   - "CC-BY-NC-SA-4.0 (prose)"
-status: "paired"
+status: "release"
 ---
 
 # Folder Discipline and the Maps of Content (MOC) Pattern
