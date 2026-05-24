@@ -35,7 +35,7 @@ Companion project skills and a distribution surface. The ten v1.0 booklets are u
 ### Zenodo
 
 - Concept DOI: [10.5281/zenodo.20289687](https://doi.org/10.5281/zenodo.20289687) (always resolves to the latest version, now v1.1.0).
-- Version DOI for v1.1.0: minted on the GitHub release and recorded here in a follow-up commit.
+- Version DOI for v1.1.0: [10.5281/zenodo.20364287](https://doi.org/10.5281/zenodo.20364287).
 
 ## [1.0.0] - 2026-05-24
 
