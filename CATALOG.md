@@ -11,7 +11,7 @@ This catalog lists every booklet in `claude-code-for-social-scientists`, grouped
 | `paired` | Both `tr.md` and `en.md` drafted, human review pending |
 | `release` | Human-reviewed, version-tagged, included in a public release |
 
-The repository now contains nine booklets at `paired` status. Both Turkish and English drafts are complete for all nine. Booklet `001-01-0001` is human-reviewed, while `001-01-0002`, `001-01-0003`, `002-04-0001`, `003-01-0001`, `004-01-0001`, `007-02-0001`, `009-01-0001`, and `010-01-0001` have human review pending. Twenty-one booklets are at `planned` status as of 2026-05-24. Of these planned booklets, **one more belongs to the v1.0 announcement target** (`012-01-0001`, the closing troubleshooting booklet).
+The repository now contains ten booklets at `paired` status. Both Turkish and English drafts are complete for all ten. Booklet `001-01-0001` is human-reviewed, while `001-01-0002`, `001-01-0003`, `002-04-0001`, `003-01-0001`, `004-01-0001`, `007-02-0001`, `009-01-0001`, `010-01-0001`, and `012-01-0001` have human review pending. Twenty booklets are at `planned` status as of 2026-05-24. With `012-01-0001` (the closing troubleshooting booklet) paired, **all ten booklets of the v1.0 announcement target are complete**. The v1.0 release awaits principal human review and version tagging.
 
 ---
 
@@ -127,7 +127,7 @@ When tools fail, when papers disagree, when reviewers ask the wrong question.
 
 | Identifier | Title (EN) | Title (TR) | Status |
 |---|---|---|---|
-| 012-01-0001 `[v1.0]` | When Things Go Wrong: A Working Troubleshooting Protocol | İşler Ters Gittiğinde: Çalışan Bir Sorun Giderme Protokolü | `planned` |
+| 012-01-0001 `[v1.0]` | When Things Go Wrong, A Working Troubleshooting Protocol | İşler Ters Gittiğinde, Çalışan Bir Sorun Giderme Protokolü | `paired` |
 
 ---
 
@@ -136,9 +136,9 @@ When tools fail, when papers disagree, when reviewers ask the wrong question.
 | Status | Count |
 |---|---|
 | `release` | 0 |
-| `paired` | 9 |
+| `paired` | 10 |
 | `draft` | 0 |
-| `planned` | 21 |
+| `planned` | 20 |
 | **Total catalog** | **30** |
 | **v1.0 announcement target** | **10** (marked `[v1.0]` above) |
 
@@ -154,4 +154,4 @@ See [`CONTRIBUTING.md`](./CONTRIBUTING.md). The short version. Open an issue wit
 
 ---
 
-**Last updated:** 2026-05-24 (Phase 3 booklets 007-02-0001, 009-01-0001, and 010-01-0001 paired)
+**Last updated:** 2026-05-24 (Phase 4 closing booklet 012-01-0001 paired, all ten v1.0 booklets complete)

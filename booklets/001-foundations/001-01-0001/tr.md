@@ -165,7 +165,7 @@ Ziems, C., Held, W., Shaikh, O., Chen, J., Zhang, Z., & Yang, D. (2024). Can lar
 **Broşür kimliği.** `001-01-0001`
 **Sürüm.** `0.1.0`
 **Tarih.** 2026-05-19
-**Sözcük sayısı (yaklaşık).** 2900 (Türkçe gövde metni)
+**Sözcük sayısı (yaklaşık).** 1997 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 12
 **Halüsinasyon atıf sayısı.** 0
 **Önceki broşür.** Yok (ilk broşür)
