@@ -38,6 +38,11 @@ The v1.0 manifesto. Ten core booklets, Turkish and English in full parallel, pos
 - Booklet 001-01-0001 footer word counts reconciled to measured values. Turkish body corrected from a stated 2900 to the measured 1997, English from a stated 2700 to the measured 2442. The earlier figures predated the Phase 1 reference-list trim and were never re-measured.
 - Booklet 003-01-0001 English reference list corrected. The Luhmann (1992) reference, cited in-text in the English body, had been omitted from the English reference list while present in the Turkish. Restored to match the frontmatter count of 10 and the Turkish version. Found during the pre-release cross-booklet consistency audit, which otherwise confirmed that all ten booklets carry matching frontmatter and reference-list citation counts (94 total), a consistent previous-to-next bridge chain, and no forbidden characters across the bilingual set.
 
+### Zenodo
+
+- Concept DOI: [10.5281/zenodo.20289687](https://doi.org/10.5281/zenodo.20289687) (always resolves to the latest version, now v1.0.0).
+- Version DOI for v1.0.0: [10.5281/zenodo.20363740](https://doi.org/10.5281/zenodo.20363740).
+
 ## [0.2.0] - 2026-05-19
 
 The work since the v0.1.0-alpha tag (commit `4999222`) is grouped below into four phases, each corresponding to a discrete review or remediation cycle. The phase labels also match the vault diary entries for 2026-05-19.
