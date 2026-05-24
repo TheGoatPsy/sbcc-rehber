@@ -11,7 +11,7 @@ This catalog lists every booklet in `claude-code-for-social-scientists`, grouped
 | `paired` | Both `tr.md` and `en.md` drafted, human review pending |
 | `release` | Human-reviewed, version-tagged, included in a public release |
 
-The current version (`v0.1.0-alpha`) contains one booklet at `paired` status (Turkish and English drafts both complete, awaiting public release). Twenty-nine booklets are at `planned` status as of 2026-05-19. Of these, **nine more belong to the v1.0 announcement target** (see the `[v1.0]` marker per booklet row).
+The repository now contains three booklets at `paired` status. Both Turkish and English drafts are complete for all three. Booklet `001-01-0001` is human-reviewed, while `001-01-0002` and `001-01-0003` have human review pending. Twenty-seven booklets are at `planned` status as of 2026-05-24. Of these planned booklets, **seven more belong to the v1.0 announcement target** (see the `[v1.0]` marker per booklet row).
 
 ---
 
@@ -22,8 +22,8 @@ The conceptual introduction. What Claude Code is, how it differs from a chat win
 | Identifier | Title (EN) | Title (TR) | Status |
 |---|---|---|---|
 | 001-01-0001 `[v1.0]` | What is Claude Code? A Social Scientist's Perspective | Claude Code Nedir? Sosyal Bilimci Bakışıyla | `paired` |
-| 001-01-0002 `[v1.0]` | The Agentic Shift: From Chat Window to Working Partner | Aracın Ötesine Geçiş: Sohbet Penceresinden İş Ortağına | `planned` |
-| 001-01-0003 `[v1.0]` | Installation, First Session, and Sanity Checks | Kurulum, İlk Oturum, Sağlık Testleri | `planned` |
+| 001-01-0002 `[v1.0]` | The Agentic Shift: From Chat Window to Working Partner | Aracın Ötesine Geçiş: Sohbet Penceresinden İş Ortağına | `paired` |
+| 001-01-0003 `[v1.0]` | Installation, First Session, and Sanity Checks | Kurulum, İlk Oturum, Sağlık Testleri | `paired` |
 
 ## 002 — Academic Access / Akademik Erişim
 
@@ -136,9 +136,9 @@ When tools fail, when papers disagree, when reviewers ask the wrong question.
 | Status | Count |
 |---|---|
 | `release` | 0 |
-| `paired` | 1 |
+| `paired` | 3 |
 | `draft` | 0 |
-| `planned` | 29 |
+| `planned` | 27 |
 | **Total catalog** | **30** |
 | **v1.0 announcement target** | **10** (marked `[v1.0]` above) |
 
@@ -154,4 +154,4 @@ See [`CONTRIBUTING.md`](./CONTRIBUTING.md). The short version. Open an issue wit
 
 ---
 
-**Last updated:** 2026-05-19 (v0.1.0-alpha scaffold)
+**Last updated:** 2026-05-24 (Phase 1 booklets 001-01-0002 and 001-01-0003 paired)

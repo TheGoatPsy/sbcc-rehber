@@ -8,7 +8,16 @@ Citations of this work should use the Zenodo concept DOI [10.5281/zenodo.2028968
 
 ## [Unreleased]
 
-No unreleased changes at this moment. New work will be recorded here as it lands.
+### Added
+
+- Booklet 001-01-0002 (The Agentic Shift: From Chat Window to Working Partner) drafted in Turkish and English. Nine-section map, 10 verified citations (Wooldridge 2020, Park et al. 2023, Sumers et al. 2024, Yao et al. 2023, Mialon et al. 2023, Schick et al. 2023, Engel 1977, Hicks et al. 2024, Bender et al. 2021, Mollick 2024). Status `paired`, human review pending.
+- Booklet 001-01-0003 (Installation, First Session, and Sanity Checks) drafted in Turkish and English. Ten-section operational map with a failure-modes table, 6 verified citations (Anthropic Claude Code documentation and best practices, Microsoft WSL documentation, Ouyang et al. 2022, Bai et al. 2022, Anthropic Responsible Scaling Policy). Status `paired`, human review pending.
+- Both new booklets carry the full disclosure frontmatter. `ai_contribution_level` is `substantial-drafting` for 001-01-0002 and `co-drafting` for 001-01-0003. This completes category 001 (Foundations) as a bilingual set for the v1.0 manifesto.
+
+### Changed
+
+- `CATALOG.md` status of 001-01-0002 and 001-01-0003 moved from `planned` to `paired`. Paired count 1 to 3, planned count 29 to 27.
+- Claude Code best-practices citation URL updated to the current canonical `https://code.claude.com/docs/en/best-practices` after a 308 permanent redirect from the older `anthropic.com/engineering` path (verified by live fetch on 2026-05-24).
 
 ## [0.2.0] - 2026-05-19
 
