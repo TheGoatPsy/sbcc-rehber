@@ -49,7 +49,7 @@ Companion project skills and a distribution surface. The ten v1.0 booklets are u
 - v1.0.0 booklet frontmatter status now uses `release` across all twenty language files.
 - Release booklets no longer contain unresolved `10.XXXXX/XXXXX` DOI examples.
 - Booklet 009 self-disclosure language now matches completed human review.
-- Booklet 012 Turkish wording now uses `??pheci` rather than `septik`.
+- Booklet 012 Turkish wording now uses `şüpheci` rather than `septik`.
 
 ### Zenodo
 
@@ -65,13 +65,13 @@ The v1.0 manifesto. Ten core booklets, Turkish and English in full parallel, pos
 - Booklet 001-01-0002 (The Agentic Shift: From Chat Window to Working Partner) drafted in Turkish and English. Nine-section map, 10 verified citations (Wooldridge 2020, Park et al. 2023, Sumers et al. 2024, Yao et al. 2023, Mialon et al. 2023, Schick et al. 2023, Engel 1977, Hicks et al. 2024, Bender et al. 2021, Mollick 2024). Status `release`, human review complete.
 - Booklet 001-01-0003 (Installation, First Session, and Sanity Checks) drafted in Turkish and English. Ten-section operational map with a failure-modes table, 6 verified citations (Anthropic Claude Code documentation and best practices, Microsoft WSL documentation, Ouyang et al. 2022, Bai et al. 2022, Anthropic Responsible Scaling Policy). Status `release`, human review complete.
 - Both new booklets carry the full disclosure frontmatter. `ai_contribution_level` is `substantial-drafting` for 001-01-0002 and `co-drafting` for 001-01-0003. This completes category 001 (Foundations) as a bilingual set for the v1.0 manifesto.
-- Booklet 002-04-0001 (DergiPark, ULAKBIM TR Dizin, HEAL-Link, and Regional Indexing) drafted in Turkish and English. The signature regional-access booklet, eleven-section map with a three-language literature-scan workflow and an MCP configuration example, 10 verified citations (van Leeuwen et al. 2001, Mongeon and Paul-Hus 2016, Larivi?re et al. 2015, Tenopir et al. 2019, Demir 2018, UNESCO 2021, plus the DergiPark, TR Dizin, Y?K Thesis Center, and HEAL-Link institutional sources). `ai_contribution_level` `co-drafting`. Status `release`, human review complete.
+- Booklet 002-04-0001 (DergiPark, ULAKBIM TR Dizin, HEAL-Link, and Regional Indexing) drafted in Turkish and English. The signature regional-access booklet, eleven-section map with a three-language literature-scan workflow and an MCP configuration example, 10 verified citations (van Leeuwen et al. 2001, Mongeon and Paul-Hus 2016, Larivière et al. 2015, Tenopir et al. 2019, Demir 2018, UNESCO 2021, plus the DergiPark, TR Dizin, YÖK Thesis Center, and HEAL-Link institutional sources). `ai_contribution_level` `co-drafting`. Status `release`, human review complete.
 - Booklet 003-01-0001 (Memory as Vault: A First-Principles Introduction) drafted in Turkish and English. The original-concept booklet, nine-section map with a Mermaid Input-Store-Retrieve-Present diagram, 10 verified citations (Bush 1945, Nelson 1965, Luhmann 1992, Ahrens 2017, Lewis et al. 2020, Khattab et al. 2023, Valmeekam et al. 2023, Engel 1977, KVKK 2024, EDPB 2024). `original_concept: true`. `ai_contribution_level` `co-drafting`. Status `release`, human review complete.
 - Booklet 004-01-0001 (Folder Discipline and the Maps of Content (MOC) Pattern) drafted in Turkish and English. Ten-section map with three Mermaid architecture diagrams, a Markdown conventions table, and three MOC examples (project, area, archive), 8 verified citations (Allen 2015, Forte 2022, Ahrens 2017, Knuth 1984, Brown and Duguid 2017, Tufte 1990, Bates 2002, Norman 2013). `ai_contribution_level` `substantial-drafting`. Status `release`, human review complete. This completes the methodological-spine categories 002, 003, and 004 as bilingual release sets.
 - Booklet 007-02-0001 (APA 7 with DOI Discipline) drafted in Turkish and English. Ten-section map with a Crossref API verification workflow, an eight-step bibliography hygiene pipeline, and a language-model citation failure-modes table, 10 verified citations (APA 2020, Walters and Wilder 2023, Greenhalgh et al. 2016, Sallam 2023, Bhattacharyya et al. 2023, Else 2023, Hicks et al. 2024, plus the ICMJE, Crossref, and PubMed sources). `ai_contribution_level` `substantial-drafting`. Status `release`, human review complete.
 - Booklet 009-01-0001 (Ethics in AI-Assisted Research: From Principle to Behavior), the spine booklet, drafted in Turkish and English. Eleven-section map with a twelve-item operational ethics checklist and a reflexive disclosure section that points at the booklet's own frontmatter, 12 verified citations (WMA Helsinki 2025, COPE 2023, WAME 2023, ICMJE 2024, STM 2025, EU AI Act 2024/1689, ENAI 2025, KVKK 2016, EDPB 2024, Resnik and Hosseini 2025, Mittelstadt et al. 2016, Jobin et al. 2019). `ai_contribution_level` `co-drafting`. Status `release`, human review complete.
 - Booklet 010-01-0001 (Rebuttal Letters with Traceability Matrices) drafted in Turkish and English. Ten-section map with a synthetic eight-row traceability matrix, an ethics boundary table, and a 30/60/90-day plan, 9 verified citations (Provenzale and Stanley 2006, Belcher 2019, Sword 2017, Noble 2017, Williams and Bizup 2016, Hosseini et al. 2023, Else 2023, Resnik 2018, Squazzoni et al. 2021). `ai_contribution_level` `substantial-drafting`. Status `release`, human review complete. This completes the academic-production-cycle categories 007, 009, and 010.
-- Booklet 012-01-0001 (When Things Go Wrong, A Working Troubleshooting Protocol), the closing booklet, drafted in Turkish and English. Eight-section map with a three-category problem taxonomy (tool, knowledge, communication), three worked example problems, a seven-step reasoning framework mapped to Polya's four stages, and a GitHub issue template, 7 verified citations (Polya 1945/2014, Schoenfeld 1985, D?rner 1996, Reason 2000, Norman 2013, Vaughan 1996, Perrow 1999). `ai_contribution_level` `co-drafting`. Status `release`, human review complete. This completes the v1.0 manifesto at ten released booklets. The closing section of this booklet closes the whole series.
+- Booklet 012-01-0001 (When Things Go Wrong, A Working Troubleshooting Protocol), the closing booklet, drafted in Turkish and English. Eight-section map with a three-category problem taxonomy (tool, knowledge, communication), three worked example problems, a seven-step reasoning framework mapped to Polya's four stages, and a GitHub issue template, 7 verified citations (Polya 1945/2014, Schoenfeld 1985, Dörner 1996, Reason 2000, Norman 2013, Vaughan 1996, Perrow 1999). `ai_contribution_level` `co-drafting`. Status `release`, human review complete. This completes the v1.0 manifesto at ten released booklets. The closing section of this booklet closes the whole series.
 
 ### Changed
 
@@ -82,7 +82,7 @@ The v1.0 manifesto. Ten core booklets, Turkish and English in full parallel, pos
 - `CATALOG.md` status of 007-02-0001, 009-01-0001, and 010-01-0001 moved from `planned` to `release`. Release count 6 to 9, planned count 24 to 21. CATALOG titles for 009-01-0001 and 010-01-0001 aligned to the booklet frontmatter.
 - Citation metadata corrected during Phase 3 verification. The Declaration of Helsinki citation corrected to its actual JAMA publication, World Medical Association (2025), JAMA, 333(1), 71, after the work-card draft had recorded 2024 with JAMA 332(13), 1066-1069. The three peer-review handbook ISBNs corrected against publisher records: Belcher 2019 to 978-0-226-49991-8, Sword 2017 to 978-0-674-73770-9, Williams and Bizup 2016 to 978-0-13-408041-3. Provenzale and Stanley (2006) is cited without a DOI after 10.2214/AJR.05.0856 failed to resolve in Crossref.
 - `CATALOG.md` status of 012-01-0001 moved from `planned` to `release`. Release count 9 to 10, planned count 21 to 20. The CATALOG title for 012-01-0001 aligned to the booklet frontmatter (comma rather than colon). With this, all ten v1.0 announcement-target booklets are released.
-- Citation metadata corrected during Phase 4 verification. The Reason (2000) DOI confirmed against Crossref (BMJ 320(7237), 768-770). Two work-card ISBNs corrected: D?rner (1996) to the Metropolitan Books edition 978-0-8050-4160-6 (the card had carried an invalid check digit on a different subtitle), and Vaughan (1996) to 978-0-226-85176-1 (the card check digit was wrong). The Polya citation is given as a republished 1945 classic (2014 Princeton printing) without an unverifiable edition-number claim.
+- Citation metadata corrected during Phase 4 verification. The Reason (2000) DOI confirmed against Crossref (BMJ 320(7237), 768-770). Two work-card ISBNs corrected: Dörner (1996) to the Metropolitan Books edition 978-0-8050-4160-6 (the card had carried an invalid check digit on a different subtitle), and Vaughan (1996) to 978-0-226-85176-1 (the card check digit was wrong). The Polya citation is given as a republished 1945 classic (2014 Princeton printing) without an unverifiable edition-number claim.
 - Booklet 001-01-0001 footer word counts reconciled to measured values. Turkish body corrected from a stated 2900 to the measured 1997, English from a stated 2700 to the measured 2442. The earlier figures predated the Phase 1 reference-list trim and were never re-measured.
 - Booklet 003-01-0001 English reference list corrected. The Luhmann (1992) reference, cited in-text in the English body, had been omitted from the English reference list while present in the Turkish. Restored to match the frontmatter count of 10 and the Turkish version. Found during the pre-release cross-booklet consistency audit, which otherwise confirmed that all ten booklets carry matching frontmatter and reference-list citation counts (94 total), a consistent previous-to-next bridge chain, and no forbidden characters across the bilingual set.
 
@@ -95,13 +95,13 @@ The v1.0 manifesto. Ten core booklets, Turkish and English in full parallel, pos
 
 The work since the v0.1.0-alpha tag (commit `4999222`) is grouped below into four phases, each corresponding to a discrete review or remediation cycle. The phase labels also match the vault diary entries for 2026-05-19.
 
-### Phase 0 ? Post-tag setup (commits `1272b0d` to `04ceaa3`)
+### Phase 0 — Post-tag setup (commits `1272b0d` to `04ceaa3`)
 
 - Zenodo deposit completed. Concept DOI `10.5281/zenodo.20289687` and version DOI `10.5281/zenodo.20289688` minted. Placeholders in `CITATION.cff` replaced with the real DOIs.
 - Repository renamed from `sbcc-rehber` to `claude-code-for-social-scientists`. All internal references and the banner SVG updated. The old URL still redirects to the new one through GitHub's automatic mechanism, so Zenodo metadata was not affected.
 - markdownlint configuration relaxed (MD033 inline-html allowlist for `p`, `img`, `div`, `a`) so the banner embedding in the README does not fail the lint.
 
-### Phase 1 ? Senior peer review remediation, faz 1 (commit `104558f`)
+### Phase 1 — Senior peer review remediation, faz 1 (commit `104558f`)
 
 - `disclosure_standard` migrated from the non-existent NISO RP-2025-draft to the consolidating consensus across COPE 2023, WAME 2023, ICMJE 2024, STM 2025, the EU AI Act 2024/1689 Article 50, and ENAI.
 - Booklet 001-01-0001 reference list cleaned. Three uncited entries (Bail 2024, Birhane 2022, Sallam 2023) removed to restore APA 7 reference-list discipline. `verified_citations_count` in both `tr.md` and `en.md` frontmatters reduced from 12 to 10 to reflect the corrected count.
@@ -111,7 +111,7 @@ The work since the v0.1.0-alpha tag (commit `4999222`) is grouped below into fou
 - `meta/roadmap.md` mixed-language passages normalized (Turkish words "Hafta" and "Ay" replaced with English equivalents in the English-language file).
 - CI hardened. `dieghernan/cff-validator` pinned to SHA `7b3c5e27c65c08af9f0c4a9c5e424aa281834e25`. AI disclosure frontmatter audit expanded from 5 required fields to 10 fields. Frontmatter extraction in CI switched from `head -n 60` to an awk-based YAML block parser.
 
-### Phase 2 ? Senior peer review remediation, faz 2 (commit `d6f4ded`)
+### Phase 2 — Senior peer review remediation, faz 2 (commit `d6f4ded`)
 
 - Pandoc citeproc keys (`[@author2024]`) in booklet 001-01-0001 converted to inline APA 7 citations so that GitHub renders them as readable text without a build step.
 - Frontmatter title schema migrated from `title` plus `title_tr` to `title_en` plus `title_tr`. Both fields are now required by CI. Rationale: the previous schema put an English title in files declared `language: tr`, which was internally inconsistent.
@@ -120,15 +120,15 @@ The work since the v0.1.0-alpha tag (commit `4999222`) is grouped below into fou
 - `CHANGELOG.md` (this file) added, following Keep a Changelog 1.1.0.
 - `SECURITY.md` added, with responsible disclosure path and vault sanitization principles (SAFE, SANITIZE, BLOCKED, SKIP).
 
-### Phase 3 ? Strategic remediation (commit `4251aeb`)
+### Phase 3 — Strategic remediation (commit `4251aeb`)
 
 - v1.0 announcement scope reduced from thirty booklets to ten core booklets. The ten v1.0 booklets are marked `[v1.0]` in `CATALOG.md`. The remaining twenty booklets move to the v1.5 and v2.0 backlog. Rationale: quality over breadth for the v1.0 manifesto.
 - `meta/roadmap.md` revised end to end (Phase 1 to Phase 3, v1.0, v1.5, v2.0 sections) to reflect the smaller per-month booklet count.
-- `README.md` and `README.tr.md` audience descriptions narrowed. The previous text named seven geographies (T?rkiye, Greece, Mediterranean, Middle East, Latin America, South and Southeast Asia, Sub-Saharan Africa) which overpromised against the v1.0 scope. Replaced with the bilingual focus statement (every booklet delivered in Turkish and English in full parallel).
+- `README.md` and `README.tr.md` audience descriptions narrowed. The previous text named seven geographies (Türkiye, Greece, Mediterranean, Middle East, Latin America, South and Southeast Asia, Sub-Saharan Africa) which overpromised against the v1.0 scope. Replaced with the bilingual focus statement (every booklet delivered in Turkish and English in full parallel).
 - `## Acknowledgements` section removed from both READMEs. The section had named two competitor repositories (Galaxy-Dawn/claude-scholar and Imbad0202/academic-research-skills) as influences. They are competitors, not influences. The guide's structural and methodological choices are original.
 - Two citations added to booklet 001-01-0001. Engel (1977) for the biopsychosocial frame in the agent-system analogy in section 2, and Frankfurt (2005) for the philosophical scaffolding behind the bullshit-production reading in section 4. `verified_citations_count` raised from 10 to 12 in both `tr.md` and `en.md`, with corresponding update in `meta/ai-disclosure.md`.
 
-### Phase 4 ? Banner and date claim polish (commits `91d9a30`, `fde7ebb`)
+### Phase 4 — Banner and date claim polish (commits `91d9a30`, `fde7ebb`)
 
 - Banner SVG footer line trimmed. The `ECPP Dublin July 2026` segment removed from the footer. The same change applied to ARIA alt text in `README.md` and `README.tr.md`.
 - All `ECPP Dublin / July 2026 / Temmuz 2026` date references removed from `README.md` status block, `README.tr.md` durum block, `CATALOG.md` intro, `meta/roadmap.md` v1.0 section, and `CHANGELOG.md`. v1.0 release timing is now set when the ten v1.0 booklets are reviewed and tagged, not by a calendar promise.
