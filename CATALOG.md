@@ -11,7 +11,7 @@ This catalog lists every booklet in `claude-code-for-social-scientists`, grouped
 | `paired` | Both `tr.md` and `en.md` drafted, human review pending |
 | `release` | Human-reviewed, version-tagged, included in a public release |
 
-The repository now contains three booklets at `paired` status. Both Turkish and English drafts are complete for all three. Booklet `001-01-0001` is human-reviewed, while `001-01-0002` and `001-01-0003` have human review pending. Twenty-seven booklets are at `planned` status as of 2026-05-24. Of these planned booklets, **seven more belong to the v1.0 announcement target** (see the `[v1.0]` marker per booklet row).
+The repository now contains six booklets at `paired` status. Both Turkish and English drafts are complete for all six. Booklet `001-01-0001` is human-reviewed, while `001-01-0002`, `001-01-0003`, `002-04-0001`, `003-01-0001`, and `004-01-0001` have human review pending. Twenty-four booklets are at `planned` status as of 2026-05-24. Of these planned booklets, **four more belong to the v1.0 announcement target** (see the `[v1.0]` marker per booklet row).
 
 ---
 
@@ -34,7 +34,7 @@ Practical access to journals, citation indexes, reference managers, and institut
 | 002-01-0001 | PubMed and Semantic Scholar MCPs for Working Researchers | Çalışan Araştırmacı İçin PubMed ve Semantic Scholar MCP'leri | `planned` |
 | 002-02-0001 | Zotero, ORCID, and the Reference Manager Bridge | Zotero, ORCID ve Referans Yönetim Köprüsü | `planned` |
 | 002-03-0001 | EZproxy, Institutional VPN, and Off-Campus Realities | EZproxy, Kurumsal VPN ve Kampüs Dışı Erişim | `planned` |
-| 002-04-0001 `[v1.0]` | DergiPark, ULAKBIM TR Dizin, HEAL-Link, and Regional Indexing | DergiPark, ULAKBIM TR Dizin, HEAL-Link ve Bölgesel İndeksleme | `planned` |
+| 002-04-0001 `[v1.0]` | DergiPark, ULAKBIM TR Dizin, HEAL-Link, and Regional Indexing | DergiPark, ULAKBIM TR Dizin, HEAL-Link ve Bölgesel İndeksleme | `paired` |
 
 ## 003 — Memory System / Hafıza Sistemi
 
@@ -42,7 +42,7 @@ The Memory-as-Vault engineering pattern. How to maintain a persistent academic c
 
 | Identifier | Title (EN) | Title (TR) | Status |
 |---|---|---|---|
-| 003-01-0001 `[v1.0]` | Memory as Vault: A First-Principles Introduction | Kasa Olarak Hafıza: İlkesel Bir Giriş | `planned` |
+| 003-01-0001 `[v1.0]` | Memory as Vault, A First-Principles Introduction | Kasa Olarak Hafıza, İlkesel Bir Giriş | `paired` |
 | 003-02-0001 | Retrieval Patterns: Indexing a Decade of Notes | Geri Çağırma Kalıpları: On Yıllık Notları İndekslemek | `planned` |
 | 003-03-0001 | Material Passport: Tracking Sources Across Sessions | Material Passport: Kaynakları Oturumlar Arası İzlemek | `planned` |
 
@@ -52,7 +52,7 @@ Folder discipline, Maps of Content, Markdown conventions that survive software c
 
 | Identifier | Title (EN) | Title (TR) | Status |
 |---|---|---|---|
-| 004-01-0001 `[v1.0]` | Folder Discipline and the Maps of Content (MOC) Pattern | Klasör Disiplini ve MOC Haritası Kalıbı | `planned` |
+| 004-01-0001 `[v1.0]` | Folder Discipline and the Maps of Content (MOC) Pattern | Klasör Disiplini ve Maps of Content (MOC) Kalıbı | `paired` |
 | 004-02-0001 | Markdown Conventions That Outlive Tools | Araçlardan Uzun Yaşayan Markdown Alışkanlıkları | `planned` |
 
 ## 005 — Hooks and Automation / Hook'lar ve Otomasyon
@@ -136,9 +136,9 @@ When tools fail, when papers disagree, when reviewers ask the wrong question.
 | Status | Count |
 |---|---|
 | `release` | 0 |
-| `paired` | 3 |
+| `paired` | 6 |
 | `draft` | 0 |
-| `planned` | 27 |
+| `planned` | 24 |
 | **Total catalog** | **30** |
 | **v1.0 announcement target** | **10** (marked `[v1.0]` above) |
 
@@ -154,4 +154,4 @@ See [`CONTRIBUTING.md`](./CONTRIBUTING.md). The short version. Open an issue wit
 
 ---
 
-**Last updated:** 2026-05-24 (Phase 1 booklets 001-01-0002 and 001-01-0003 paired)
+**Last updated:** 2026-05-24 (Phase 2 booklets 002-04-0001, 003-01-0001, and 004-01-0001 paired)
