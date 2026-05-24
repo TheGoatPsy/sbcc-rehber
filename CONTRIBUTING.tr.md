@@ -70,7 +70,7 @@ Merge edilen dış katkı sahipleri katkı türü ile birlikte [`meta/contributo
 
 ## Sorular
 
-Sorunuz burada cevaplanmadıysa, GitHub Discussions etkinleştirildiğinde (v1.5) tartışma açın, ya da bir konu açın, ya da sürdürücüye `onuribram@outlook.com` adresinden yazınız.
+Sorunuz burada cevaplanmadıysa, GitHub Discussions etkinleştirildiğinde (v1.5) tartışma açın, bir konu açın ya da sürdürücünün GitHub profilindeki iletişim yüzeyini kullanınız.
 
 ---
 

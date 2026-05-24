@@ -39,7 +39,7 @@ This Code of Conduct applies within all community spaces, and also applies when 
 
 ## Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the maintainer at `onuribram@outlook.com`. All complaints will be reviewed and investigated promptly and fairly. The maintainer is obligated to respect the privacy and security of the reporter of any incident.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported through the maintainer's GitHub profile contact surface or another private channel already established with the maintainer. All complaints will be reviewed and investigated promptly and fairly. The maintainer is obligated to respect the privacy and security of the reporter of any incident.
 
 ## Enforcement guidelines
 
@@ -95,7 +95,7 @@ Bu Davranış Kuralları tüm topluluk alanlarında uygulanır. Bir bireyin topl
 
 ## Bildirim
 
-Taciz, küfür ve diğer kabul edilemez davranış örnekleri sürdürücüye `onuribram@outlook.com` adresinden bildirilebilir. Tüm şikayetler hızla ve adil biçimde incelenir. Sürdürücü, herhangi bir olayın bildiricinin mahremiyetini ve güvenliğini korumakla yükümlüdür.
+Taciz, küfür ve diğer kabul edilemez davranış örnekleri sürdürücünün GitHub profilindeki iletişim yüzeyi veya sürdürücüyle zaten kurulmuş başka bir özel kanal üzerinden bildirilebilir. Tüm şikayetler hızla ve adil biçimde incelenir. Sürdürücü, herhangi bir olayın bildiricinin mahremiyetini ve güvenliğini korumakla yükümlüdür.
 
 ## Uygulama aşamaları
 

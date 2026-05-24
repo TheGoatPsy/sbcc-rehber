@@ -72,7 +72,7 @@ Merged external contributors are listed in [`meta/contributors.md`](./meta/contr
 
 ## Questions
 
-If your question is not answered here, open a discussion (once GitHub Discussions is enabled at v1.5), or open an issue, or email the maintainer at `onuribram@outlook.com`.
+If your question is not answered here, open a discussion (once GitHub Discussions is enabled at v1.5), open an issue, or use the maintainer's GitHub profile contact surface.
 
 ---
 

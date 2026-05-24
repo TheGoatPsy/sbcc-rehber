@@ -11,7 +11,7 @@ This catalog lists every booklet in `claude-code-for-social-scientists`, grouped
 | `paired` | Both `tr.md` and `en.md` drafted, not yet included in a public release |
 | `release` | Human-reviewed, version-tagged, included in a public release |
 
-The repository now contains ten booklets at `release` status. Both Turkish and English files are complete, human-reviewed, and citation-audited for all ten v1.0.0 booklets. Twenty booklets remain at `planned` status as of 2026-05-24. The v1.1.0 release adds ten companion Claude Code project skills that turn the booklets into repeatable workflows, installable through the `social-cc-plugin` pip package or the Claude Code plugin system.
+The repository now contains ten booklets at `release` status. Both Turkish and English files are complete, human-reviewed, and citation-audited for all ten v1.0.0 booklets. Twenty booklets remain at `planned` status as of 2026-05-24. The v1.1.x releases add ten companion Claude Code project skills that turn the booklets into repeatable workflows, installable through the `social-cc-plugin` pip package or the Claude Code plugin system.
 
 ---
 
@@ -144,7 +144,7 @@ When tools fail, when papers disagree, when reviewers ask the wrong question.
 
 ## Companion Project Skills
 
-The v1.1.0 release adds Claude Code project skills under `.claude/skills/<skill-name>/SKILL.md`. These skills do not replace the booklets. They provide compact, repeatable operating protocols for the most common workflows.
+The v1.1.x release line adds Claude Code project skills under `.claude/skills/<skill-name>/SKILL.md`. These skills do not replace the booklets. They provide compact, repeatable operating protocols for the most common workflows.
 
 | Skill | Booklet basis | Workflow surface |
 |---|---|---|
@@ -163,7 +163,7 @@ The v1.1.0 release adds Claude Code project skills under `.claude/skills/<skill-
 
 Booklet identifiers (`KKK-AA-SSSS`) are immutable. A booklet's content version is tracked in its own frontmatter (`version` field) and in this catalog at release time. Revisions to a booklet keep the identifier and increment the booklet version.
 
-When this repository is tagged for release (for example `v0.1.0-alpha`, `v1.0.0`, `v1.5.0`), the release notes reference the booklet identifiers and content versions included in the release. Zenodo mints a new DOI for each tagged release; the concept DOI in `CITATION.cff` resolves to the latest version, and individual version DOIs are available on Zenodo.
+When this repository is tagged for release (for example `v0.1.0-alpha`, `v1.0.0`, `v1.1.1`, or `v1.5.0`), the release notes reference the booklet identifiers and content versions included in the release. Zenodo mints a new DOI after each GitHub release is published. The concept DOI in `CITATION.cff` resolves to the latest version, and individual version DOIs are available on Zenodo after the release event.
 
 ## How to propose a new booklet
 
@@ -171,4 +171,4 @@ See [`CONTRIBUTING.md`](./CONTRIBUTING.md). The short version. Open an issue wit
 
 ---
 
-**Last updated:** 2026-05-24 (v1.1.0 release: companion project skills, social-cc-plugin distribution, metadata aligned)
+**Last updated:** 2026-05-24 (v1.1.1 release: metadata hygiene, companion project skills, social-cc-plugin distribution)

@@ -4,7 +4,7 @@ This file provides an aggregate, machine-friendly view of AI contribution levels
 
 This page is updated by the maintainer at each release. Readers who want the latest disclosure for a specific booklet should always check the booklet's own frontmatter, not this aggregate.
 
-## Aggregate table (as of v1.1.0, 2026-05-24)
+## Aggregate table (as of v1.1.1, 2026-05-24)
 
 | Booklet ID | Language | Contribution level | Human review | Verified citations | Fabricated citations | Last reviewed |
 |---|---|---|---|---|---|---|
@@ -72,6 +72,7 @@ The CI workflow refuses release booklet frontmatter that declares pending human 
 | 2026-05-19 | v0.2.0 remediation | Disclosure schema aligned to `title_en`, `title_tr`, `model_alias`, and `model_dated`. |
 | 2026-05-24 | v1.0.0 release | Aggregate expanded to all ten released bilingual booklets. Statuses, citation counts, human review state, and fabricated citation counts aligned to frontmatter. |
 | 2026-05-24 | v1.1.0 release | Companion project skills and the `social-cc-plugin` distribution added. Booklet disclosure content unchanged; the aggregate is re-affirmed for the v1.1.0 tag. |
+| 2026-05-24 | v1.1.1 release | Metadata hygiene patch. Booklet disclosure content unchanged; the aggregate is re-affirmed for the v1.1.1 tag. |
 
 ---
 

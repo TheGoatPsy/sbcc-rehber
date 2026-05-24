@@ -13,7 +13,7 @@ This file lists the people and tools that have contributed to `claude-code-for-s
 - AI and mental health researcher.
 - Author of *Üretken Yapay Zeka ve Ruh Sağlığı* (Generative Artificial Intelligence and Mental Health), Nobel Academic Publishing.
 - ORCID: [0000-0003-1076-3928](https://orcid.org/0000-0003-1076-3928).
-- Contact: `onuribram@outlook.com`.
+- Contact: GitHub issues, discussions, or the maintainer's GitHub profile contact surface.
 
 Role: principal author of all booklets, repository maintainer, license holder, copyright holder. All editorial decisions are made by Onour. AI-generated material is reviewed by Onour before commit on `main`.
 

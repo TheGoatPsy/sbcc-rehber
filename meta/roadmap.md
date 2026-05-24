@@ -4,7 +4,7 @@ The public phase plan for `claude-code-for-social-scientists`. Dates are targets
 
 ## Current baseline
 
-The current public release is `v1.1.0`, released on 2026-05-24. It contains the ten v1.0 core booklets in Turkish and English, all at `release` status, all human-reviewed, and all carrying complete AI-disclosure frontmatter, plus ten companion Claude Code project skills and a distribution surface (the `social-cc-plugin` pip package and a native Claude Code plugin manifest). The repository is now a booklet plus project-skill methodology package.
+The current public release is `v1.1.1`, released on 2026-05-24. It contains the ten v1.0 core booklets in Turkish and English, all at `release` status, all human-reviewed, and all carrying complete AI-disclosure frontmatter, plus ten companion Claude Code project skills and a distribution surface (the `social-cc-plugin` pip package and a native Claude Code plugin manifest). The repository is now a booklet plus project-skill methodology package.
 
 ## v0.1.0-alpha, scaffold
 
@@ -57,11 +57,11 @@ The current public release is `v1.1.0`, released on 2026-05-24. It contains the 
 - The aggregate release count is 10 release, 0 paired, 0 draft, 20 planned.
 - Version DOI for v1.0.0 is recorded in `CHANGELOG.md` and `CITATION.cff`.
 
-## v1.1.0, companion project skills
+## v1.1.x, companion project skills and distribution metadata
 
 **Status.** Complete. Released on 2026-05-24.
 
-**Scope.** Ten `.claude/skills/<skill-name>/SKILL.md` project skills that turn the v1.0 booklets into executable Claude Code workflows, plus two distribution paths: the `social-cc-plugin` pip package (GitHub Actions OpenID Connect trusted publishing) and a native Claude Code plugin manifest at `.claude-plugin/plugin.json`.
+**Scope.** Ten `.claude/skills/<skill-name>/SKILL.md` project skills that turn the v1.0 booklets into executable Claude Code workflows, plus two distribution paths: the `social-cc-plugin` pip package (GitHub Actions OpenID Connect trusted publishing) and a native Claude Code plugin manifest at `.claude-plugin/plugin.json`. The v1.1.1 patch removes direct maintainer email metadata from the public package and documents the post-release Zenodo version DOI flow.
 
 **Skill set.**
 

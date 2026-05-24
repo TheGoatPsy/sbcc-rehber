@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="./assets/banner.svg" alt="Claude Code for Social Scientists — Sosyal Bilimciler İçin Claude Code Rehberi banner. Yazar Onour Impram, ORCID 0000-0003-1076-3928, Zenodo concept DOI 10.5281/zenodo.20289687, çift lisans Apache 2.0 ve CC-BY-NC-SA 4.0, v1.1.0.">
+  <img src="./assets/banner.svg" alt="Claude Code for Social Scientists — Sosyal Bilimciler İçin Claude Code Rehberi banner. Yazar Onour Impram, ORCID 0000-0003-1076-3928, Zenodo concept DOI 10.5281/zenodo.20289687, çift lisans Apache 2.0 ve CC-BY-NC-SA 4.0, v1.1.1.">
 </p>
 
 # Sosyal Bilimciler İçin Claude Code Rehberi
 
 Anthropic Claude Code'u araştırmada, eğitimde ve akademik yazımda kullanmak isteyen sosyal bilimciler için iki dilli, açık kaynak bir rehber. İngilizce konuşulan dünyanın dışında çalışan araştırmacılara, içeride çalışanlara da seslenmek üzere, bu araçları gerçek akademik üretim sürecinde kullanan bir klinik psikolog ve doktora adayı tarafından yazılıyor.
 
-> **Durum.** v1.1.0 release. On çekirdek broşür Türkçe ve İngilizce tamamlandı, insan incelemesinden geçti ve atıf denetimi yapıldı. Ayrıca broşürleri yeniden kullanılabilir iş akışlarına çeviren on companion Claude Code project skill eklendi. Skills, pip (`social-cc-plugin`) ya da Claude Code eklentisi olarak kurulur.
+> **Durum.** v1.1.1 release. On çekirdek broşür Türkçe ve İngilizce tamamlandı, insan incelemesinden geçti ve atıf denetimi yapıldı. Ayrıca broşürleri yeniden kullanılabilir iş akışlarına çeviren on companion Claude Code project skill eklendi. Skills, pip (`social-cc-plugin`) ya da Claude Code eklentisi olarak kurulur.
 
 > **EN readers.** The English version is in [`README.md`](./README.md). Every booklet has a `tr.md` and an `en.md` side by side. A CI check enforces this pairing on every commit.
 
@@ -98,7 +98,7 @@ Her broşürün `KKK-AA-SSSS` biçiminde sabit bir kimliği vardır.
 
 ## Project Skills
 
-v1.1.0 yüzeyi [`.claude/skills/`](./.claude/skills/) altında on Claude Code project skill ekler. Broşürler teori, pedagoji ve akademik çerçeveyi taşır. Skills katmanı tekrar edilebilir iş akışlarını, denetim listelerini ve güvenli çalışma sınırlarını taşır.
+v1.1.1 yüzeyi [`.claude/skills/`](./.claude/skills/) altında on Claude Code project skill içerir. Broşürler teori, pedagoji ve akademik çerçeveyi taşır. Skills katmanı tekrar edilebilir iş akışlarını, denetim listelerini ve güvenli çalışma sınırlarını taşır.
 
 | Skill | Tamamlayıcı broşürler | Amaç |
 |---|---|---|
@@ -128,7 +128,7 @@ Kod ve yapılandırma **Apache License, Version 2.0** kapsamındadır ([`LICENSE
 
 ## Atıf
 
-Bu çalışmayı atıf gösterecekseniz [`CITATION.cff`](./CITATION.cff) dosyasındaki makine okunabilir kaydı veya GitHub üzerindeki "Cite this repository" düğmesini kullanınız. Zenodo concept DOI (en son sürüme çözümlenir) **10.5281/zenodo.20289687**. Kanonik kayıt için bkz. <https://doi.org/10.5281/zenodo.20289687>. v1.1.0, v1.0.0, v0.2.0 ve v0.1.0-alpha dahil her sürümün kendi DOI'si [`CITATION.cff`](./CITATION.cff) içindeki `identifiers` alanında tutulur, böylece README yeni sürümler taglendiğinde eskimemiş olur.
+Bu çalışmayı atıf gösterecekseniz [`CITATION.cff`](./CITATION.cff) dosyasındaki makine okunabilir kaydı veya GitHub üzerindeki "Cite this repository" düğmesini kullanınız. Zenodo concept DOI (en son sürüme çözümlenir) **10.5281/zenodo.20289687**. Kanonik kayıt için bkz. <https://doi.org/10.5281/zenodo.20289687>. Zenodo her version DOI'yi GitHub release yayımlandıktan sonra üretir. Bu nedenle immutable tag arşivleri concept DOI ve daha önce bilinen version DOI'leri içerebilir, yeni üretilen version DOI metadata'sı Zenodo kaydı oluşunca `main` üzerinde kaydedilir.
 
 ## Uluslararası koruma
 
@@ -141,7 +141,7 @@ Bu çalışma şu kanallarla kayıt altına alınmıştır.
 
 ## Yol haritası
 
-Halka açık faz planı için [`meta/roadmap.md`](./meta/roadmap.md) dosyasına bakınız. Mevcut sürüm v1.1.0’dır, temel ve en yüksek değerli kategorilerden on çekirdek broşür ve tekrar edilebilir Claude Code iş akışları için on companion project skill yayın durumundadır. Sonraki hedefler, v1.5 için topluluk tartışmaları ve ek kategoriler, v2.0 için tam otuz broşürlük katalog, canlı laboratuvar, konferans atıfları ve eğitim materyali kullanımıdır.
+Halka açık faz planı için [`meta/roadmap.md`](./meta/roadmap.md) dosyasına bakınız. Mevcut sürüm v1.1.1’dir, temel ve en yüksek değerli kategorilerden on çekirdek broşür ve tekrar edilebilir Claude Code iş akışları için on companion project skill yayın durumundadır. Sonraki hedefler, v1.5 için topluluk tartışmaları ve ek kategoriler, v2.0 için tam otuz broşürlük katalog, canlı laboratuvar, konferans atıfları ve eğitim materyali kullanımıdır.
 
 ## Katkıda bulunma
 
@@ -149,4 +149,4 @@ Yapay zekânın İngilizce dışı akademik ekosistemlere nasıl indiğini önem
 
 ## İletişim
 
-Onour Impram. `onuribram@outlook.com`. İstanbul, Türkiye / Komotini, Yunanistan.
+Onour Impram. İstanbul, Türkiye / Komotini, Yunanistan. Proje koordinasyonu için GitHub issues, discussions veya sürdürücünün GitHub profilindeki iletişim yüzeyini kullanınız.

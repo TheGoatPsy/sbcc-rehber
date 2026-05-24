@@ -23,8 +23,8 @@ Save the form. PyPI creates the project automatically on the first successful pu
 
 ## Release ordering
 
-Register the pending publisher **before** publishing the v1.1.0 GitHub release, or be ready to
-re-run the workflow afterward. The publish workflow
+Register the pending publisher **before** publishing the first GitHub release that should create
+the PyPI project, or be ready to re-run the workflow afterward. The publish workflow
 ([`../.github/workflows/publish-pypi.yml`](../.github/workflows/publish-pypi.yml)) runs on
 `release: published`, builds the sdist and wheel, and uploads them through the `pypi` GitHub
 Environment using OIDC. If the pending publisher is not yet registered, the publish step fails
@@ -42,3 +42,5 @@ workflow's `publish` job is the only place granted `id-token: write`, and it is 
 - The project page appears at
   [pypi.org/project/social-cc-plugin](https://pypi.org/project/social-cc-plugin/).
 - `pip install social-cc-plugin` then `social-cc list` shows the ten bundled skills.
+- Patch releases should keep direct maintainer email addresses out of package metadata. Route
+  project coordination through GitHub issues, discussions, and profile-level contact surfaces.

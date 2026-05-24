@@ -6,6 +6,25 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 Citations of this work should use the Zenodo concept DOI [10.5281/zenodo.20289687](https://doi.org/10.5281/zenodo.20289687), which always resolves to the latest version. Version-specific DOIs are listed below.
 
+## [1.1.1] - 2026-05-24
+
+Patch release for distribution metadata hygiene. The booklets, project skills, and installer behavior are unchanged from v1.1.0.
+
+### Changed
+
+- Removed the maintainer's direct email address from public package metadata, citation metadata, plugin metadata, README contact text, contributor guidance, and conduct reporting text. Public coordination now routes through GitHub issues, discussions, and profile-level contact surfaces.
+- Clarified that Zenodo version DOIs are minted after a GitHub release is published. Immutable tag archives can contain the concept DOI and previously known version DOIs, while `main` records newly minted version DOIs after Zenodo creates them.
+
+### Fixed
+
+- Avoided the misleading implication that a GitHub tag archive must already contain the version-specific DOI minted by Zenodo after that tag is released.
+- Published a clean patch distribution surface so new PyPI metadata no longer exposes the maintainer's direct email address.
+
+### Zenodo
+
+- Concept DOI: [10.5281/zenodo.20289687](https://doi.org/10.5281/zenodo.20289687) (resolves to the latest released version).
+- Version DOI for v1.1.1: minted by Zenodo after the GitHub release, then recorded on `main`.
+
 ## [1.1.0] - 2026-05-24
 
 Companion project skills and a distribution surface. The ten v1.0 booklets are unchanged in scholarly content. This minor release turns the booklets into repeatable Claude Code workflows and makes them installable.

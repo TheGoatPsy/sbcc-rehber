@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="./assets/banner.svg" alt="Claude Code for Social Scientists — Sosyal Bilimciler İçin Claude Code Rehberi banner. Author Onour Impram, ORCID 0000-0003-1076-3928, Zenodo concept DOI 10.5281/zenodo.20289687, dual licensed Apache 2.0 plus CC-BY-NC-SA 4.0, v1.1.0.">
+  <img src="./assets/banner.svg" alt="Claude Code for Social Scientists — Sosyal Bilimciler İçin Claude Code Rehberi banner. Author Onour Impram, ORCID 0000-0003-1076-3928, Zenodo concept DOI 10.5281/zenodo.20289687, dual licensed Apache 2.0 plus CC-BY-NC-SA 4.0, v1.1.1.">
 </p>
 
 # Claude Code for Social Scientists
 
 A bilingual, open-source guide for social scientists who want to use Anthropic's Claude Code in their research, teaching, and academic writing. Written for researchers outside the English-speaking world as well as inside it, by a working clinical psychologist and PhD candidate who uses these tools in real academic production.
 
-> **Status:** v1.1.0 release. Ten core booklets in Turkish and English, human-reviewed and citation-audited, plus ten companion Claude Code project skills that turn the booklets into reusable workflows. The skills install with pip (`social-cc-plugin`) or as a Claude Code plugin.
+> **Status:** v1.1.1 release. Ten core booklets in Turkish and English, human-reviewed and citation-audited, plus ten companion Claude Code project skills that turn the booklets into reusable workflows. The skills install with pip (`social-cc-plugin`) or as a Claude Code plugin.
 
 > **TR readers:** A Turkish overview lives at the bottom of this file. The full Turkish version is in [`README.tr.md`](./README.tr.md). Every booklet exists as `tr.md` and `en.md` side by side.
 
@@ -98,7 +98,7 @@ So `001-01-0001` is the first booklet, in the first subcategory, of the Foundati
 
 ## Project Skills
 
-The v1.1.0 surface adds ten Claude Code project skills under [`.claude/skills/`](./.claude/skills/). The booklets carry theory, pedagogy, and scholarly framing. The skills carry repeatable workflows, audit checklists, and safe operating boundaries.
+The v1.1.1 surface includes ten Claude Code project skills under [`.claude/skills/`](./.claude/skills/). The booklets carry theory, pedagogy, and scholarly framing. The skills carry repeatable workflows, audit checklists, and safe operating boundaries.
 
 | Skill | Companion booklets | Purpose |
 |---|---|---|
@@ -128,7 +128,7 @@ Code and configuration are under the **Apache License, Version 2.0** ([`LICENSE.
 
 ## Citation
 
-If you cite this work, use the machine-readable record in [`CITATION.cff`](./CITATION.cff), or the "Cite this repository" button on GitHub. The Zenodo concept DOI (resolves to the latest version) is **10.5281/zenodo.20289687**. See <https://doi.org/10.5281/zenodo.20289687> for the canonical record. Version-specific DOIs for each release, including v1.1.0, v1.0.0, v0.2.0, and v0.1.0-alpha, are recorded in [`CITATION.cff`](./CITATION.cff) under `identifiers`, so the README stays current as new versions are tagged.
+If you cite this work, use the machine-readable record in [`CITATION.cff`](./CITATION.cff), or the "Cite this repository" button on GitHub. The Zenodo concept DOI (resolves to the latest version) is **10.5281/zenodo.20289687**. See <https://doi.org/10.5281/zenodo.20289687> for the canonical record. Zenodo mints each version DOI after a GitHub release is published, so immutable tag archives may only contain the concept DOI and previously known version DOIs. Newly minted version DOI metadata is recorded on `main` after Zenodo creates it.
 
 ## International protection
 
@@ -141,7 +141,7 @@ This work is registered through:
 
 ## Roadmap
 
-See [`meta/roadmap.md`](./meta/roadmap.md) for the public phase plan. The current release is v1.1.0, ten released core booklets across the foundational and highest-value categories plus ten companion project skills for repeatable Claude Code workflows. Later targets remain v1.5 for community discussions and additional categories, and v2.0 for the full thirty-booklet catalog, living lab, conference citations, and instructional use.
+See [`meta/roadmap.md`](./meta/roadmap.md) for the public phase plan. The current release is v1.1.1, ten released core booklets across the foundational and highest-value categories plus ten companion project skills for repeatable Claude Code workflows. Later targets remain v1.5 for community discussions and additional categories, and v2.0 for the full thirty-booklet catalog, living lab, conference citations, and instructional use.
 
 ## Contributing
 
@@ -149,7 +149,7 @@ Contributions are welcome from social science researchers, clinicians, instructi
 
 ## Contact
 
-Onour Impram. `onuribram@outlook.com`. Istanbul, Türkiye / Komotini, Greece.
+Onour Impram. Istanbul, Türkiye / Komotini, Greece. Use GitHub issues, discussions, or the maintainer's GitHub profile contact surface for project coordination.
 
 ---
 
@@ -162,6 +162,6 @@ Her broşür Türkçe ve İngilizce paralel yayımlanır. Lisanslama çift katma
 
 Yazar Onour Impram, Türkiye, Yunanistan ve İrlanda lisanslı klinik psikolog, İstanbul Üniversitesi Klinik ve Sağlık Psikolojisi doktora adayıdır. Tam Türkçe tanıtım için [`README.tr.md`](./README.tr.md) dosyasını inceleyin. Katkı kuralları ve dil paritesi politikası için [`CONTRIBUTING.tr.md`](./CONTRIBUTING.tr.md).
 
-İletişim: `onuribram@outlook.com`.
+İletişim için GitHub issues, discussions veya sürdürücünün GitHub profilindeki iletişim yüzeyini kullanınız.
 
 </details>
