@@ -20,8 +20,8 @@ ai_tools:
     role: "drafting, verification, citation lookup"
     interaction_mode: "interactive console"
 ai_contribution_level: "substantial-drafting"
-human_review: "pending"
-human_review_date: null
+human_review: "complete"
+human_review_date: "2026-05-24"
 verified_citations_count: 8
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"

@@ -8,6 +8,10 @@ Citations of this work should use the Zenodo concept DOI [10.5281/zenodo.2028968
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-05-24
+
+The v1.0 manifesto. Ten core booklets, Turkish and English in full parallel, positioning Claude Code as a methodological partner of academic production for the social scientist. Across three dimensions: foundations (001), the methodological spine (002, 003, 004), and the academic production cycle (007, 009, 010, 012). 94 verified citations, 0 fabrications. Every booklet carries full AI-disclosure frontmatter and human-reviewed approval. Dual license: Apache 2.0 for code, CC-BY-NC-SA 4.0 for prose.
+
 ### Added
 
 - Booklet 001-01-0002 (The Agentic Shift: From Chat Window to Working Partner) drafted in Turkish and English. Nine-section map, 10 verified citations (Wooldridge 2020, Park et al. 2023, Sumers et al. 2024, Yao et al. 2023, Mialon et al. 2023, Schick et al. 2023, Engel 1977, Hicks et al. 2024, Bender et al. 2021, Mollick 2024). Status `paired`, human review pending.
