@@ -12,7 +12,7 @@ Major release. An audit-driven correctness and hardening pass, the first content
 
 ### Added
 
-- Booklet 001-01-0004, "CLAUDE.md and the Discipline of Standing Instructions," a bilingual foundations booklet at `draft` status with human review pending. Eight independently verified citations, full Turkish and English parity. Catalog total grows from thirty to thirty-one.
+- Booklet 001-01-0004, "CLAUDE.md and the Discipline of Standing Instructions," a bilingual foundations booklet at `release` status, human-reviewed by the author. Eight independently verified citations, full Turkish and English parity. The released catalog grows from ten to eleven booklets, and the long-term catalog total is thirty-one.
 - A bilingual MkDocs Material companion website (`mkdocs.yml`) that renders the booklets in place, with a GitHub Pages workflow (`.github/workflows/pages.yml`) that builds on every pull request and deploys on push to main.
 - A Journal of Open Source Education companion paper draft (`paper/paper.md`, `paper/paper.bib`), whose bibliography reuses only citations already verified in the repository.
 - A bilingual structure and citation parity check in the repository validator. Paired `tr.md` and `en.md` files must carry the same level-2 section count and the same set of bibliographic DOIs.
@@ -21,7 +21,7 @@ Major release. An audit-driven correctness and hardening pass, the first content
 ### Changed
 
 - The repository validator derives booklet counts from the filesystem instead of hardcoding version-specific totals, so promoting a booklet no longer requires editing the validator.
-- The AI disclosure aggregate now covers `draft` booklets as well as released ones, and its verified and fabricated citation labels were generalized from released to all disclosed language files.
+- The AI disclosure aggregate now covers all disclosed booklets regardless of status, and its verified and fabricated citation labels were generalized from released to all disclosed language files.
 - `.zenodo.json` declares the prose license as CC-BY-NC-SA-4.0 and describes the taxonomy consistently with `CITATION.cff`.
 
 ### Fixed

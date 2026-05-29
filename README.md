@@ -6,7 +6,7 @@
 
 A bilingual, open-source guide for social scientists who want to use Anthropic's Claude Code in their research, teaching, and academic writing. Written for researchers outside the English-speaking world as well as inside it, by a working clinical psychologist and PhD candidate who uses these tools in real academic production.
 
-> **Status:** v2.0.0 release. Ten core booklets in Turkish and English, human-reviewed and citation-audited, plus ten companion Claude Code project skills that turn the booklets into reusable workflows. v2.0.0 adds an audit-driven correctness and CI hardening pass, a first expansion booklet at draft status, a companion website, and a Journal of Open Source Education paper. The skills install with pip (`social-cc-plugin`) or as a Claude Code plugin.
+> **Status:** v2.0.0 release. Ten core booklets in Turkish and English, human-reviewed and citation-audited, plus ten companion Claude Code project skills that turn the booklets into reusable workflows. v2.0.0 adds an audit-driven correctness and CI hardening pass, a first human-reviewed expansion booklet, a companion website, and a Journal of Open Source Education paper. The skills install with pip (`social-cc-plugin`) or as a Claude Code plugin.
 
 > **TR readers:** A Turkish overview lives at the bottom of this file. The full Turkish version is in [`README.tr.md`](./README.tr.md). Every booklet exists as `tr.md` and `en.md` side by side.
 
@@ -141,7 +141,7 @@ This work is registered through:
 
 ## Roadmap
 
-See [`meta/roadmap.md`](./meta/roadmap.md) for the public phase plan. The current release is v2.0.0, which delivers an audit-driven correctness and CI hardening pass on top of the ten released core booklets and ten companion project skills, plus a first expansion booklet at draft status, a companion website, and a Journal of Open Source Education paper. A later major milestone, the full thirty-booklet catalog with a living lab, conference citations, and instructional use, is targeted for v3.0.
+See [`meta/roadmap.md`](./meta/roadmap.md) for the public phase plan. The current release is v2.0.0, which delivers an audit-driven correctness and CI hardening pass on top of the ten released core booklets and ten companion project skills, plus a first human-reviewed expansion booklet, a companion website, and a Journal of Open Source Education paper. A later major milestone, the full thirty-booklet catalog with a living lab, conference citations, and instructional use, is targeted for v3.0.
 
 ## Contributing
 

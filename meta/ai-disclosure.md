@@ -28,21 +28,21 @@ This page is updated by the maintainer at each release. Readers who want the lat
 | 010-01-0001 | en | substantial-drafting | complete | 9 | 0 | 2026-05-24 |
 | 012-01-0001 | tr | co-drafting | complete | 7 | 0 | 2026-05-24 |
 | 012-01-0001 | en | co-drafting | complete | 7 | 0 | 2026-05-24 |
-| 001-01-0004 | tr | full-draft | pending | 8 | 0 | — |
-| 001-01-0004 | en | full-draft | pending | 8 | 0 | — |
+| 001-01-0004 | tr | full-draft | complete | 8 | 0 | 2026-05-29 |
+| 001-01-0004 | en | full-draft | complete | 8 | 0 | 2026-05-29 |
 
-Booklet 001-01-0004 is a v2.0.0 development draft. It is a full AI draft awaiting author review, so its human review state is `pending` and it is not yet part of a public release. Twenty booklets in [`CATALOG.md`](../CATALOG.md) remain at `planned` status and have no AI disclosure yet because no booklet-level AI-assisted drafting work has been committed for them.
+Booklet 001-01-0004 was added in the v2.0.0 cycle as a full AI draft and then human-reviewed by the author, so its human review state is `complete` and it ships at `release` status in v2.0.0. Twenty booklets in [`CATALOG.md`](../CATALOG.md) remain at `planned` status and have no AI disclosure yet because no booklet-level AI-assisted drafting work has been committed for them.
 
 ## Citation discipline summary
 
 | Metric | Value |
 |---|---|
-| Booklets at `release` status | 10 |
+| Booklets at `release` status | 11 |
 | Booklets at `paired` status | 0 |
-| Booklets at `draft` status | 1 |
+| Booklets at `draft` status | 0 |
 | Booklets at `planned` status | 20 |
 | Total verified citation declarations across all disclosed language files | 204 |
-| Unique bilingual citation sets across released booklets | 94 |
+| Unique bilingual citation sets across released booklets | 102 |
 | Total fabricated citations across all disclosed language files | 0 |
 | Fabrication rate, fabricated divided by verified plus fabricated | 0% |
 
@@ -60,9 +60,9 @@ Booklet 001-01-0004 is a v2.0.0 development draft. It is a full AI draft awaitin
 
 | State | Count |
 |---|---|
-| complete | 20 |
+| complete | 22 |
 | partial | 0 |
-| pending | 2 |
+| pending | 0 |
 
 The CI workflow refuses release booklet frontmatter that declares pending human review, fabricated citations, missing citation counts, stale placeholder DOI examples, broken bilingual pairs, or inconsistent catalog counts. See [`.github/workflows/ci.yml`](../.github/workflows/ci.yml) and [`scripts/validate-repo.mjs`](../scripts/validate-repo.mjs).
 
@@ -75,7 +75,7 @@ The CI workflow refuses release booklet frontmatter that declares pending human 
 | 2026-05-24 | v1.0.0 release | Aggregate expanded to all ten released bilingual booklets. Statuses, citation counts, human review state, and fabricated citation counts aligned to frontmatter. |
 | 2026-05-24 | v1.1.0 release | Companion project skills and the `social-cc-plugin` distribution added. Booklet disclosure content unchanged; the aggregate is re-affirmed for the v1.1.0 tag. |
 | 2026-05-24 | v1.1.1 release | Metadata hygiene patch. Booklet disclosure content unchanged; the aggregate is re-affirmed for the v1.1.1 tag. |
-| 2026-05-29 | v2.0.0 development | Booklet 001-01-0004 (CLAUDE.md and standing-instruction discipline) added at draft status, full-draft, human review pending. The aggregate now covers disclosed draft booklets, and the verified and fabricated citation labels were generalized from released to all disclosed language files. |
+| 2026-05-29 | v2.0.0 release | Booklet 001-01-0004 (CLAUDE.md and standing-instruction discipline) added at full-draft level, human-reviewed by the author, and promoted to `release` status. The aggregate now covers disclosed booklets at all statuses, and the verified and fabricated citation labels were generalized from released to all disclosed language files. |
 
 ---
 

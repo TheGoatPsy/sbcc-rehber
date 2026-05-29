@@ -1,6 +1,6 @@
 # Catalog
 
-This catalog lists every booklet in `claude-code-for-social-scientists`, grouped by category, with a stable identifier of the form `KKK-AA-SSSS` (category, subcategory, serial), a short description in English and Turkish, and a status. The full long-term catalog targets thirty-one booklets across twelve categories. The v1.0 target is the **ten core booklets** marked with `[v1.0]` in the tables below. The remaining twenty-one booklets are scheduled for v1.5 and v2.0, with v2.0 drafting now under way. See [`meta/roadmap.md`](./meta/roadmap.md) for the phase plan and release timing.
+This catalog lists every booklet in `claude-code-for-social-scientists`, grouped by category, with a stable identifier of the form `KKK-AA-SSSS` (category, subcategory, serial), a short description in English and Turkish, and a status. The full long-term catalog targets thirty-one booklets across twelve categories. The v1.0 target is the **ten core booklets** marked with `[v1.0]` in the tables below. Booklet 001-01-0004 ships at `release` status in v2.0.0, bringing the released total to eleven. The remaining twenty booklets are scheduled for later releases. See [`meta/roadmap.md`](./meta/roadmap.md) for the phase plan and release timing.
 
 ## Status legend
 
@@ -11,7 +11,7 @@ This catalog lists every booklet in `claude-code-for-social-scientists`, grouped
 | `paired` | Both `tr.md` and `en.md` drafted, not yet included in a public release |
 | `release` | Human-reviewed, version-tagged, included in a public release |
 
-The repository now contains ten booklets at `release` status. Both Turkish and English files are complete, human-reviewed, and citation-audited for all ten v1.0.0 booklets. One additional booklet, 001-01-0004, is at `draft` status as a v2.0.0 development addition awaiting author review. Twenty booklets remain at `planned` status as of 2026-05-29. The v1.1.x releases add ten companion Claude Code project skills that turn the booklets into repeatable workflows, installable through the `social-cc-plugin` pip package or the Claude Code plugin system.
+The repository now contains eleven booklets at `release` status. Both Turkish and English files are complete, human-reviewed, and citation-audited. Ten are the v1.0.0 core booklets, and the eleventh, 001-01-0004, was added and human-reviewed for the v2.0.0 release. Twenty booklets remain at `planned` status as of 2026-05-29. The v1.1.x releases add ten companion Claude Code project skills that turn the booklets into repeatable workflows, installable through the `social-cc-plugin` pip package or the Claude Code plugin system.
 
 ---
 
@@ -24,7 +24,7 @@ The conceptual introduction. What Claude Code is, how it differs from a chat win
 | 001-01-0001 `[v1.0]` | What is Claude Code? A Social Scientist's Perspective | Claude Code Nedir? Sosyal Bilimci Bakışıyla | `release` |
 | 001-01-0002 `[v1.0]` | The Agentic Shift: From Chat Window to Working Partner | Aracın Ötesine Geçiş: Sohbet Penceresinden İş Ortağına | `release` |
 | 001-01-0003 `[v1.0]` | Installation, First Session, and Sanity Checks | Kurulum, İlk Oturum, Sağlık Testleri | `release` |
-| 001-01-0004 | CLAUDE.md and the Discipline of Standing Instructions | CLAUDE.md ve Kalıcı Talimat Disiplini | `draft` |
+| 001-01-0004 | CLAUDE.md and the Discipline of Standing Instructions | CLAUDE.md ve Kalıcı Talimat Disiplini | `release` |
 
 ## 002 — Academic Access / Akademik Erişim
 
@@ -136,9 +136,9 @@ When tools fail, when papers disagree, when reviewers ask the wrong question.
 
 | Status | Count |
 |---|---|
-| `release` | 10 |
+| `release` | 11 |
 | `paired` | 0 |
-| `draft` | 1 |
+| `draft` | 0 |
 | `planned` | 20 |
 | **Total catalog** | **31** |
 | **v1.0 announcement target** | **10** (marked `[v1.0]` above) |
@@ -172,4 +172,4 @@ See [`CONTRIBUTING.md`](./CONTRIBUTING.md). The short version. Open an issue wit
 
 ---
 
-**Last updated:** 2026-05-29 (v2.0.0 release: audit and CI hardening, booklet 001-01-0004 added at draft status, companion website, and JOSE paper)
+**Last updated:** 2026-05-29 (v2.0.0 release: audit and CI hardening, booklet 001-01-0004 added at release status after human review, companion website, and JOSE paper)

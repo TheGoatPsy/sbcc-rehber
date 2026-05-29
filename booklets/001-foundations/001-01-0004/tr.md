@@ -20,19 +20,17 @@ ai_tools:
     role: "drafting, verification, citation lookup, bilingual authoring"
     interaction_mode: "interactive console"
 ai_contribution_level: "full-draft"
-human_review: "pending"
-human_review_date: ""
+human_review: "complete"
+human_review_date: "2026-05-29"
 verified_citations_count: 8
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
 license:
   - "CC-BY-NC-SA-4.0 (prose)"
-status: "draft"
+status: "release"
 ---
 
 # CLAUDE.md ve Kalıcı Talimat Disiplini
-
-> **Durum.** Bu broşür yapay zekâ destekli tam taslak aşamasındadır ve yazar incelemesi beklemektedir. Atıfların tamamı bağımsız olarak doğrulanmıştır. İnceleme tamamlanınca `status` alanı `release` yapılacak ve insan incelemesi tarihi işlenecektir.
 
 Bu rehberin ilk üç broşürü sırasıyla üç soruyu yanıtladı. Claude Code nedir, neden sohbet penceresinden farklıdır, ve güvenli biçimde nasıl kurulur. Kurulum bittikten sonra araştırmacının verdiği ilk kalıcı karar teknik değil yöntemseldir. Araca, her oturumun başında neyi hatırlatacağını nasıl yazar. Bu kararın somut yeri `CLAUDE.md` dosyasıdır. Bu broşür `CLAUDE.md`'yi bir kolaylık ayarı olarak değil, akademik üretimi biçimlendiren bir yöntem aracı olarak ele alır.
 
@@ -50,7 +48,7 @@ Bu dosyanın sohbet penceresine yazılan bir talimattan üç temel farkı vardı
 
 ## 3. Komut duyarlılığı ve disiplinin gerekçesi
 
-Talimatı dikkatle yazmak için iyi bir gerekçe vardır. Dil modelleri, komutun küçük biçim değişikliklerine şaşırtıcı ölçüde duyarlıdır. Sclar ve diğerleri (2023), yalnızca biçimlendirmedeki ufak değişikliklerin, yani araya konan bir boşluğun ya da bir ayracın, few-shot ayarında doğrulukta büyük farklara yol açabildiğini gösterdi. Aynı içerik, farklı biçimde sunulduğunda farklı sonuç verebilir.
+Talimatı dikkatle yazmak için iyi bir gerekçe vardır. Dil modelleri, komutun küçük biçim değişikliklerine şaşırtıcı ölçüde duyarlıdır. Sclar ve diğerleri (2023), yalnızca biçimlendirmedeki ufak değişikliklerin, yani araya konan bir boşluğun ya da bir ayracın, few-shot ayarında, test edilen açık kaynak modellerde doğrulukta büyük farklara yol açabildiğini gösterdi. Aynı içerik, farklı biçimde sunulduğunda farklı sonuç verebilir.
 
 Bu bulgunun sosyal bilimci için sonucu doğrudandır. Tekrarlanabilirlik, komutun kararlılığına bağlıdır. Eğer talimat her oturumda gelişigüzel ve sözlü olarak verilirse, sonuçların aynı kalacağının güvencesi yoktur. Talimatın yazılı, sürümlenmiş ve sınanmış olması, bu duyarlılığı kontrol altına alır. Komut, akademik yöntemin bir parçası olarak ele alındığında, biçimi de yöntemin bir parçası olur. Dağınık ve sözlü komut, gelişigüzel ölçüm aletine benzer. Sabit ve yazılı talimat, kalibre edilmiş alete benzer.
 
@@ -62,7 +60,7 @@ Ancak tek tek komut kalıplarının ötesinde daha sağlam bir fikir vardır. Ka
 
 ## 5. Tekrarlanabilirlik altyapısı olarak CLAUDE.md
 
-Sandve ve diğerleri (2013), tekrarlanabilir hesaplamalı araştırma için on basit kural sıraladı. Bu kuralların özü tek bir ilkeye iner. Sürecin her adımı kaydedilmeli ve mümkün olduğunca otomatikleştirilmelidir ki başkası, ya da aylar sonra aynı araştırmacı, aynı sonucu yeniden üretebilsin. `CLAUDE.md` bu ilkeyi yapay zekâ destekli iş akışına taşıyan somut bir araçtır.
+Sandve ve diğerleri (2013), tekrarlanabilir hesaplamalı araştırma için on basit kural sıraladı. Bu kurallarda tekrar eden bir buyruk öne çıkar. Sürecin her adımı kaydedilmeli ve mümkün olduğunca otomatikleştirilmelidir ki başkası, ya da aylar sonra aynı araştırmacı, aynı sonucu yeniden üretebilsin. `CLAUDE.md` bu ilkeyi yapay zekâ destekli iş akışına taşıyan somut bir araçtır.
 
 Hangi modelin, hangi talimatla ve hangi sınırlar içinde çalıştığı tek bir dosyada sabitlendiğinde, çalışmanın yapay zekâ bileşeni belgelenmiş olur. Bir yıl sonra aynı `CLAUDE.md`, aynı davranışı yeniden üretmenin başlangıç noktasıdır. Bu, yapay zekâ destekli araştırmanın en kırılgan yönlerinden birine, yani sürecin tekrar edilemezliğine doğrudan yanıt verir. Talimat dosyası, bir makalenin yöntem bölümünün makineye bakan yüzüdür. Yöntem bölümü insan okuruna ne yaptığınızı anlatır, `CLAUDE.md` araca aynı şeyi söyler.
 
@@ -76,9 +74,9 @@ Dördüncüsü etik sınırlar. Klinik ve kişisel verinin anonimleştirilmesi, 
 
 İyi yazılmış bir `CLAUDE.md` güçlü bir araçtır, ama iki sınırı açıkça anılmadan kullanılırsa araştırmacıyı yanıltır. Birinci sınır olasılıksal doğadır. Talimat ne kadar iyi olursa olsun, model hâlâ istatistiksel bir sistemdir. Talimat hata oranını düşürür ama sıfırlamaz. Anlamadan istatistiksel örüntü üretme riski, en titiz talimatla bile sürer (Bender ve diğerleri, 2021). Üretilen metin, epistemik düzeyde hakikate kayıtsız bir karakter taşıyabilir, yani doğru görünmek ile doğru olmak arasındaki farkı kendiliğinden gözetmez (Hicks ve diğerleri, 2024). Bu nedenle talimat, doğrulama disiplininin yerine geçmez, onu tamamlar.
 
-İkinci sınır daha incedir. Talimat, zihinsel yükü dışarı verir. Risko ve Gilbert (2016), zihinsel boşaltmanın hem fayda hem maliyet taşıdığını gösterdi. Dışarı verilen şey hatırlama yükü olduğunda kazanç açıktır, ama dışarı verilen şey muhakemenin kendisi olduğunda kayıp gizlidir. `CLAUDE.md`'nin dışsallaştırması gereken, tekrar eden yordamdır. Hangi üslubun istendiği, hangi biçimin beklendiği gibi. Dışsallaştırılmaması gereken ise bilimsel yargıdır. Bir bulgunun anlamı, bir yorumun geçerliliği, bir etik kararın ağırlığı araştırmacıda kalmalıdır. Talimat, yordamı devreder, yargıyı değil.
+İkinci sınır daha incedir. Talimat, zihinsel yükü dışarı verir. Risko ve Gilbert (2016), zihinsel boşaltmanın hem fayda hem maliyet taşıdığını gösterdi. Dışarı verilen şey hatırlama yükü olduğunda kazanç açıktır, ama dışarı verilen şey muhakemenin kendisi olduğunda kayıp gizlidir. Buradan hareketle, `CLAUDE.md`'nin dışsallaştırması gereken, tekrar eden yordamdır. Hangi üslubun istendiği, hangi biçimin beklendiği gibi. Dışsallaştırılmaması gereken ise bilimsel yargıdır. Bir bulgunun anlamı, bir yorumun geçerliliği, bir etik kararın ağırlığı araştırmacıda kalmalıdır. Talimat, yordamı devreder, yargıyı değil.
 
-## 8. Türkiye ve Yunanistan özgülü
+## 8. Türkçe ve Batı Trakya Özgülü
 
 Talimat disiplini, iki dilli ve bölgesel bağlamda ayrı bir değer kazanır. Tek bir `CLAUDE.md`, hem Türkçe hem İngilizce çalışan bir araştırmacı için ortak bağlam olabilir. Dosya, hangi durumda hangi dilin beklendiğini, ve Türkçe diakritik harflerin ASCII'ye düşürülmemesi gibi inceliği bir kez tanımlar. Bu, iki dil arasında gidip gelen bir akademik için sürekli yeniden açıklama yükünü ortadan kaldırır.
 
@@ -115,7 +113,7 @@ White, J., Fu, Q., Hays, S., Sandborn, M., Olea, C., Gilbert, H., Elnashar, A., 
 **Broşür kimliği.** `001-01-0004`
 **Sürüm.** `0.1.0`
 **Tarih.** 2026-05-29
-**Sözcük sayısı (yaklaşık).** 1170
+**Sözcük sayısı (yaklaşık).** 1189
 **Doğrulanmış atıf sayısı.** 8
 **Halüsinasyon atıf sayısı.** 0
 **Önceki broşür.** [`001-01-0003`](../001-01-0003/tr.md). Kurulum, İlk Oturum, Sağlık Testleri

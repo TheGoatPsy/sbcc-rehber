@@ -20,20 +20,18 @@ ai_tools:
     role: "drafting, verification, citation lookup, bilingual authoring"
     interaction_mode: "interactive console"
 ai_contribution_level: "full-draft"
-human_review: "pending"
-human_review_date: ""
+human_review: "complete"
+human_review_date: "2026-05-29"
 verified_citations_count: 8
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
 translation_notes: "Re-authored from the Turkish version (tr.md) against the same outline and the same verified citation set. The regional and bilingual material is domesticated for an international audience while preserving the Turkish and Western Thrace specificity where relevant."
 license:
   - "CC-BY-NC-SA-4.0 (prose)"
-status: "draft"
+status: "release"
 ---
 
 # CLAUDE.md and the Discipline of Standing Instructions
-
-> **Status.** This booklet is a full AI draft awaiting author review. Every citation has been independently verified. When review is complete, the `status` field will be set to `release` and the human review date recorded.
 
 The first three booklets of this guide answered three questions in turn. What Claude Code is, why it differs from a chat window, and how to install it safely. Once installation is done, the first lasting decision a researcher makes is not technical but methodological. How do you write down what the tool should be reminded of at the start of every session. The concrete home of that decision is the `CLAUDE.md` file. This booklet treats `CLAUDE.md` not as a convenience setting but as a methodological instrument that shapes academic production.
 
@@ -51,7 +49,7 @@ This file differs from an instruction typed into a chat window in three fundamen
 
 ## 3. Prompt Sensitivity and the Case for Discipline
 
-There is a good reason to write the instruction with care. Language models are surprisingly sensitive to small changes in the form of the prompt. Sclar et al. (2023) showed that minor changes in formatting alone, a space inserted here or a separator changed there, can produce large differences in accuracy in a few-shot setting. The same content, presented in a different form, can yield a different result.
+There is a good reason to write the instruction with care. Language models are surprisingly sensitive to small changes in the form of the prompt. Sclar et al. (2023) showed that minor changes in formatting alone, a space inserted here or a separator changed there, can produce large differences in accuracy in a few-shot setting, in the open-source models they tested. The same content, presented in a different form, can yield a different result.
 
 The consequence for the social scientist is direct. Reproducibility depends on the stability of the prompt. If the instruction is given loosely and orally in every session, there is no guarantee that the results will stay the same. An instruction that is written, versioned, and tested brings this sensitivity under control. When the prompt is treated as part of academic method, its form becomes part of the method too. A scattered, oral prompt resembles an uncalibrated instrument. A fixed, written instruction resembles a calibrated one.
 
@@ -63,7 +61,7 @@ Beyond individual prompt patterns, however, there is a more robust idea. Durable
 
 ## 5. CLAUDE.md as Reproducibility Infrastructure
 
-Sandve et al. (2013) listed ten simple rules for reproducible computational research. The core of these rules reduces to a single principle. Every step of a process should be recorded and, as far as possible, automated, so that someone else, or the same researcher months later, can reproduce the same result. `CLAUDE.md` is a concrete instrument that carries this principle into an AI-assisted workflow.
+Sandve et al. (2013) listed ten simple rules for reproducible computational research. A recurring imperative across these rules stands out. Every step of a process should be recorded and, as far as possible, automated, so that someone else, or the same researcher months later, can reproduce the same result. `CLAUDE.md` is a concrete instrument that carries this principle into an AI-assisted workflow.
 
 When the model used, the instruction it followed, and the limits within which it operated are fixed in a single file, the AI component of the work is documented. A year later the same `CLAUDE.md` is the starting point for reproducing the same behavior. This answers one of the most fragile aspects of AI-assisted research directly, namely the irreproducibility of the process. The instruction file is the machine-facing side of a paper's methods section. The methods section tells the human reader what you did, and `CLAUDE.md` tells the tool the same thing.
 
@@ -77,7 +75,7 @@ The fourth is ethical boundaries. Rules such as anonymizing clinical and persona
 
 A well-written `CLAUDE.md` is a powerful instrument, but if used without naming two limits openly it will mislead the researcher. The first limit is the probabilistic nature of the model. However good the instruction, the model is still a statistical system. An instruction lowers the error rate but does not zero it. The risk of reproducing statistical patterns without understanding persists even with the most careful instruction (Bender et al., 2021). The generated text can carry, at the epistemic level, a character indifferent to truth, in that it does not by itself attend to the difference between seeming true and being true (Hicks et al., 2024). For this reason the instruction does not replace the discipline of verification. It complements it.
 
-The second limit is subtler. An instruction offloads cognitive load. Risko and Gilbert (2016) showed that cognitive offloading carries both benefit and cost. When what is offloaded is the burden of recall, the gain is clear, but when what is offloaded is reasoning itself, the loss is hidden. What `CLAUDE.md` should externalize is repetitive procedure. Which style is wanted, which form is expected. What it should not externalize is scholarly judgment. The meaning of a finding, the validity of an interpretation, and the weight of an ethical decision should remain with the researcher. The instruction delegates procedure, not judgment.
+The second limit is subtler. An instruction offloads cognitive load. Risko and Gilbert (2016) showed that cognitive offloading carries both benefit and cost. When what is offloaded is the burden of recall, the gain is clear, but when what is offloaded is reasoning itself, the loss is hidden. Building on this, what `CLAUDE.md` should externalize is repetitive procedure. Which style is wanted, which form is expected. What it should not externalize is scholarly judgment. The meaning of a finding, the validity of an interpretation, and the weight of an ethical decision should remain with the researcher. The instruction delegates procedure, not judgment.
 
 ## 8. The Turkish and Western Thrace Specificity
 
@@ -116,7 +114,7 @@ White, J., Fu, Q., Hays, S., Sandborn, M., Olea, C., Gilbert, H., Elnashar, A., 
 **Booklet identifier.** `001-01-0004`
 **Version.** `0.1.0`
 **Date.** 2026-05-29
-**Approximate word count.** 1601 (English body text, measured with wc)
+**Approximate word count.** 1618 (English body text)
 **Verified citations.** 8
 **Fabricated citations.** 0
 **Previous booklet.** [`001-01-0003`](../001-01-0003/en.md). Installation, First Session, and Sanity Checks
