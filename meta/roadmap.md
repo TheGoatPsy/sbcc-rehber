@@ -4,7 +4,7 @@ The public phase plan for `claude-code-for-social-scientists`. Dates are targets
 
 ## Current baseline
 
-The current public release is `v2.0.0`, released on 2026-05-29. It builds on the ten v1.0 core booklets in Turkish and English, all at `release` status, all human-reviewed, and all carrying complete AI-disclosure frontmatter, plus ten companion Claude Code project skills and a distribution surface (the `social-cc-plugin` pip package and a native Claude Code plugin manifest). v2.0.0 adds an audit-driven correctness and CI hardening pass, version-independent release tooling, a first expansion booklet at `draft` status (001-01-0004), a companion MkDocs website, and a Journal of Open Source Education paper. The repository is a booklet plus project-skill methodology package.
+The current public release is `v2.0.0`, released on 2026-05-29. It builds on the ten v1.0 core booklets in Turkish and English, all at `release` status, all human-reviewed, and all carrying complete AI-disclosure frontmatter, plus ten companion Claude Code project skills and a distribution surface (the `social-cc-plugin` pip package and a native Claude Code plugin manifest). v2.0.0 adds an audit-driven correctness and CI hardening pass, version-independent release tooling, a first expansion booklet promoted to `release` status after human review (001-01-0004), a companion MkDocs website, and a Journal of Open Source Education paper. The repository is a booklet plus project-skill methodology package.
 
 ## v0.1.0-alpha, scaffold
 
@@ -90,7 +90,7 @@ The current public release is `v2.0.0`, released on 2026-05-29. It builds on the
 **Scope.**
 
 - GitHub Discussions enabled with moderation guidelines.
-- Approximately ten additional booklets drafted, drawn from categories 002, 005, 006, and 008.
+- Approximately ten additional booklets drafted, drawn from categories 008, 002, 005, and 006. The data analysis category (008) is prioritized following the Anthropic 2026 coding-agents survey, which finds that quantitative data analysis is the dominant social-science use of coding agents. Booklet 008-01-0001 (Reproducible Quantitative Workflows) is already drafted bilingually at `paired` status.
 - First external contributors merged.
 - Turkish and English translation review iterations integrated.
 
@@ -115,4 +115,4 @@ If the author becomes unable to maintain the repository, the GitHub repository, 
 
 ---
 
-**Last updated.** 2026-05-24.
+**Last updated.** 2026-05-29.
