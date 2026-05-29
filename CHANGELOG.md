@@ -21,7 +21,7 @@ Minor release. A second Data Analysis booklet, added after human review, on the 
 ### Zenodo
 
 - Concept DOI: [10.5281/zenodo.20289687](https://doi.org/10.5281/zenodo.20289687) (resolves to the latest released version).
-- Version DOI for v2.2.0: minted by Zenodo after this release is published and recorded here afterward.
+- Version DOI for v2.2.0: [10.5281/zenodo.20446035](https://doi.org/10.5281/zenodo.20446035).
 
 ## [2.1.0] - 2026-05-29
 
