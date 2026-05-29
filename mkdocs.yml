@@ -1,0 +1,137 @@
+site_name: Claude Code for Social Scientists
+site_description: >-
+  A bilingual (Turkish + English) open-source guide for social scientists using
+  Anthropic's Claude Code in research, teaching, and academic writing.
+  Sosyal bilimciler için iki dilli açık kaynak Claude Code rehberi.
+site_url: https://thegoatpsy.github.io/claude-code-for-social-scientists/
+repo_url: https://github.com/TheGoatPsy/claude-code-for-social-scientists
+repo_name: TheGoatPsy/claude-code-for-social-scientists
+copyright: >-
+  Code: Apache-2.0 · Prose and booklets: CC-BY-NC-SA-4.0 ·
+  © 2026 Onour Impram (ORCID 0000-0003-1076-3928)
+
+docs_dir: .
+site_dir: _site
+
+exclude_docs: |
+  _site/
+  node_modules/
+  .git/
+  .github/
+  .claude/
+  src/
+  scripts/
+  template/
+  meta/
+  tests/
+  paper/
+  assets/*.json
+  assets/*.svg
+  package.json
+  package-lock.json
+  pyproject.toml
+  LICENSE
+  SECURITY.md
+  CODE_OF_CONDUCT.md
+  CONTRIBUTING.tr.md
+  README.tr.md
+  AI-AUTHORSHIP.md
+  CHANGELOG.md
+  mkdocs.yml
+
+theme:
+  name: material
+  language: en
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - same-dir
+  - search:
+      lang:
+        - en
+        - tr
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Home: README.md
+  - Catalog: CATALOG.md
+  - Contributing: CONTRIBUTING.md
+
+  - "001 Foundations / Temeller":
+      - "001-01-0001 — What is Claude Code? (EN)": booklets/001-foundations/001-01-0001/en.md
+      - "001-01-0001 — Claude Code Nedir? (TR)": booklets/001-foundations/001-01-0001/tr.md
+      - "001-01-0002 — The Agentic Shift (EN)": booklets/001-foundations/001-01-0002/en.md
+      - "001-01-0002 — Aracın Ötesine Geçiş (TR)": booklets/001-foundations/001-01-0002/tr.md
+      - "001-01-0003 — Installation and First Session (EN)": booklets/001-foundations/001-01-0003/en.md
+      - "001-01-0003 — Kurulum ve İlk Oturum (TR)": booklets/001-foundations/001-01-0003/tr.md
+      - "001-01-0004 — CLAUDE.md Discipline (EN) [draft]": booklets/001-foundations/001-01-0004/en.md
+      - "001-01-0004 — CLAUDE.md Disiplini (TR) [taslak]": booklets/001-foundations/001-01-0004/tr.md
+
+  - "002 Academic Access / Akademik Erişim":
+      - "002-04-0001 — DergiPark, ULAKBIM, HEAL-Link (EN)": booklets/002-academic-access/002-04-0001/en.md
+      - "002-04-0001 — DergiPark, ULAKBIM, HEAL-Link (TR)": booklets/002-academic-access/002-04-0001/tr.md
+
+  - "003 Memory System / Hafıza Sistemi":
+      - "003-01-0001 — Memory as Vault (EN)": booklets/003-memory-system/003-01-0001/en.md
+      - "003-01-0001 — Kasa Olarak Hafıza (TR)": booklets/003-memory-system/003-01-0001/tr.md
+
+  - "004 Vault Architecture / Kasa Mimarisi":
+      - "004-01-0001 — Folder Discipline and MOC (EN)": booklets/004-vault-architecture/004-01-0001/en.md
+      - "004-01-0001 — Klasör Disiplini ve MOC (TR)": booklets/004-vault-architecture/004-01-0001/tr.md
+
+  - "007 Academic Writing / Akademik Yazım":
+      - "007-02-0001 — APA 7 with DOI Discipline (EN)": booklets/007-academic-writing/007-02-0001/en.md
+      - "007-02-0001 — DOI Disiplini ile APA 7 (TR)": booklets/007-academic-writing/007-02-0001/tr.md
+
+  - "009 Ethics and IRB / Etik ve IRB":
+      - "009-01-0001 — Ethics in AI-Assisted Research (EN)": booklets/009-ethics-irb/009-01-0001/en.md
+      - "009-01-0001 — YZ Destekli Araştırmada Etik (TR)": booklets/009-ethics-irb/009-01-0001/tr.md
+
+  - "010 Peer Review / Hakem Değerlendirmesi":
+      - "010-01-0001 — Rebuttal Letters (EN)": booklets/010-peer-review/010-01-0001/en.md
+      - "010-01-0001 — Hakem Yanıt Mektupları (TR)": booklets/010-peer-review/010-01-0001/tr.md
+
+  - "012 Troubleshooting / Sorun Giderme":
+      - "012-01-0001 — When Things Go Wrong (EN)": booklets/012-troubleshooting/012-01-0001/en.md
+      - "012-01-0001 — İşler Ters Gittiğinde (TR)": booklets/012-troubleshooting/012-01-0001/tr.md
