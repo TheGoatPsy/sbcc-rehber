@@ -204,17 +204,22 @@ function validateBooklets() {
     aggregate.substantialDrafting += fields.get("ai_contribution_level") === "substantial-drafting" ? 1 : 0;
   }
 
-  if (bookletFiles.length !== 20) {
-    fail(`Expected 20 booklet language files, found ${bookletFiles.length}`);
+  if (bookletFiles.length === 0) {
+    fail("No booklet language files found under booklets/");
   }
-  if (releaseBookletIds.size !== 10) {
-    fail(`Expected 10 release booklets, found ${releaseBookletIds.size}`);
+  if (bookletFiles.length % 2 !== 0) {
+    fail(`Booklet language files must come in tr/en pairs, found ${bookletFiles.length}`);
   }
 
-  return { bookletFiles, aggregate };
+  return {
+    bookletFiles,
+    aggregate,
+    releaseCount: releaseBookletIds.size,
+    bookletCount: bookletFiles.length / 2,
+  };
 }
 
-function validateCatalog() {
+function validateCatalog(releaseCount, bookletCount) {
   const catalog = read(path.join(root, "CATALOG.md"));
   const counts = { release: 0, paired: 0, draft: 0, planned: 0 };
   const rowPattern = /^\| [^|\n]+ \| [^|\n]+ \| [^|\n]+ \| `(release|paired|draft|planned)` \|$/gmu;
@@ -222,14 +227,24 @@ function validateCatalog() {
     counts[match[1]] += 1;
   }
 
-  const expected = { release: 10, paired: 0, draft: 0, planned: 20 };
-  for (const [status, count] of Object.entries(expected)) {
-    if (counts[status] !== count) {
-      fail(`CATALOG.md has ${counts[status]} ${status} rows, expected ${count}`);
+  // Each status summary row must match the number of detail rows present
+  // (internal CATALOG consistency), with no hardcoded version counts.
+  for (const status of ["release", "paired", "draft", "planned"]) {
+    if (!catalog.includes(`| \`${status}\` | ${counts[status]} |`)) {
+      fail(`CATALOG.md summary row for ${status} must equal its ${counts[status]} detail rows`);
     }
-    if (!catalog.includes(`| \`${status}\` | ${count} |`)) {
-      fail(`CATALOG.md summary row for ${status} must be ${count}`);
-    }
+  }
+
+  // Cross-check CATALOG against the filesystem (the source of truth). Release
+  // rows must equal the on-disk release booklets; the file-backed statuses
+  // (all except planned) must equal the booklets that exist on disk. planned
+  // rows are roadmap-only and have no files.
+  if (counts.release !== releaseCount) {
+    fail(`CATALOG.md lists ${counts.release} release rows but the filesystem has ${releaseCount} release booklets`);
+  }
+  const fileBacked = counts.release + counts.paired + counts.draft;
+  if (fileBacked !== bookletCount) {
+    fail(`CATALOG.md file-backed rows (${fileBacked}) must equal the ${bookletCount} booklets on disk`);
   }
 
   for (const skill of expectedSkills) {
@@ -247,8 +262,8 @@ function validateAggregateDisclosure(aggregate) {
 
   const rowPattern = /^\| \d{3}-\d{2}-\d{4} \| (tr|en) \|/gmu;
   const rows = [...disclosure.matchAll(rowPattern)];
-  if (rows.length !== 20) {
-    fail(`meta/ai-disclosure.md must list 20 language rows, found ${rows.length}`);
+  if (rows.length !== aggregate.files) {
+    fail(`meta/ai-disclosure.md must list one row per booklet language file (${aggregate.files}), found ${rows.length}`);
   }
 
   const checks = [
@@ -410,8 +425,8 @@ function escapeRegExp(value) {
   return value.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&");
 }
 
-const { aggregate } = validateBooklets();
-validateCatalog();
+const { aggregate, releaseCount, bookletCount } = validateBooklets();
+validateCatalog(releaseCount, bookletCount);
 validateAggregateDisclosure(aggregate);
 validateReadmes();
 validateMarkdownLinks();
