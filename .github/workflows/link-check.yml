@@ -1,0 +1,69 @@
+name: Link and DOI Liveness
+
+# Network-dependent liveness checks. These run on a schedule and on demand,
+# never on push or pull_request, so a transient outage or rate limit can never
+# paint a pull request falsely red. They are not branch-protection gates; they
+# surface link rot and dead DOIs for a human to triage.
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Mondays 07:00 UTC, offset one hour after the secret scan.
+    - cron: "0 7 * * 1"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: link-check-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  links:
+    name: External link liveness
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Check links with lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --no-progress
+            --max-retries 3
+            --retry-wait-time 5
+            --accept 200,206,403,429
+            --exclude-path template
+            --exclude doi\.org
+            .
+          fail: true
+          jobSummary: true
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+  dois:
+    name: Cited DOI resolution
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Resolve cited DOIs against doi.org
+        run: node scripts/check-dois.mjs
