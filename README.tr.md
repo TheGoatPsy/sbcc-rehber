@@ -35,7 +35,7 @@ Her broşür kısa, görüş bildiren, yazarın kendi akademik pratiğinde sına
 
 ## İki dilli neden
 
-Türkçe ve İngilizce tam paralel sunulur. Dünya genelinde yaklaşık doksan milyon Türkçe konuşan vardır ve Batı Avrupa'da geniş bir Türk diasporası bulunur. Türkçe akademik yapay zekâ kaynakları talebe göre azdır. İngilizce versiyonun amacı, uluslararası meslektaşların okuyabilmesi, İngilizce dergilerde alıntılanabilmesi, küresel akademik arama motorlarından erişilebilmesi. Her broşür kendi klasöründe `tr.md` ve `en.md` olarak yan yana yaşar. Sürekli entegrasyon kontrolü, bu eşleşmeyi bozan herhangi bir commit'i reddeder.
+Türkçe ve İngilizce tam paralel sunulur. Dünya genelinde yaklaşık doksan milyon Türkçe konuşan vardır ve Batı Avrupa'da geniş bir Türk diasporası bulunur. Türkçe akademik yapay zekâ kaynakları talebe göre azdır. Bu boşluk rastlantı değildir. Sosyal bilimde coding agent kullanımına dair 2026 tarihli büyük ölçekli bir tarama, ABD ve Kanada'daki araştırmacıları örnekler ve benimsemenin kariyer aşaması, cinsiyet ve kurum prestiji ekseninde eğik olduğunu bulur ([Anthropic, 2026](https://www.anthropic.com/research/coding-agents-social-sciences)). Bu çerçevenin dışından tam paralel yazılmış bir rehber, erişimi genişletmenin somut bir yoludur. İngilizce versiyonun amacı, uluslararası meslektaşların okuyabilmesi, İngilizce dergilerde alıntılanabilmesi, küresel akademik arama motorlarından erişilebilmesi. Her broşür kendi klasöründe `tr.md` ve `en.md` olarak yan yana yaşar. Sürekli entegrasyon kontrolü, bu eşleşmeyi bozan herhangi bir commit'i reddeder.
 
 ## Bu rehber kimin için, kimin için değil
 

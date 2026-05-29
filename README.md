@@ -35,7 +35,7 @@ Each booklet is short, opinionated, and tested in the author's own academic prac
 
 ## Why bilingual
 
-Turkish and English are presented in full parallel. There are roughly ninety million Turkish speakers globally and a large diaspora in Western Europe, and Turkish-language academic AI resources are scarce relative to demand. The English version exists so the work is reviewable by international colleagues, citable in English-language journals, and reachable through global academic search engines. Each booklet lives in a folder with `tr.md` and `en.md` as siblings. A continuous-integration check refuses any commit that breaks this pairing.
+Turkish and English are presented in full parallel. There are roughly ninety million Turkish speakers globally and a large diaspora in Western Europe, and Turkish-language academic AI resources are scarce relative to demand. This gap is not incidental. A large 2026 survey of coding agents in the social sciences samples researchers in the United States and Canada and finds adoption skewed by career stage, gender, and institutional prestige ([Anthropic, 2026](https://www.anthropic.com/research/coding-agents-social-sciences)). A guide written in full parallel from outside that frame is one concrete way to widen access. The English version exists so the work is reviewable by international colleagues, citable in English-language journals, and reachable through global academic search engines. Each booklet lives in a folder with `tr.md` and `en.md` as siblings. A continuous-integration check refuses any commit that breaks this pairing.
 
 ## Who this is for, who it is not
 
