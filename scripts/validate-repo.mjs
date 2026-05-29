@@ -281,6 +281,45 @@ function validateAggregateDisclosure(aggregate) {
   }
 }
 
+function validateBilingualParity(bookletFiles) {
+  const byDir = new Map();
+  for (const filePath of bookletFiles) {
+    const dir = path.dirname(filePath);
+    const lang = path.basename(filePath, ".md");
+    if (!byDir.has(dir)) byDir.set(dir, {});
+    byDir.get(dir)[lang] = filePath;
+  }
+
+  for (const [dir, pair] of byDir) {
+    if (!pair.tr || !pair.en) continue; // missing-pair already reported by validateBooklets
+
+    const relDir = posixPath(dir);
+    // Strip frontmatter and fenced code so we compare prose structure and
+    // bibliographic citations, not localized values inside worked examples.
+    const trBody = stripFencedCode(stripFrontmatter(read(pair.tr)));
+    const enBody = stripFencedCode(stripFrontmatter(read(pair.en)));
+
+    const trSections = countLevel2Headings(trBody);
+    const enSections = countLevel2Headings(enBody);
+    if (trSections !== enSections) {
+      fail(
+        `${relDir} bilingual structure drift: tr.md has ${trSections} level-2 sections, en.md has ${enSections}`,
+      );
+    }
+
+    const trDois = extractDois(trBody);
+    const enDois = extractDois(enBody);
+    const onlyTr = [...trDois].filter((doi) => !enDois.has(doi));
+    const onlyEn = [...enDois].filter((doi) => !trDois.has(doi));
+    if (onlyTr.length > 0 || onlyEn.length > 0) {
+      const detail = [];
+      if (onlyTr.length > 0) detail.push(`only in tr.md: ${onlyTr.join(", ")}`);
+      if (onlyEn.length > 0) detail.push(`only in en.md: ${onlyEn.join(", ")}`);
+      fail(`${relDir} bilingual citation drift (${detail.join("; ")})`);
+    }
+  }
+}
+
 function validateReadmes() {
   const stalePatterns = [
     /v0\.1 scaffold/u,
@@ -357,6 +396,31 @@ function stripFencedCode(markdown) {
   return markdown.replace(/```[\s\S]*?```/gu, "");
 }
 
+function stripFrontmatter(content) {
+  const start = content.match(/^---\r?\n/u);
+  if (!start) return content;
+  const rest = content.slice(start[0].length);
+  const end = /\r?\n---\r?\n/u.exec(rest);
+  return end ? rest.slice(end.index + end[0].length) : content;
+}
+
+function normalizeDoi(rawDoi) {
+  // A DOI's identity is the bare suffix. Drop polite-pool query strings
+  // (e.g. ?mailto=...), fragments, trailing punctuation, and markdown
+  // delimiters before comparing. DOIs are case-insensitive, so lower-case.
+  const base = rawDoi.split(/[?#]/u)[0];
+  return base.replace(/[.,;:*_`]+$/u, "").toLowerCase();
+}
+
+function extractDois(text) {
+  const doiPattern = /10\.\d{4,9}\/[^\s)\]"'<>*`]+/gu;
+  return new Set((text.match(doiPattern) || []).map(normalizeDoi));
+}
+
+function countLevel2Headings(text) {
+  return (text.match(/^## /gmu) || []).length;
+}
+
 function validateSkills() {
   const skillsRoot = path.join(root, ".claude", "skills");
   if (!fs.existsSync(skillsRoot)) {
@@ -425,9 +489,10 @@ function escapeRegExp(value) {
   return value.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&");
 }
 
-const { aggregate, releaseCount, bookletCount } = validateBooklets();
+const { aggregate, releaseCount, bookletCount, bookletFiles } = validateBooklets();
 validateCatalog(releaseCount, bookletCount);
 validateAggregateDisclosure(aggregate);
+validateBilingualParity(bookletFiles);
 validateReadmes();
 validateMarkdownLinks();
 validateSkills();
