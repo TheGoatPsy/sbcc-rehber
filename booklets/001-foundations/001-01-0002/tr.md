@@ -56,7 +56,7 @@ Bu üç özellik, sohbet arayüzünü değersiz kılmaz. Hızlı bir kavramsal s
 
 ## 3. Ajan Arayüzünün Anatomisi
 
-Ajan sözcüğü, çok ajanlı sistemler literatüründe net bir anlama sahiptir. Bir ajan, içinde bulunduğu ortamı algılayan, bu algıya dayanarak karar veren ve ortam üzerinde eylemde bulunan bir yapıdır (Wooldridge, 2020). Bu tanım, sohbet arayüzünün tek geçişli mantığından temel olarak ayrılır. Sohbet yalnızca yanıt üretir, ajan ise algılar, karar verir, eyler ve sonucunu değerlendirir.
+Ajan sözcüğü, çok ajanlı sistemler literatüründe net bir anlama sahiptir. Bir ajan, içinde bulunduğu ortamı algılayan, bu algıya dayanarak karar veren ve ortam üzerinde eylemde bulunan bir yapıdır (Wooldridge, 2009). Bu tanım, sohbet arayüzünün tek geçişli mantığından temel olarak ayrılır. Sohbet yalnızca yanıt üretir, ajan ise algılar, karar verir, eyler ve sonucunu değerlendirir.
 
 Bu döngünün modern dil modeli ajanlarındaki en etkili kalıbı, akıl yürütme ile eylemi birbirine dokuyan yapıdır. Model bir düşünce adımı üretir, ardından bir eylem yapar, eylemin sonucunu gözlemler ve bu gözlemi sonraki düşünce adımına besler (Yao ve diğerleri, 2023). Sosyal bilimci için bu, aracın bir soruyu tek seferde yanıtlamak yerine, soruyu alt adımlara böldüğü, her adımda ne yaptığını gördüğü ve gerektiğinde yön değiştirdiği anlamına gelir. Bu döngünün arkasındaki bilişsel mimari, dil ajanlarını bellek, eylem alanı ve karar süreci gibi bileşenler üzerinden sistematik biçimde çerçeveleyen bir literatürle desteklenir (Sumers ve diğerleri, 2024).
 
@@ -130,7 +130,7 @@ Schick, T., Dwivedi-Yu, J., Dessì, R., Raileanu, R., Lomeli, M., Zettlemoyer, L
 
 Sumers, T. R., Yao, S., Narasimhan, K., & Griffiths, T. L. (2024). Cognitive architectures for language agents. *Transactions on Machine Learning Research*. https://arxiv.org/abs/2309.02427
 
-Wooldridge, M. (2020). *An introduction to multiagent systems* (2nd ed.). Wiley. ISBN 978-1-119-95956-7
+Wooldridge, M. (2009). *An introduction to multiagent systems* (2nd ed.). Wiley. ISBN 978-0-470-51946-2
 
 Yao, S., Zhao, J., Yu, D., Du, N., Shafran, I., Narasimhan, K., & Cao, Y. (2023). ReAct: Synergizing reasoning and acting in language models. In *Proceedings of the 11th International Conference on Learning Representations (ICLR 2023)*. https://arxiv.org/abs/2210.03629
 

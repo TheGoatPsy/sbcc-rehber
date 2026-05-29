@@ -127,7 +127,7 @@ Hosseini, M., Rasmussen, L. M., & Resnik, D. B. (2023). Using AI to write schola
 
 Noble, W. S. (2017). Ten simple rules for writing a response to reviewers. *PLOS Computational Biology*, 13(10), e1005730. https://doi.org/10.1371/journal.pcbi.1005730
 
-Provenzale, J. M., & Stanley, R. J. (2006). A systematic guide to reviewing a manuscript. *American Journal of Roentgenology*, 186(3), 848-854.
+Provenzale, J. M., & Stanley, R. J. (2006). A systematic guide to reviewing a manuscript. *American Journal of Roentgenology*, 186(3), 848-854. https://doi.org/10.2214/AJR.05.0782
 
 Resnik, D. B. (2018). *The ethics of research with human subjects: Protecting people, advancing science, promoting trust*. Springer. https://doi.org/10.1007/978-3-319-68756-8
 

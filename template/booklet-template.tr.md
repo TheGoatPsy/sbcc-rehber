@@ -34,6 +34,10 @@ license:
   - "CC-BY-NC-SA-4.0 (prose)"
 status: "planned"
 # Dört durum: planned, draft, paired, release
+# İsteğe bağlı editoryal bayraklar (broşür düzeyinde vurgu, hepsi varsayılan olarak yok):
+# signature_booklet: true   # kategorisi için amiral broşür
+# spine_booklet: true       # rehberin argümanının yapısal olarak dayandığı broşür
+# original_concept: true    # bu yazara özgü bir kavram tanıtır (köken işareti, hukuki iddia değil)
 ---
 
 # BURAYI TÜRKÇE BROŞÜR BAŞLIĞIYLA DEĞİŞTİRİN

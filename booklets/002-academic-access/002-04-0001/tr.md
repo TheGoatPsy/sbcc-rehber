@@ -48,7 +48,7 @@ DergiPark, TÜBİTAK ULAKBİM ev sahipliğinde yürüyen, yüzlerce Türk akadem
 Pratikte bu şöyle çalışır. Bir DergiPark makalesinin DOI'sine sahipseniz, Claude Code'a bu DOI üzerinden bibliyografik üst veriyi çektirebilirsiniz. DOI içerik müzakeresi denen mekanizma, bir DOI adresine belirli bir biçim talebiyle gidildiğinde, makalenin künyesini yapılandırılmış olarak döndürür.
 
 ```bash
-# Bir DergiPark DOI'sinin künyesini BibTeX olarak çek
+# Bir DOI'nin künyesini BibTeX olarak çek (DergiPark DOI'lerinin de kullandığı Crossref içerik müzakeresi)
 curl -LH "Accept: application/x-bibtex" https://doi.org/10.3390/publications7010018
 ```
 

@@ -137,6 +137,7 @@ A reader who wants to audit AI involvement can do the following.
 | Date | Version | Change |
 |---|---|---|
 | 2026-05-19 | 0.1.0 | Initial policy. COPE 2023, WAME 2023, ICMJE 2024, STM 2025, EU AI Act 2024/1689 Art. 50, ENAI consensus alignment. |
+| 2026-05-24 | 0.2.0 | Schema evolution across the v1.0 to v1.1 booklet cycle. Added `model_dated` alongside `model_alias` in the `ai_tools` schema. Expressed `license` as a list (prose under CC-BY-NC-SA-4.0). Migrated the title schema to `title_en` and `title_tr`. |
 
 ## 10. References
 

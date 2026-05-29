@@ -1,6 +1,6 @@
 {
   "title": "Sosyal Bilimciler İçin Claude Code Rehberi (Claude Code for Social Scientists)",
-  "description": "A bilingual (Turkish and English) open-source guide for social scientists who want to integrate Anthropic's Claude Code into their research, teaching, and academic writing. Twelve thematic categories cover foundations, academic access, memory systems, vault architecture, hooks and automation, MCP and plugins, academic writing, data analysis, ethics and IRB, peer review, conference presentation, and troubleshooting. Authored by a working clinical psychologist and PhD candidate, with explicit AI co-authorship disclosure under the consolidating scholarly-publishing consensus (COPE 2023, WAME 2023, ICMJE 2024, STM 2025, EU AI Act 2024/1689 Art. 50, ENAI).",
+  "description": "A bilingual (Turkish and English) open-source guide for social scientists who want to integrate Anthropic's Claude Code into their research, teaching, and academic writing. A twelve-category taxonomy spans foundations, academic access, memory systems, vault architecture, hooks and automation, MCP and plugins, academic writing, data analysis, ethics and IRB, peer review, conference presentation, and troubleshooting. Authored by a working clinical psychologist and PhD candidate, with explicit AI co-authorship disclosure under the consolidating scholarly-publishing consensus (COPE 2023, WAME 2023, ICMJE 2024, STM 2025, EU AI Act 2024/1689 Art. 50, ENAI). The prose is licensed under CC-BY-NC-SA-4.0 and the accompanying code under Apache-2.0 (see CITATION.cff and the LICENSE files).",
   "upload_type": "software",
   "creators": [
     {
@@ -10,7 +10,7 @@
     }
   ],
   "access_right": "open",
-  "license": "Apache-2.0",
+  "license": "CC-BY-NC-SA-4.0",
   "keywords": [
     "claude-code",
     "anthropic",

@@ -101,7 +101,7 @@ The following twelve-item checklist turns the principles of this booklet into co
 5. Informed consent covered the artificial intelligence assisted processing.
 6. The ethics board application stated the artificial intelligence component explicitly.
 7. All citations were verified with triple-index triangulation.
-8. The artificial intelligence contribution level was determined on the five-level scale.
+8. The artificial intelligence contribution level was determined on the five-level scale (defined in Section 4 of AI-AUTHORSHIP.md in the repository root).
 9. The disclosure appeared in the methods section or a disclosure note.
 10. Authorship was attributed only to humans who bear responsibility.
 11. Transparency obligations were observed for submission to the EU.
