@@ -1,6 +1,6 @@
 # Catalog
 
-This catalog lists every booklet in `claude-code-for-social-scientists`, grouped by category, with a stable identifier of the form `KKK-AA-SSSS` (category, subcategory, serial), a short description in English and Turkish, and a status. The full long-term catalog targets thirty-one booklets across twelve categories. The v1.0 target is the **ten core booklets** marked with `[v1.0]` in the tables below. Booklet 001-01-0004 ships at `release` status in v2.0.0, bringing the released total to eleven. Booklet 008-01-0001 (Reproducible Quantitative Workflows) is drafted bilingually at `paired` status, motivated by the empirical finding that quantitative data analysis is the dominant social-science use of coding agents. The remaining nineteen booklets are scheduled for later releases. See [`meta/roadmap.md`](./meta/roadmap.md) for the phase plan and release timing.
+This catalog lists every booklet in `claude-code-for-social-scientists`, grouped by category, with a stable identifier of the form `KKK-AA-SSSS` (category, subcategory, serial), a short description in English and Turkish, and a status. The full long-term catalog targets thirty-one booklets across twelve categories. The v1.0 target is the **ten core booklets** marked with `[v1.0]` in the tables below. Booklet 001-01-0004 ships at `release` status in v2.0.0, and booklet 008-01-0001 (Reproducible Quantitative Workflows) at `release` status in v2.1.0 after human review, motivated by the empirical finding that quantitative data analysis is the dominant social-science use of coding agents, bringing the released total to twelve. The remaining nineteen booklets are scheduled for later releases. See [`meta/roadmap.md`](./meta/roadmap.md) for the phase plan and release timing.
 
 ## Status legend
 
@@ -11,7 +11,7 @@ This catalog lists every booklet in `claude-code-for-social-scientists`, grouped
 | `paired` | Both `tr.md` and `en.md` drafted, not yet included in a public release |
 | `release` | Human-reviewed, version-tagged, included in a public release |
 
-The repository now contains eleven booklets at `release` status. Both Turkish and English files are complete, human-reviewed, and citation-audited. Ten are the v1.0.0 core booklets, and the eleventh, 001-01-0004, was added and human-reviewed for the v2.0.0 release. One booklet, 008-01-0001, is at `paired` status, drafted in both languages and citation-audited but awaiting human review and a public release. Nineteen booklets remain at `planned` status as of 2026-05-29. The v1.1.x releases add ten companion Claude Code project skills that turn the booklets into repeatable workflows, installable through the `social-cc-plugin` pip package or the Claude Code plugin system.
+The repository now contains twelve booklets at `release` status. Both Turkish and English files are complete, human-reviewed, and citation-audited. Ten are the v1.0.0 core booklets, the eleventh, 001-01-0004, was added and human-reviewed for the v2.0.0 release, and the twelfth, 008-01-0001, was added and human-reviewed for the v2.1.0 release. Nineteen booklets remain at `planned` status as of 2026-05-29. The v1.1.x releases add ten companion Claude Code project skills that turn the booklets into repeatable workflows, installable through the `social-cc-plugin` pip package or the Claude Code plugin system.
 
 ---
 
@@ -91,7 +91,7 @@ Reproducible workflows, statistical test selection, qualitative coding, mixed-me
 
 | Identifier | Title (EN) | Title (TR) | Status |
 |---|---|---|---|
-| 008-01-0001 | Reproducible Quantitative Workflows | Yeniden Üretilebilir Nicel İş Akışları | `paired` |
+| 008-01-0001 | Reproducible Quantitative Workflows | Yeniden Üretilebilir Nicel İş Akışları | `release` |
 | 008-02-0001 | Statistical Test Selection with AI Consultation Discipline | Yapay Zekâ Danışma Disipliniyle İstatistiksel Test Seçimi | `planned` |
 | 008-03-0001 | Qualitative Coding with AI Assistance and Human Oversight | Yapay Zekâ Yardımı ve İnsan Gözetimiyle Nitel Kodlama | `planned` |
 
@@ -136,8 +136,8 @@ When tools fail, when papers disagree, when reviewers ask the wrong question.
 
 | Status | Count |
 |---|---|
-| `release` | 11 |
-| `paired` | 1 |
+| `release` | 12 |
+| `paired` | 0 |
 | `draft` | 0 |
 | `planned` | 19 |
 | **Total catalog** | **31** |
@@ -172,4 +172,4 @@ See [`CONTRIBUTING.md`](./CONTRIBUTING.md). The short version. Open an issue wit
 
 ---
 
-**Last updated:** 2026-05-29 (booklet 008-01-0001, Reproducible Quantitative Workflows, added at `paired` status; data-analysis category prioritized following the Anthropic 2026 coding-agents survey. Earlier the same day: v2.0.0 release with audit and CI hardening, booklet 001-01-0004 promoted to release after human review, companion website, and JOSE paper)
+**Last updated:** 2026-05-29 (v2.1.0 release: booklet 008-01-0001, Reproducible Quantitative Workflows, added at `release` status after human review; data-analysis category prioritized following the Anthropic 2026 coding-agents survey. Earlier the same day: v2.0.0 release with audit and CI hardening, booklet 001-01-0004 promoted to release after human review, companion website, and JOSE paper)

@@ -20,14 +20,14 @@ ai_tools:
     role: "drafting, verification, citation lookup, bilingual authoring"
     interaction_mode: "interactive console"
 ai_contribution_level: "substantial-drafting"
-human_review: "pending"
-human_review_date: ""
+human_review: "complete"
+human_review_date: "2026-05-29"
 verified_citations_count: 9
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
 license:
   - "CC-BY-NC-SA-4.0 (prose)"
-status: "paired"
+status: "release"
 ---
 
 # Yeniden Üretilebilir Nicel İş Akışları
