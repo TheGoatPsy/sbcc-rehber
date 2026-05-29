@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="./assets/banner.svg" alt="Claude Code for Social Scientists — Sosyal Bilimciler İçin Claude Code Rehberi banner. Author Onour Impram, ORCID 0000-0003-1076-3928, Zenodo concept DOI 10.5281/zenodo.20289687, dual licensed Apache 2.0 plus CC-BY-NC-SA 4.0, v1.1.1.">
+  <img src="./assets/banner.svg" alt="Claude Code for Social Scientists — Sosyal Bilimciler İçin Claude Code Rehberi banner. Author Onour Impram, ORCID 0000-0003-1076-3928, Zenodo concept DOI 10.5281/zenodo.20289687, dual licensed Apache 2.0 plus CC-BY-NC-SA 4.0, v2.0.0.">
 </p>
 
 # Claude Code for Social Scientists
 
 A bilingual, open-source guide for social scientists who want to use Anthropic's Claude Code in their research, teaching, and academic writing. Written for researchers outside the English-speaking world as well as inside it, by a working clinical psychologist and PhD candidate who uses these tools in real academic production.
 
-> **Status:** v1.1.1 release. Ten core booklets in Turkish and English, human-reviewed and citation-audited, plus ten companion Claude Code project skills that turn the booklets into reusable workflows. The skills install with pip (`social-cc-plugin`) or as a Claude Code plugin.
+> **Status:** v2.0.0 release. Ten core booklets in Turkish and English, human-reviewed and citation-audited, plus ten companion Claude Code project skills that turn the booklets into reusable workflows. v2.0.0 adds an audit-driven correctness and CI hardening pass, a first expansion booklet at draft status, a companion website, and a Journal of Open Source Education paper. The skills install with pip (`social-cc-plugin`) or as a Claude Code plugin.
 
 > **TR readers:** A Turkish overview lives at the bottom of this file. The full Turkish version is in [`README.tr.md`](./README.tr.md). Every booklet exists as `tr.md` and `en.md` side by side.
 
@@ -98,7 +98,7 @@ So `001-01-0001` is the first booklet, in the first subcategory, of the Foundati
 
 ## Project Skills
 
-The v1.1.1 surface includes ten Claude Code project skills under [`.claude/skills/`](./.claude/skills/). The booklets carry theory, pedagogy, and scholarly framing. The skills carry repeatable workflows, audit checklists, and safe operating boundaries.
+The v2.0.0 surface includes ten Claude Code project skills under [`.claude/skills/`](./.claude/skills/). The booklets carry theory, pedagogy, and scholarly framing. The skills carry repeatable workflows, audit checklists, and safe operating boundaries.
 
 | Skill | Companion booklets | Purpose |
 |---|---|---|
@@ -141,7 +141,7 @@ This work is registered through:
 
 ## Roadmap
 
-See [`meta/roadmap.md`](./meta/roadmap.md) for the public phase plan. The current release is v1.1.1, ten released core booklets across the foundational and highest-value categories plus ten companion project skills for repeatable Claude Code workflows. Later targets remain v1.5 for community discussions and additional categories, and v2.0 for the full thirty-booklet catalog, living lab, conference citations, and instructional use.
+See [`meta/roadmap.md`](./meta/roadmap.md) for the public phase plan. The current release is v2.0.0, which delivers an audit-driven correctness and CI hardening pass on top of the ten released core booklets and ten companion project skills, plus a first expansion booklet at draft status, a companion website, and a Journal of Open Source Education paper. A later major milestone, the full thirty-booklet catalog with a living lab, conference citations, and instructional use, is targeted for v3.0.
 
 ## Contributing
 

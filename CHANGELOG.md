@@ -6,6 +6,35 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 Citations of this work should use the Zenodo concept DOI [10.5281/zenodo.20289687](https://doi.org/10.5281/zenodo.20289687), which always resolves to the latest version. Version-specific DOIs are listed below.
 
+## [2.0.0] - 2026-05-29
+
+Major release. An audit-driven correctness and hardening pass, the first content-expansion booklet, version-independent repository tooling, and a companion website and academic paper. The ten v1.0 booklets are unchanged in scholarly content.
+
+### Added
+
+- Booklet 001-01-0004, "CLAUDE.md and the Discipline of Standing Instructions," a bilingual foundations booklet at `draft` status with human review pending. Eight independently verified citations, full Turkish and English parity. Catalog total grows from thirty to thirty-one.
+- A bilingual MkDocs Material companion website (`mkdocs.yml`) that renders the booklets in place, with a GitHub Pages workflow (`.github/workflows/pages.yml`) that builds on every pull request and deploys on push to main.
+- A Journal of Open Source Education companion paper draft (`paper/paper.md`, `paper/paper.bib`), whose bibliography reuses only citations already verified in the repository.
+- A bilingual structure and citation parity check in the repository validator. Paired `tr.md` and `en.md` files must carry the same level-2 section count and the same set of bibliographic DOIs.
+- A scheduled, non-blocking link and DOI liveness workflow (`.github/workflows/link-check.yml`) and `scripts/check-dois.mjs`, which resolves every cited DOI against the doi.org handle system.
+
+### Changed
+
+- The repository validator derives booklet counts from the filesystem instead of hardcoding version-specific totals, so promoting a booklet no longer requires editing the validator.
+- The AI disclosure aggregate now covers `draft` booklets as well as released ones, and its verified and fabricated citation labels were generalized from released to all disclosed language files.
+- `.zenodo.json` declares the prose license as CC-BY-NC-SA-4.0 and describes the taxonomy consistently with `CITATION.cff`.
+
+### Fixed
+
+- Corrected the Wooldridge citation in booklet 001-01-0002 to the 2009 second edition with the matching ISBN.
+- Added the verified Crossref DOI to the Provenzale and Stanley citation in booklet 010-01-0001.
+- Documented the five-level AI contribution scale cross-reference and the per-language MOC field-key domestication note.
+
+### Zenodo
+
+- Concept DOI: [10.5281/zenodo.20289687](https://doi.org/10.5281/zenodo.20289687) (resolves to the latest released version).
+- Version DOI for v2.0.0: minted by Zenodo after the GitHub release is published, and recorded here afterward.
+
 ## [1.1.1] - 2026-05-24
 
 Patch release for distribution metadata hygiene. The booklets, project skills, and installer behavior are unchanged from v1.1.0.

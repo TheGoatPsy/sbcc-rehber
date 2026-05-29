@@ -4,7 +4,7 @@ The public phase plan for `claude-code-for-social-scientists`. Dates are targets
 
 ## Current baseline
 
-The current public release is `v1.1.1`, released on 2026-05-24. It contains the ten v1.0 core booklets in Turkish and English, all at `release` status, all human-reviewed, and all carrying complete AI-disclosure frontmatter, plus ten companion Claude Code project skills and a distribution surface (the `social-cc-plugin` pip package and a native Claude Code plugin manifest). The repository is now a booklet plus project-skill methodology package.
+The current public release is `v2.0.0`, released on 2026-05-29. It builds on the ten v1.0 core booklets in Turkish and English, all at `release` status, all human-reviewed, and all carrying complete AI-disclosure frontmatter, plus ten companion Claude Code project skills and a distribution surface (the `social-cc-plugin` pip package and a native Claude Code plugin manifest). v2.0.0 adds an audit-driven correctness and CI hardening pass, version-independent release tooling, a first expansion booklet at `draft` status (001-01-0004), a companion MkDocs website, and a Journal of Open Source Education paper. The repository is a booklet plus project-skill methodology package.
 
 ## v0.1.0-alpha, scaffold
 
@@ -94,7 +94,9 @@ The current public release is `v1.1.1`, released on 2026-05-24. It contains the 
 - First external contributors merged.
 - Turkish and English translation review iterations integrated.
 
-## v2.0.0, full thirty-booklet catalog and living lab
+## v3.0.0, full thirty-booklet catalog and living lab
+
+> **Note.** The v2.0.0 tag was used for the 2026-05-29 audit, hardening, and ecosystem release described under the current baseline. The full thirty-booklet catalog and living lab milestone, originally planned as v2.0.0, is now targeted for v3.0.0.
 
 **Target.** 2027-04.
 

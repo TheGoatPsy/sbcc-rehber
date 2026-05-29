@@ -172,4 +172,4 @@ See [`CONTRIBUTING.md`](./CONTRIBUTING.md). The short version. Open an issue wit
 
 ---
 
-**Last updated:** 2026-05-29 (v2.0.0 development: booklet 001-01-0004 added at draft status, pending author review)
+**Last updated:** 2026-05-29 (v2.0.0 release: audit and CI hardening, booklet 001-01-0004 added at draft status, companion website, and JOSE paper)

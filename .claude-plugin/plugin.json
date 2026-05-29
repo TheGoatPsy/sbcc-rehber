@@ -1,7 +1,7 @@
 {
   "name": "social-cc-plugin",
   "displayName": "Claude Code for Social Scientists Skills",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "description": "Ten project skills for social science research with Claude Code: literature triage, APA 7 DOI verification, bilingual booklet pairing, AI disclosure auditing, ethics and IRB protocols, rebuttal traceability, research vault architecture, regional academic access, agentic session debugging, and pre-release repository integrity checks.",
   "author": {
     "name": "Onour Impram",
