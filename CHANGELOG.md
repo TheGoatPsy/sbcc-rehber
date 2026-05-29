@@ -23,7 +23,7 @@ Minor release. The first Data Analysis booklet, added after human review, motiva
 ### Zenodo
 
 - Concept DOI: [10.5281/zenodo.20289687](https://doi.org/10.5281/zenodo.20289687) (resolves to the latest released version).
-- Version DOI for v2.1.0: minted by Zenodo after this release is published and recorded here afterward.
+- Version DOI for v2.1.0: [10.5281/zenodo.20444934](https://doi.org/10.5281/zenodo.20444934).
 
 ## [2.0.0] - 2026-05-29
 
