@@ -25,7 +25,7 @@ human_review_date: "2026-05-24"
 verified_citations_count: 8
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
-translation_notes: "English re-authored from the Turkish source, not a literal translation. Folder and MOC examples preserve the Memory as Vault conventions established in the Turkish version."
+translation_notes: "English re-authored from the Turkish source, not a literal translation. Folder and MOC examples preserve the Memory as Vault conventions established in the Turkish version. The MOC and frontmatter field keys are intentionally domesticated per language: the Turkish version uses Turkish keys such as tip and etiketler, this English version uses type and tags. A reader consulting both versions sees the same structure with language-appropriate keys, not a single shared schema."
 license:
   - "CC-BY-NC-SA-4.0 (prose)"
 status: "release"

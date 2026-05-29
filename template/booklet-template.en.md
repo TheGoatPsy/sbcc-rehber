@@ -34,6 +34,10 @@ license:
   - "CC-BY-NC-SA-4.0 (prose)"
 status: "planned"
 # Four states: planned, draft, paired, release
+# Optional editorial flags (booklet-level emphasis, all default to absent):
+# signature_booklet: true   # a flagship booklet for its category
+# spine_booklet: true       # a booklet the guide's argument structurally depends on
+# original_concept: true    # introduces a concept original to this author (a provenance marker, not a legal claim)
 ---
 
 # REPLACE WITH ENGLISH BOOKLET TITLE

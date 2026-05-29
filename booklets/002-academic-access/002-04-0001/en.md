@@ -49,7 +49,7 @@ DergiPark is the platform, hosted by TÜBİTAK ULAKBİM, where hundreds of Turki
 In practice this works as follows. If you have the DOI of a DergiPark article, you can have Claude Code retrieve the bibliographic metadata through that DOI. The mechanism called DOI content negotiation returns an article's record in structured form when the DOI address is reached with a request for a particular format.
 
 ```bash
-# Retrieve the metadata of a DergiPark DOI as BibTeX
+# Retrieve a DOI's metadata as BibTeX (the same Crossref content negotiation a DergiPark DOI uses)
 curl -LH "Accept: application/x-bibtex" https://doi.org/10.3390/publications7010018
 ```
 

@@ -57,7 +57,7 @@ These three properties do not make the chat interface worthless. For a quick con
 
 ## 3. The Anatomy of the Agent Interface
 
-The word agent has a precise meaning in the multiagent systems literature. An agent is a structure that perceives the environment it is in, decides on the basis of that perception, and acts upon the environment (Wooldridge, 2020). This definition departs fundamentally from the single-pass logic of the chat interface. Chat only produces an answer. An agent perceives, decides, acts, and evaluates the result.
+The word agent has a precise meaning in the multiagent systems literature. An agent is a structure that perceives the environment it is in, decides on the basis of that perception, and acts upon the environment (Wooldridge, 2009). This definition departs fundamentally from the single-pass logic of the chat interface. Chat only produces an answer. An agent perceives, decides, acts, and evaluates the result.
 
 The most influential pattern of this loop in modern language model agents is the structure that interleaves reasoning with action. The model produces a thought step, then takes an action, observes the result of the action, and feeds that observation into the next thought step (Yao et al., 2023). For the social scientist this means the tool, instead of answering a question all at once, breaks the question into substeps, makes each step visible, and changes direction when needed. The cognitive architecture behind this loop is supported by a literature that frames language agents systematically through components such as memory, action space, and decision process (Sumers et al., 2024).
 
@@ -131,7 +131,7 @@ Schick, T., Dwivedi-Yu, J., Dessì, R., Raileanu, R., Lomeli, M., Zettlemoyer, L
 
 Sumers, T. R., Yao, S., Narasimhan, K., & Griffiths, T. L. (2024). Cognitive architectures for language agents. *Transactions on Machine Learning Research*. https://arxiv.org/abs/2309.02427
 
-Wooldridge, M. (2020). *An introduction to multiagent systems* (2nd ed.). Wiley. ISBN 978-1-119-95956-7
+Wooldridge, M. (2009). *An introduction to multiagent systems* (2nd ed.). Wiley. ISBN 978-0-470-51946-2
 
 Yao, S., Zhao, J., Yu, D., Du, N., Shafran, I., Narasimhan, K., & Cao, Y. (2023). ReAct: Synergizing reasoning and acting in language models. In *Proceedings of the 11th International Conference on Learning Representations (ICLR 2023)*. https://arxiv.org/abs/2210.03629
 
