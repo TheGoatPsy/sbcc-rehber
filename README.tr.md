@@ -6,7 +6,7 @@
 
 Anthropic Claude Code'u araştırmada, eğitimde ve akademik yazımda kullanmak isteyen sosyal bilimciler için iki dilli, açık kaynak bir rehber. İngilizce konuşulan dünyanın dışında çalışan araştırmacılara, içeride çalışanlara da seslenmek üzere, bu araçları gerçek akademik üretim sürecinde kullanan bir klinik psikolog ve doktora adayı tarafından yazılıyor.
 
-> **Durum.** v2.2.0 release. On üç yayınlanmış broşür Türkçe ve İngilizce tamamlandı, insan incelemesinden geçti ve atıf denetimi yapıldı. Ayrıca broşürleri yeniden kullanılabilir iş akışlarına çeviren on companion Claude Code project skill bulunur. v2.2.0, ikinci Veri Analizi broşürünü (Yapay Zekâ Danışma Disipliniyle İstatistiksel Test Seçimi) ekler. Bir ajan her testi anında çalıştırabildiğinde test seçimi disiplinini, anketin adını koyduğu seçici raporlama korkusuna doğrudan cevap olarak ele alır. Skills, pip (`social-cc-plugin`) ya da Claude Code eklentisi olarak kurulur.
+> **Durum.** v2.2.0 release. On üç yayınlanmış broşür Türkçe ve İngilizce tamamlandı, insan incelemesinden geçti ve atıf denetimi yapıldı. Ayrıca broşürleri yeniden kullanılabilir iş akışlarına çeviren on companion Claude Code project skill bulunur. v2.2.0, ikinci Veri Analizi broşürünü (Yapay Zekâ Danışma Disipliniyle İstatistiksel Test Seçimi) ekler. Bir ajanın her testi anında çalıştırabildiği ortamda test seçimi disiplinini ele alan bu broşür, anketin adını koyduğu seçici raporlama kaygısına doğrudan yanıt verir. Skills, pip (`social-cc-plugin`) ya da Claude Code eklentisi olarak kurulur.
 
 > **EN readers.** The English version is in [`README.md`](./README.md). Every booklet has a `tr.md` and an `en.md` side by side. A CI check enforces this pairing on every commit.
 
@@ -35,13 +35,13 @@ Her broşür kısa, görüş bildiren, yazarın kendi akademik pratiğinde sına
 
 ## İki dilli neden
 
-Türkçe ve İngilizce tam paralel sunulur. Dünya genelinde yaklaşık doksan milyon Türkçe konuşan vardır ve Batı Avrupa'da geniş bir Türk diasporası bulunur. Türkçe akademik yapay zekâ kaynakları talebe göre azdır. Bu boşluk rastlantı değildir. Sosyal bilimde coding agent kullanımına dair 2026 tarihli büyük ölçekli bir tarama, ABD ve Kanada'daki araştırmacıları örnekler ve benimsemenin kariyer aşaması, cinsiyet ve kurum prestiji ekseninde eğik olduğunu bulur ([Anthropic, 2026](https://www.anthropic.com/research/coding-agents-social-sciences)). Bu çerçevenin dışından tam paralel yazılmış bir rehber, erişimi genişletmenin somut bir yoludur. İngilizce versiyonun amacı, uluslararası meslektaşların okuyabilmesi, İngilizce dergilerde alıntılanabilmesi, küresel akademik arama motorlarından erişilebilmesi. Her broşür kendi klasöründe `tr.md` ve `en.md` olarak yan yana yaşar. Sürekli entegrasyon kontrolü, bu eşleşmeyi bozan herhangi bir commit'i reddeder.
+Türkçe ve İngilizce tam paralel sunulur. Dünya genelinde yaklaşık doksan milyon Türkçe konuşan vardır ve Batı Avrupa'da geniş bir Türk diasporası bulunur. Türkçe akademik yapay zekâ kaynakları ise talebe kıyasla oldukça azdır. Bu boşluk rastlantı değildir. Sosyal bilimde coding agent kullanımına dair 2026 tarihli büyük ölçekli bir tarama, ABD ve Kanada'daki araştırmacıları örnekler ve benimsemenin kariyer aşaması, cinsiyet ve kurum prestiji ekseninde eğik olduğunu bulur ([Anthropic, 2026](https://www.anthropic.com/research/coding-agents-social-sciences)). Bu çerçevenin dışından tam paralel yazılmış bir rehber, erişimi genişletmenin somut bir yoludur. İngilizce versiyonun amacı ise uluslararası meslektaşların okuyabilmesi, İngilizce dergilerde atıf yapılabilmesi ve küresel akademik arama motorlarından ulaşılabilmesidir. Her broşür kendi klasöründe `tr.md` ve `en.md` olarak yan yana yaşar. Sürekli entegrasyon kontrolü, bu eşleşmeyi bozan herhangi bir commit'i reddeder.
 
 ## Bu rehber kimin için, kimin için değil
 
-Anket çalışması yürüten yardımcı doçent için, sistematik derleme yazan doktora öğrencisi için, R&R hazırlayan doktora sonrası araştırmacı için, müfredat tasarlayan öğretim üyesi için, IRB sürecinde gezinen klinik araştırmacı için. Kod okuyabilen, ancak tek bir paragraf yazmak için bir hafta yeni bir araç zincirini öğrenmek istemeyen insanlar için.
+Anket çalışması yürüten yardımcı doçent için, sistematik derleme yazan doktora öğrencisi için, R&R hazırlayan doktora sonrası araştırmacı için, müfredat tasarlayan öğretim üyesi için, IRB sürecinde gezinen klinik araştırmacı için. Kodu okuyabilen, ne var ki tek bir paragraf yazmak uğruna bir haftalık araç öğrenimine vakit ayırmak istemeyen insanlar için.
 
-Bir Claude Code başvuru kılavuzu değil. Anthropic kendi belgelerini yayımlıyor. Bir yapay zekâ abartı belgesi değil. Yapay zekânın makalenizi sizin için yazacağı sözünü vermez. Aynı zamanda 2026 yılında yapay zekânın akademik üretimde hiçbir rol oynamadığını da varsaymaz. Konum, akademik yayıncılığın uzlaşı çerçevesi altında (COPE 2023, WAME 2023, ICMJE 2024, STM 2025) ve AB Yapay Zekâ Yasası 2024/1689 şeffaflık yükümlülükleri ile dürüst ortak yazarlıktır.
+Bir Claude Code başvuru kılavuzu değildir. Anthropic kendi belgelerini yayımlamaktadır. Bir yapay zekâ abartı belgesi de değildir. Yapay zekânın makalenizi sizin için yazacağına dair bir söz vermez. Öte yandan, 2026 yılında yapay zekânın akademik üretimde hiçbir rol oynamadığını da varsaymaz. Rehberin konumu, akademik yayıncılığın uzlaşı çerçevesi altında (COPE 2023, WAME 2023, ICMJE 2024, STM 2025) ve AB Yapay Zekâ Yasası 2024/1689 şeffaflık yükümlülükleri içinde, dürüst ortak yazarlıktır.
 
 ## Yazarlık ve yapay zekâ ortak yazarlığı
 
@@ -98,7 +98,7 @@ Her broşürün `KKK-AA-SSSS` biçiminde sabit bir kimliği vardır.
 
 ## Project Skills
 
-v2.2.0 yüzeyi [`.claude/skills/`](./.claude/skills/) altında on Claude Code project skill içerir. Broşürler teori, pedagoji ve akademik çerçeveyi taşır. Skills katmanı tekrar edilebilir iş akışlarını, denetim listelerini ve güvenli çalışma sınırlarını taşır.
+v2.2.0 yüzeyi [`.claude/skills/`](./.claude/skills/) altında on Claude Code project skill içerir. Broşürler teoriyi, pedagojiyi ve akademik çerçeveyi taşır. Skills katmanı ise tekrarlanabilir iş akışlarını, denetim listelerini ve güvenli çalışma sınırlarını taşır.
 
 | Skill | Tamamlayıcı broşürler | Amaç |
 |---|---|---|
