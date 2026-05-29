@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en" class="lang-en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude Code for Social Scientists</title>
+<meta name="description" content="A bilingual, open-source guide for social scientists using Anthropic's Claude Code in research, teaching, and academic writing. Sosyal bilimciler icin iki dilli acik kaynak Claude Code rehberi.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%234f46e5'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='16' fill='white' text-anchor='middle'%3Ecc%3C/text%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #fbfbf9;
+    --surface: #ffffff;
+    --surface-2: #f4f4f0;
+    --ink: #16161a;
+    --muted: #5d5d68;
+    --faint: #8a8a94;
+    --line: #e6e6df;
+    --accent: #4f46e5;
+    --accent-ink: #4338ca;
+    --accent-soft: #eef0fe;
+    --good: #15803d;
+    --term-bg: #0d1117;
+    --term-ink: #e6edf3;
+    --term-line: #21262d;
+    --term-prompt: #7ee787;
+    --term-cmd: #79c0ff;
+    --radius: 9px;
+    --maxw: 1080px;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Helvetica Neue", Arial, sans-serif;
+    --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  }
+  html.dark {
+    --bg: #0e0f13;
+    --surface: #15171c;
+    --surface-2: #1a1d24;
+    --ink: #e9e9e6;
+    --muted: #a2a2ad;
+    --faint: #71717f;
+    --line: #24262e;
+    --accent: #818cf8;
+    --accent-ink: #a5b4fc;
+    --accent-soft: #1c1f2e;
+    --good: #4ade80;
+    --term-bg: #06080c;
+    --term-line: #1b2029;
+  }
+  html.lang-en [lang="tr"] { display: none !important; }
+  html.lang-tr [lang="en"] { display: none !important; }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    font-size: 17px;
+  }
+  a { color: var(--accent-ink); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+  h1, h2, h3 { line-height: 1.18; letter-spacing: -0.02em; margin: 0; }
+  .mono { font-family: var(--mono); }
+
+  /* Header */
+  header.site {
+    position: sticky; top: 0; z-index: 50;
+    background: color-mix(in srgb, var(--bg) 86%, transparent);
+    backdrop-filter: saturate(140%) blur(10px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav { display: flex; align-items: center; gap: 20px; height: 60px; }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 650; letter-spacing: -0.02em; color: var(--ink); }
+  .brand .logo { width: 26px; height: 26px; border-radius: 7px; background: var(--accent); color: #fff; display: grid; place-items: center; font-family: var(--mono); font-size: 13px; font-weight: 700; }
+  .nav .links { display: flex; gap: 18px; margin-left: 14px; }
+  .nav .links a { color: var(--muted); font-size: 14.5px; font-weight: 500; }
+  .nav .links a:hover { color: var(--ink); text-decoration: none; }
+  .nav .spacer { flex: 1; }
+  .ctl { display: inline-flex; align-items: center; gap: 8px; }
+  .btn { display: inline-flex; align-items: center; gap: 8px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); padding: 8px 14px; font-size: 14px; font-weight: 560; cursor: pointer; font-family: var(--sans); }
+  .btn:hover { border-color: var(--accent); text-decoration: none; }
+  .btn.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .btn.primary:hover { background: var(--accent-ink); }
+  .btn.ghost { background: transparent; }
+  .icon-btn { width: 36px; height: 36px; padding: 0; justify-content: center; }
+  .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+  .seg button { border: 0; background: var(--surface); color: var(--muted); font-family: var(--mono); font-size: 12.5px; font-weight: 600; padding: 7px 10px; cursor: pointer; }
+  .seg button.on { background: var(--accent); color: #fff; }
+  @media (max-width: 760px) { .nav .links { display: none; } }
+
+  /* Hero */
+  .hero { padding: 78px 0 36px; position: relative; }
+  .hero::before { content: ""; position: absolute; inset: 0; background-image: radial-gradient(var(--line) 1px, transparent 1px); background-size: 26px 26px; opacity: .5; mask-image: linear-gradient(to bottom, #000, transparent 70%); -webkit-mask-image: linear-gradient(to bottom, #000, transparent 70%); pointer-events: none; }
+  .eyebrow { position: relative; display: inline-flex; align-items: center; gap: 8px; font-family: var(--mono); font-size: 12.5px; letter-spacing: .04em; color: var(--accent-ink); background: var(--accent-soft); border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent); padding: 5px 11px; border-radius: 999px; text-transform: uppercase; }
+  .hero h1 { position: relative; font-size: clamp(34px, 6vw, 60px); font-weight: 700; margin: 22px 0 0; max-width: 16ch; }
+  .hero .lead { position: relative; color: var(--muted); font-size: clamp(17px, 2.2vw, 20px); margin: 18px 0 0; max-width: 60ch; }
+  .hero-cta { position: relative; display: flex; flex-wrap: wrap; gap: 12px; margin: 30px 0 0; }
+  .hero-meta { position: relative; margin-top: 22px; color: var(--faint); font-size: 13.5px; display: flex; flex-wrap: wrap; gap: 8px 18px; }
+  .hero-meta b { color: var(--muted); font-weight: 600; }
+
+  /* Terminal */
+  .term { background: var(--term-bg); border: 1px solid var(--term-line); border-radius: var(--radius); overflow: hidden; box-shadow: 0 1px 0 rgba(0,0,0,.04); }
+  .term-bar { display: flex; align-items: center; gap: 7px; padding: 9px 13px; border-bottom: 1px solid var(--term-line); }
+  .term-bar .dot { width: 11px; height: 11px; border-radius: 50%; background: #30363d; }
+  .term-bar .dot:nth-child(1){ background:#ff5f56; } .term-bar .dot:nth-child(2){ background:#ffbd2e; } .term-bar .dot:nth-child(3){ background:#27c93f; }
+  .term-bar .t { margin-left: 8px; color: #8b949e; font-family: var(--mono); font-size: 12px; }
+  .term-bar .copy { margin-left: auto; background: transparent; border: 1px solid var(--term-line); color: #8b949e; font-family: var(--mono); font-size: 11.5px; padding: 3px 9px; border-radius: 6px; cursor: pointer; }
+  .term-bar .copy:hover { color: var(--term-ink); border-color: #3d444d; }
+  .term pre { margin: 0; padding: 15px 16px; overflow-x: auto; }
+  .term code { font-family: var(--mono); font-size: 13.5px; color: var(--term-ink); line-height: 1.85; white-space: pre; }
+  .term .p { color: var(--term-prompt); user-select: none; }
+  .term .c { color: var(--term-cmd); }
+  .term .o { color: #8b949e; }
+  .hero .term { position: relative; margin-top: 30px; max-width: 560px; }
+
+  /* Stats */
+  .stats { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--surface); }
+  .stats .grid { display: grid; grid-template-columns: repeat(6, 1fr); }
+  .stat { padding: 22px 16px; text-align: center; border-right: 1px solid var(--line); }
+  .stat:last-child { border-right: 0; }
+  .stat .n { font-size: 26px; font-weight: 700; letter-spacing: -0.03em; font-family: var(--mono); }
+  .stat .n.ok { color: var(--good); }
+  .stat .l { color: var(--muted); font-size: 12.5px; margin-top: 4px; }
+  @media (max-width: 860px) { .stats .grid { grid-template-columns: repeat(3, 1fr); } .stat:nth-child(3n){ border-right: 0; } .stat:nth-child(-n+3){ border-bottom: 1px solid var(--line); } }
+  @media (max-width: 460px) { .stats .grid { grid-template-columns: repeat(2, 1fr); } }
+
+  /* Section scaffold */
+  section.block { padding: 66px 0; border-bottom: 1px solid var(--line); }
+  .kicker { font-family: var(--mono); font-size: 12.5px; letter-spacing: .05em; text-transform: uppercase; color: var(--accent-ink); }
+  .block h2 { font-size: clamp(26px, 3.6vw, 36px); font-weight: 700; margin-top: 12px; max-width: 22ch; }
+  .block .sub { color: var(--muted); margin-top: 12px; max-width: 64ch; font-size: 17px; }
+
+  /* Pillars */
+  .pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: 38px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+  .pillar { background: var(--surface); padding: 26px 24px 30px; }
+  .pillar .num { font-family: var(--mono); font-size: 13px; color: var(--accent-ink); font-weight: 700; }
+  .pillar h3 { font-size: 19px; margin-top: 14px; }
+  .pillar p { color: var(--muted); font-size: 15px; margin: 10px 0 0; }
+  @media (max-width: 820px) { .pillars { grid-template-columns: 1fr; } }
+
+  /* Card grids */
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 36px; }
+  .cards.two { grid-template-columns: repeat(2, 1fr); }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 18px 20px; }
+  .card .tag { font-family: var(--mono); font-size: 11.5px; color: var(--faint); }
+  .card h3 { font-size: 16.5px; margin-top: 7px; }
+  .card p { color: var(--muted); font-size: 14px; margin: 8px 0 0; }
+  .card.is-link:hover { border-color: var(--accent); }
+  @media (max-width: 860px) { .cards, .cards.two { grid-template-columns: 1fr; } }
+
+  .skill-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px 22px; margin-top: 32px; }
+  .skill { display: flex; gap: 12px; align-items: baseline; padding: 11px 0; border-bottom: 1px solid var(--line); }
+  .skill code { font-family: var(--mono); font-size: 13px; color: var(--accent-ink); background: var(--accent-soft); padding: 2px 7px; border-radius: 5px; white-space: nowrap; }
+  .skill span { color: var(--muted); font-size: 14px; }
+  @media (max-width: 760px) { .skill-list { grid-template-columns: 1fr; } }
+
+  /* Tabs */
+  .tabs { margin-top: 34px; }
+  .tabbar { display: inline-flex; gap: 4px; padding: 4px; background: var(--surface-2); border: 1px solid var(--line); border-radius: 10px; }
+  .tabbar button { border: 0; background: transparent; color: var(--muted); font-family: var(--mono); font-size: 13px; font-weight: 600; padding: 7px 14px; border-radius: 7px; cursor: pointer; }
+  .tabbar button.on { background: var(--surface); color: var(--ink); box-shadow: 0 1px 2px rgba(0,0,0,.06); }
+  .tabpane { display: none; margin-top: 16px; max-width: 620px; }
+  .tabpane.on { display: block; }
+
+  /* Callout */
+  .callout { margin-top: 36px; background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: var(--radius); padding: 26px 26px; }
+  .callout h3 { font-size: 19px; }
+  .callout p { color: var(--muted); margin: 12px 0 0; font-size: 15.5px; }
+  .callout .row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+  .chip { font-family: var(--mono); font-size: 12px; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 5px 11px; }
+  .chip b { color: var(--ink); }
+
+  /* Footer */
+  footer.site { padding: 46px 0; color: var(--muted); font-size: 14px; }
+  footer .top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; }
+  footer .col h4 { font-size: 13px; text-transform: uppercase; letter-spacing: .04em; color: var(--faint); margin: 0 0 10px; font-weight: 650; }
+  footer .col a { display: block; color: var(--muted); padding: 3px 0; }
+  footer .col a:hover { color: var(--ink); }
+  footer .legal { margin-top: 34px; padding-top: 20px; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 13px; color: var(--faint); }
+  footer .legal .mono { color: var(--muted); }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="#top"><span class="logo">cc</span><span>Claude Code <span class="faint" style="color:var(--faint);font-weight:500">for Social Scientists</span></span></a>
+    <nav class="links">
+      <a href="#pillars"><span lang="en">Why</span><span lang="tr">Neden</span></a>
+      <a href="#catalog"><span lang="en">Catalog</span><span lang="tr">Katalog</span></a>
+      <a href="#skills"><span lang="en">Skills</span><span lang="tr">Skills</span></a>
+      <a href="#start"><span lang="en">Quick start</span><span lang="tr">Hizli baslangic</span></a>
+      <a href="#ethics"><span lang="en">Disclosure</span><span lang="tr">Ifsa</span></a>
+    </nav>
+    <span class="spacer"></span>
+    <div class="ctl">
+      <div class="seg" role="group" aria-label="Language">
+        <button id="lang-en" class="on" onclick="setLang('en')">EN</button>
+        <button id="lang-tr" onclick="setLang('tr')">TR</button>
+      </div>
+      <button class="btn icon-btn ghost" id="theme" onclick="toggleTheme()" aria-label="Toggle theme" title="Theme">◐</button>
+      <a class="btn" href="https://github.com/TheGoatPsy/claude-code-for-social-scientists" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow"><span lang="en">Open educational resource · Bilingual</span><span lang="tr">Acik egitim kaynagi · Iki dilli</span></span>
+      <h1>
+        <span lang="en">Claude Code, for the way social scientists actually work.</span>
+        <span lang="tr">Sosyal bilimcinin gercekte calistigi bicimde, Claude Code.</span>
+      </h1>
+      <p class="lead">
+        <span lang="en">A bilingual, open-source guide to using Anthropic's Claude Code in research, teaching, and academic writing. Written by a working clinical psychologist and PhD candidate, with verified citations, full Turkish and English parity, and auditable AI disclosure in every booklet.</span>
+        <span lang="tr">Arastirmada, ogretimde ve akademik yazimda Anthropic'in Claude Code aracini kullanmak icin iki dilli, acik kaynak bir rehber. Calisan bir klinik psikolog ve doktora adayi tarafindan yazildi. Her broşürde dogrulanmis atiflar, tam Turkce ve Ingilizce parite ve denetlenebilir yapay zeka ifsasi.</span>
+      </p>
+      <div class="hero-cta">
+        <a class="btn primary" href="CATALOG/"><span lang="en">Read the booklets</span><span lang="tr">Broşürleri oku</span></a>
+        <a class="btn" href="#start"><span lang="en">Install the skills</span><span lang="tr">Skills paketini kur</span></a>
+      </div>
+      <div class="term" aria-hidden="false">
+        <div class="term-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="t">terminal</span><button class="copy" data-copy="pip install social-cc-plugin">copy</button></div>
+        <pre><code><span class="p">$</span> <span class="c">pip install social-cc-plugin</span>
+<span class="o"># or as a Claude Code plugin, or clone the repo. See Quick start.</span></code></pre>
+      </div>
+      <div class="hero-meta">
+        <span lang="en"><b>13</b> released booklets</span><span lang="tr"><b>13</b> yayinlanmis broşür</span>
+        <span lang="en"><b>240</b> verified citations</span><span lang="tr"><b>240</b> dogrulanmis atif</span>
+        <span lang="en"><b>0</b> fabricated</span><span lang="tr"><b>0</b> uydurma</span>
+        <span lang="en"><b>TR + EN</b> full parity</span><span lang="tr"><b>TR + EN</b> tam parite</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats" aria-label="At a glance">
+    <div class="wrap" style="padding:0">
+      <div class="grid">
+        <div class="stat"><div class="n">13</div><div class="l"><span lang="en">Released booklets</span><span lang="tr">Yayinlanmis broşür</span></div></div>
+        <div class="stat"><div class="n">12</div><div class="l"><span lang="en">Thematic categories</span><span lang="tr">Tematik kategori</span></div></div>
+        <div class="stat"><div class="n">240</div><div class="l"><span lang="en">Verified citations</span><span lang="tr">Dogrulanmis atif</span></div></div>
+        <div class="stat"><div class="n ok">0</div><div class="l"><span lang="en">Fabricated citations</span><span lang="tr">Uydurma atif</span></div></div>
+        <div class="stat"><div class="n">10</div><div class="l"><span lang="en">Companion skills</span><span lang="tr">Companion skill</span></div></div>
+        <div class="stat"><div class="n">2</div><div class="l"><span lang="en">Languages, in parity</span><span lang="tr">Dil, paritede</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PILLARS -->
+  <section class="block" id="pillars">
+    <div class="wrap">
+      <span class="kicker"><span lang="en">Why this guide</span><span lang="tr">Neden bu rehber</span></span>
+      <h2><span lang="en">Honest about the value and the limits of agentic AI.</span><span lang="tr">Ajansal yapay zekanin hem degerine hem sinirina karsi durust.</span></h2>
+      <p class="sub"><span lang="en">Not a Claude Code reference manual, and not a promotion document. Three commitments separate it from comparable guides.</span><span lang="tr">Ne bir Claude Code referans kilavuzu, ne de bir tanitim belgesi. Uc taahhut onu benzer rehberlerden ayirir.</span></p>
+      <div class="pillars">
+        <div class="pillar">
+          <div class="num">01</div>
+          <h3><span lang="en">Full Turkish and English parity</span><span lang="tr">Tam Turkce ve Ingilizce parite</span></h3>
+          <p><span lang="en">The Turkish version is written first by a native speaker. The English version is re-authored from the same outline, not machine-translated. A continuous integration check refuses any commit that breaks the bilingual pair.</span><span lang="tr">Turkce surum once ana dili konusan biri tarafindan yazilir. Ingilizce surum ayni outline'dan yeniden-yazilir, makine cevirisi degildir. Bir surekli entegrasyon kontrolu, iki dilli cifti bozan her commit'i reddeder.</span></p>
+        </div>
+        <div class="pillar">
+          <div class="num">02</div>
+          <h3><span lang="en">Verified citations, zero fabricated</span><span lang="tr">Dogrulanmis atiflar, sifir uydurma</span></h3>
+          <p><span lang="en">Language models routinely fabricate references. Every DOI here is verified against Crossref and doi.org. The fabrication rate of the guide's own bibliography is a tracked, publicly reported metric. It is zero.</span><span lang="tr">Dil modelleri rutin olarak kaynak uydurur. Buradaki her DOI Crossref ve doi.org uzerinden dogrulanir. Rehberin kendi kaynakcasinin uydurma orani izlenen, herkese acik raporlanan bir olcuttur. Sifirdir.</span></p>
+        </div>
+        <div class="pillar">
+          <div class="num">03</div>
+          <h3><span lang="en">Auditable AI disclosure</span><span lang="tr">Denetlenebilir yapay zeka ifsasi</span></h3>
+          <p><span lang="en">Every booklet carries a machine-readable block declaring the AI contribution level, the model, the human review state, and the verified and fabricated citation counts. Disclosure is auditable at the field level, not merely claimed.</span><span lang="tr">Her broşür, yapay zeka katki duzeyini, modeli, insan-inceleme durumunu ve dogrulanmis ile uydurma atif sayilarini beyan eden makine-okunur bir blok tasir. Ifsa, yalnizca iddia edilmez, alan duzeyinde denetlenebilir.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATALOG / CATEGORIES -->
+  <section class="block" id="catalog">
+    <div class="wrap">
+      <span class="kicker"><span lang="en">What is inside</span><span lang="tr">Icinde ne var</span></span>
+      <h2><span lang="en">Twelve categories, from first principles to peer review.</span><span lang="tr">Ilk ilkelerden hakem degerlendirmesine, on iki kategori.</span></h2>
+      <p class="sub"><span lang="en">Thirteen booklets are released. Each is short, opinionated, and tested in the author's own academic practice. Identifiers of the form KKK-AA-SSSS are immutable after release.</span><span lang="tr">On uc broşür yayinda. Her biri kisa, fikirli ve yazarin kendi akademik pratiginde sinanmis. KKK-AA-SSSS bicimindeki kimlikler yayindan sonra degismez.</span></p>
+      <div class="cards">
+        <a class="card is-link" href="booklets/001-foundations/001-01-0001/en/"><div class="tag">001 · Foundations</div><h3><span lang="en">Foundations</span><span lang="tr">Temeller</span></h3><p><span lang="en">What an agentic tool is, how it differs from a chat window, and CLAUDE.md standing-instruction discipline.</span><span lang="tr">Ajansal aracin ne oldugu, sohbet penceresinden farki ve CLAUDE.md kalici talimat disiplini.</span></p></a>
+        <a class="card is-link" href="booklets/002-academic-access/002-04-0001/en/"><div class="tag">002 · Academic Access</div><h3><span lang="en">Academic access</span><span lang="tr">Akademik erisim</span></h3><p><span lang="en">DergiPark, ULAKBIM TR Dizin, HEAL-Link, and regional indexing realities most guides ignore.</span><span lang="tr">DergiPark, ULAKBIM TR Dizin, HEAL-Link ve cogu rehberin atladigi bolgesel indeksleme gercekleri.</span></p></a>
+        <a class="card is-link" href="booklets/003-memory-system/003-01-0001/en/"><div class="tag">003 · Memory</div><h3><span lang="en">Memory as Vault</span><span lang="tr">Kasa olarak hafiza</span></h3><p><span lang="en">An engineering pattern for keeping persistent academic context across years, not weeks.</span><span lang="tr">Akademik baglami haftalar degil yillar boyu kalici tutmak icin bir muhendislik kalibi.</span></p></a>
+        <a class="card is-link" href="booklets/004-vault-architecture/004-01-0001/en/"><div class="tag">004 · Vault Architecture</div><h3><span lang="en">Vault architecture</span><span lang="tr">Kasa mimarisi</span></h3><p><span lang="en">Folder discipline, Maps of Content, and Markdown conventions that outlive tools.</span><span lang="tr">Klasor disiplini, Maps of Content ve araclardan uzun yasayan Markdown alaskanliklari.</span></p></a>
+        <a class="card is-link" href="booklets/007-academic-writing/007-02-0001/en/"><div class="tag">007 · Academic Writing</div><h3><span lang="en">APA 7 with DOI discipline</span><span lang="tr">DOI disipliniyle APA 7</span></h3><p><span lang="en">A reusable bibliography hygiene pipeline that treats DOI verification as a first-class concern.</span><span lang="tr">DOI dogrulamasini birinci-sinif bir mesele sayan, yeniden kullanilabilir bir kaynakca hijyeni hatti.</span></p></a>
+        <a class="card is-link" href="booklets/008-data-analysis/008-01-0001/en/"><div class="tag">008 · Data Analysis</div><h3><span lang="en">Data analysis</span><span lang="tr">Veri analizi</span></h3><p><span lang="en">Reproducible quantitative workflows, and the discipline of statistical test selection with an analysis agent.</span><span lang="tr">Yeniden uretilebilir nicel is akislari ve bir analiz ajaniyla istatistiksel test secimi disiplini.</span></p></a>
+        <a class="card is-link" href="booklets/009-ethics-irb/009-01-0001/en/"><div class="tag">009 · Ethics and IRB</div><h3><span lang="en">Ethics and IRB</span><span lang="tr">Etik ve IRB</span></h3><p><span lang="en">Helsinki, COPE, WAME, ICMJE, STM 2025, the EU AI Act, ENAI, KVKK, and GDPR in one behavioral frame.</span><span lang="tr">Helsinki, COPE, WAME, ICMJE, STM 2025, AB AI Yasasi, ENAI, KVKK ve GDPR tek bir davranissal cercevede.</span></p></a>
+        <a class="card is-link" href="booklets/010-peer-review/010-01-0001/en/"><div class="tag">010 · Peer Review</div><h3><span lang="en">Peer review</span><span lang="tr">Hakem degerlendirmesi</span></h3><p><span lang="en">Rebuttal letters with traceability matrices and reviewer-response discipline.</span><span lang="tr">Izlenebilirlik matrisleri ve hakem-yaniti disipliniyle yanit mektuplari.</span></p></a>
+        <a class="card is-link" href="booklets/012-troubleshooting/012-01-0001/en/"><div class="tag">012 · Troubleshooting</div><h3><span lang="en">Troubleshooting</span><span lang="tr">Sorun giderme</span></h3><p><span lang="en">A structured diagnostic protocol for when tools, papers, or reviewers go wrong.</span><span lang="tr">Araclar, makaleler ya da hakemler ters gittiginde yapilandirilmis bir tani protokolu.</span></p></a>
+      </div>
+      <p class="sub" style="margin-top:22px"><a href="CATALOG/"><span lang="en">See the full catalog of all thirty-one planned booklets →</span><span lang="tr">Planlanan otuz bir broşürün tam katalogunu gor →</span></a></p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="block" id="skills">
+    <div class="wrap">
+      <span class="kicker"><span lang="en">Companion skills</span><span lang="tr">Companion skills</span></span>
+      <h2><span lang="en">Ten skills that turn the booklets into repeatable workflows.</span><span lang="tr">Broşürleri tekrar edilebilir is akislarina ceviren on skill.</span></h2>
+      <p class="sub"><span lang="en">Compact operating protocols installed through the pip package or the Claude Code plugin system. They carry audit checklists and safe operating boundaries, not just prose.</span><span lang="tr">Pip paketi ya da Claude Code eklenti sistemi ile kurulan kompakt calisma protokolleri. Yalnizca metin degil, denetim listeleri ve guvenli calisma sinirlari tasirlar.</span></p>
+      <div class="skill-list">
+        <div class="skill"><code>/social-science-literature-triage</code><span lang="en">Literature scoping and database routing</span><span lang="tr">Literatur kapsamlama ve veritabani yonlendirme</span></div>
+        <div class="skill"><code>/apa-doi-verifier</code><span lang="en">APA 7 cleanup and DOI verification</span><span lang="tr">APA 7 temizligi ve DOI dogrulama</span></div>
+        <div class="skill"><code>/bilingual-booklet-pairing</code><span lang="en">Turkish and English parity checks</span><span lang="tr">Turkce ve Ingilizce parite kontrolu</span></div>
+        <div class="skill"><code>/ai-disclosure-auditor</code><span lang="en">Contribution, model, and citation audit</span><span lang="tr">Katki, model ve atif denetimi</span></div>
+        <div class="skill"><code>/ethics-irb-ai-protocol</code><span lang="en">IRB, KVKK, GDPR, and EU AI Act review</span><span lang="tr">IRB, KVKK, GDPR ve AB AI Yasasi incelemesi</span></div>
+        <div class="skill"><code>/rebuttal-traceability-matrix</code><span lang="en">Reviewer comment traceability</span><span lang="tr">Hakem yorumu izlenebilirligi</span></div>
+        <div class="skill"><code>/memory-vault-architect</code><span lang="en">Research vault architecture and MOCs</span><span lang="tr">Arastirma kasasi mimarisi ve MOC'lar</span></div>
+        <div class="skill"><code>/regional-access-workflow</code><span lang="en">DergiPark, ULAKBIM, HEAL-Link routing</span><span lang="tr">DergiPark, ULAKBIM, HEAL-Link yonlendirme</span></div>
+        <div class="skill"><code>/agentic-session-debugger</code><span lang="en">Scope drift, loop trap, and context limits</span><span lang="tr">Kapsam kaymasi, dongu tuzagi ve baglam siniri</span></div>
+        <div class="skill"><code>/repo-release-integrity-check</code><span lang="en">Pre-release repository integrity audit</span><span lang="tr">Yayin oncesi repo butunluk denetimi</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK START -->
+  <section class="block" id="start">
+    <div class="wrap">
+      <span class="kicker"><span lang="en">Quick start</span><span lang="tr">Hizli baslangic</span></span>
+      <h2><span lang="en">Three ways to install the companion skills.</span><span lang="tr">Companion skill paketini kurmanin uc yolu.</span></h2>
+      <div class="tabs">
+        <div class="tabbar" role="tablist">
+          <button class="on" onclick="setTab(0)">pip</button>
+          <button onclick="setTab(1)">Claude Code plugin</button>
+          <button onclick="setTab(2)">git clone</button>
+        </div>
+        <div class="tabpane on" data-tab="0">
+          <div class="term"><div class="term-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="t">terminal</span><button class="copy" data-copy="pip install social-cc-plugin">copy</button></div>
+          <pre><code><span class="p">$</span> <span class="c">pip install social-cc-plugin</span>
+<span class="o"># installs the project skills into your Claude configuration</span></code></pre></div>
+        </div>
+        <div class="tabpane" data-tab="1">
+          <div class="term"><div class="term-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="t">claude code</span><button class="copy" data-copy="/plugin install social-cc-plugin">copy</button></div>
+          <pre><code><span class="p">$</span> <span class="c">/plugin install social-cc-plugin</span>
+<span class="o"># adds the ten skills as a native Claude Code plugin</span></code></pre></div>
+        </div>
+        <div class="tabpane" data-tab="2">
+          <div class="term"><div class="term-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="t">terminal</span><button class="copy" data-copy="git clone https://github.com/TheGoatPsy/claude-code-for-social-scientists.git">copy</button></div>
+          <pre><code><span class="p">$</span> <span class="c">git clone https://github.com/TheGoatPsy/\</span>
+<span class="c">  claude-code-for-social-scientists.git</span>
+<span class="o"># the booklets and skills live in the repository</span></code></pre></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ETHICS / DISCLOSURE CALLOUT -->
+  <section class="block" id="ethics" style="border-bottom:0">
+    <div class="wrap">
+      <span class="kicker"><span lang="en">Disclosure and evidence</span><span lang="tr">Ifsa ve kanit</span></span>
+      <h2><span lang="en">Rigorous enough to be a scholarly reference, not a promotional one.</span><span lang="tr">Tanitim degil, bilimsel bir referans olacak kadar titiz.</span></h2>
+      <div class="callout">
+        <h3><span lang="en">Built for the dominant use, answered to the named fear.</span><span lang="tr">Baskin kullanim icin kuruldu, adi konan korkuya cevap verdi.</span></h3>
+        <p><span lang="en">A large 2026 survey of quantitative social scientists found that the dominant use of coding agents is data analysis, and that researchers fear AI worsening selective reporting. The data analysis booklets answer that fear directly, with reproducibility, pre-specification, and verification discipline.</span><span lang="tr">2026 tarihli buyuk olcekli bir nicel sosyal bilimci taramasi, coding agent'larin baskin kullaniminin veri analizi oldugunu ve arastirmacilarin yapay zekanin secici raporlamayi kotulestirmesinden korktugunu buldu. Veri analizi broşürleri bu korkuya yeniden-uretilebilirlik, on-belirtim ve dogrulama disipliniyle dogrudan cevap verir.</span></p>
+        <div class="row">
+          <span class="chip"><b>COPE</b> 2023</span>
+          <span class="chip"><b>WAME</b> 2023</span>
+          <span class="chip"><b>ICMJE</b> 2024</span>
+          <span class="chip"><b>STM</b> 2025</span>
+          <span class="chip"><b>EU AI Act</b> Art. 50</span>
+          <span class="chip"><b>ENAI</b></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="top">
+      <div class="col" style="max-width:34ch">
+        <a class="brand" href="#top" style="margin-bottom:10px"><span class="logo">cc</span><span>Claude Code for Social Scientists</span></a>
+        <p style="color:var(--muted);font-size:14px;margin:0">
+          <span lang="en">Authored by Onour Impram, clinical psychologist and PhD candidate. Dual-licensed for permanent, non-commercial reuse.</span>
+          <span lang="tr">Onour Impram tarafindan yazildi, klinik psikolog ve doktora adayi. Kalici, ticari olmayan yeniden kullanim icin cift lisansli.</span>
+        </p>
+      </div>
+      <div class="col">
+        <h4><span lang="en">Guide</span><span lang="tr">Rehber</span></h4>
+        <a href="https://github.com/TheGoatPsy/claude-code-for-social-scientists#readme" target="_blank" rel="noopener"><span lang="en">Overview</span><span lang="tr">Genel bakis</span></a>
+        <a href="CATALOG/"><span lang="en">Catalog</span><span lang="tr">Katalog</span></a>
+        <a href="#skills"><span lang="en">Skills</span><span lang="tr">Skills</span></a>
+        <a href="CONTRIBUTING/"><span lang="en">Contributing</span><span lang="tr">Katki</span></a>
+      </div>
+      <div class="col">
+        <h4><span lang="en">Cite and archive</span><span lang="tr">Atif ve arsiv</span></h4>
+        <a href="https://doi.org/10.5281/zenodo.20289687" target="_blank" rel="noopener">Zenodo (concept DOI)</a>
+        <a href="https://orcid.org/0000-0003-1076-3928" target="_blank" rel="noopener">ORCID 0000-0003-1076-3928</a>
+        <a href="https://github.com/TheGoatPsy/claude-code-for-social-scientists" target="_blank" rel="noopener">GitHub repository</a>
+      </div>
+    </div>
+    <div class="legal">
+      <span class="mono">Code: Apache-2.0</span>
+      <span class="mono">Prose and booklets: CC-BY-NC-SA-4.0</span>
+      <span>© 2026 Onour Impram</span>
+      <span class="mono">DOI 10.5281/zenodo.20289687</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var pref = localStorage.getItem("ccss-lang");
+    if (!pref) pref = (navigator.language || "en").toLowerCase().indexOf("tr") === 0 ? "tr" : "en";
+    setLang(pref, true);
+    var theme = localStorage.getItem("ccss-theme");
+    if (!theme) theme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    applyTheme(theme);
+  })();
+  function setLang(l, silent) {
+    document.documentElement.classList.remove("lang-en", "lang-tr");
+    document.documentElement.classList.add("lang-" + l);
+    document.documentElement.setAttribute("lang", l);
+    var en = document.getElementById("lang-en"), tr = document.getElementById("lang-tr");
+    if (en && tr) { en.classList.toggle("on", l === "en"); tr.classList.toggle("on", l === "tr"); }
+    if (!silent) localStorage.setItem("ccss-lang", l);
+  }
+  function applyTheme(t) { document.documentElement.classList.toggle("dark", t === "dark"); }
+  function toggleTheme() {
+    var dark = !document.documentElement.classList.contains("dark");
+    applyTheme(dark ? "dark" : "light");
+    localStorage.setItem("ccss-theme", dark ? "dark" : "light");
+  }
+  function setTab(i) {
+    document.querySelectorAll(".tabbar button").forEach(function (b, n) { b.classList.toggle("on", n === i); });
+    document.querySelectorAll(".tabpane").forEach(function (p) { p.classList.toggle("on", p.getAttribute("data-tab") == i); });
+  }
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest("[data-copy]");
+    if (!b) return;
+    navigator.clipboard && navigator.clipboard.writeText(b.getAttribute("data-copy"));
+    var t = b.textContent; b.textContent = "copied"; setTimeout(function () { b.textContent = t; }, 1200);
+  });
+</script>
+</body>
+</html>

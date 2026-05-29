@@ -39,6 +39,9 @@ jobs:
       - name: Build site
         run: mkdocs build
 
+      - name: Inject bespoke landing page as site root
+        run: cp web/index.html _site/index.html
+
       - name: Upload Pages artifact
         if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3

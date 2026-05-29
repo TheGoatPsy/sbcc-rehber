@@ -15,6 +15,7 @@ site_dir: _site
 
 exclude_docs: |
   _site/
+  web/
   node_modules/
   .git/
   .github/
