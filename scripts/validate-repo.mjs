@@ -267,8 +267,8 @@ function validateAggregateDisclosure(aggregate) {
   }
 
   const checks = [
-    ["Total verified citation declarations across released language files", aggregate.verified],
-    ["Total fabricated citations across released language files", aggregate.fabricated],
+    ["Total verified citation declarations across all disclosed language files", aggregate.verified],
+    ["Total fabricated citations across all disclosed language files", aggregate.fabricated],
     ["3, co-drafting", aggregate.coDrafting],
     ["4, substantial-drafting", aggregate.substantialDrafting],
     ["complete", aggregate.complete],
