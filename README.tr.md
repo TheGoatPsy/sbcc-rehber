@@ -6,7 +6,7 @@
 
 Anthropic Claude Code'u araştırmada, eğitimde ve akademik yazımda kullanmak isteyen sosyal bilimciler için iki dilli, açık kaynak bir rehber. İngilizce konuşulan dünyanın dışında çalışan araştırmacılara, içeride çalışanlara da seslenmek üzere, bu araçları gerçek akademik üretim sürecinde kullanan bir klinik psikolog ve doktora adayı tarafından yazılıyor.
 
-> **Durum.** v2.0.0 release. On çekirdek broşür Türkçe ve İngilizce tamamlandı, insan incelemesinden geçti ve atıf denetimi yapıldı. Ayrıca broşürleri yeniden kullanılabilir iş akışlarına çeviren on companion Claude Code project skill eklendi. v2.0.0, denetim odaklı bir doğruluk ve CI sertleştirme turu, taslak durumunda ilk genişleme broşürü, bir companion web sitesi ve bir Journal of Open Source Education makalesi ekler. Skills, pip (`social-cc-plugin`) ya da Claude Code eklentisi olarak kurulur.
+> **Durum.** v2.0.0 release. On çekirdek broşür Türkçe ve İngilizce tamamlandı, insan incelemesinden geçti ve atıf denetimi yapıldı. Ayrıca broşürleri yeniden kullanılabilir iş akışlarına çeviren on companion Claude Code project skill eklendi. v2.0.0, denetim odaklı bir doğruluk ve CI sertleştirme turu, insan incelemesinden geçmiş ilk genişleme broşürü, bir companion web sitesi ve bir Journal of Open Source Education makalesi ekler. Skills, pip (`social-cc-plugin`) ya da Claude Code eklentisi olarak kurulur.
 
 > **EN readers.** The English version is in [`README.md`](./README.md). Every booklet has a `tr.md` and an `en.md` side by side. A CI check enforces this pairing on every commit.
 
@@ -141,7 +141,7 @@ Bu çalışma şu kanallarla kayıt altına alınmıştır.
 
 ## Yol haritası
 
-Halka açık faz planı için [`meta/roadmap.md`](./meta/roadmap.md) dosyasına bakınız. Mevcut sürüm v2.0.0. On çekirdek broşür ve on companion project skill üzerine denetim odaklı bir doğruluk ve CI sertleştirme turu, taslak durumunda ilk genişleme broşürü, bir companion web sitesi ve bir Journal of Open Source Education makalesi ekler. Tam otuz broşürlük katalog, canlı laboratuvar, konferans atıfları ve eğitim materyali kullanımını içeren sonraki büyük kilometre taşı v3.0 için hedeflenmektedir.
+Halka açık faz planı için [`meta/roadmap.md`](./meta/roadmap.md) dosyasına bakınız. Mevcut sürüm v2.0.0. On çekirdek broşür ve on companion project skill üzerine denetim odaklı bir doğruluk ve CI sertleştirme turu, insan incelemesinden geçmiş ilk genişleme broşürü, bir companion web sitesi ve bir Journal of Open Source Education makalesi ekler. Tam otuz broşürlük katalog, canlı laboratuvar, konferans atıfları ve eğitim materyali kullanımını içeren sonraki büyük kilometre taşı v3.0 için hedeflenmektedir.
 
 ## Katkıda bulunma
 
