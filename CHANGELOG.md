@@ -19,7 +19,7 @@ Minor release. A Turkish-language quality revision: the Turkish prose of all thi
 ### Zenodo
 
 - Concept DOI: [10.5281/zenodo.20289687](https://doi.org/10.5281/zenodo.20289687) (resolves to the latest released version).
-- Version DOI for v2.3.0: minted on GitHub release, recorded post-publication.
+- Version DOI for v2.3.0: [10.5281/zenodo.20449820](https://doi.org/10.5281/zenodo.20449820).
 
 ## [2.2.0] - 2026-05-29
 
