@@ -4,7 +4,7 @@ This file provides an aggregate, machine-friendly view of AI contribution levels
 
 This page is updated by the maintainer at each release. Readers who want the latest disclosure for a specific booklet should always check the booklet's own frontmatter, not this aggregate.
 
-## Aggregate table (as of v2.1.0, 2026-05-29)
+## Aggregate table (as of v2.2.0, 2026-05-29)
 
 | Booklet ID | Language | Contribution level | Human review | Verified citations | Fabricated citations | Last reviewed |
 |---|---|---|---|---|---|---|
@@ -32,21 +32,21 @@ This page is updated by the maintainer at each release. Readers who want the lat
 | 001-01-0004 | en | full-draft | complete | 8 | 0 | 2026-05-29 |
 | 008-01-0001 | tr | substantial-drafting | complete | 9 | 0 | 2026-05-29 |
 | 008-01-0001 | en | substantial-drafting | complete | 9 | 0 | 2026-05-29 |
-| 008-02-0001 | tr | substantial-drafting | pending | 9 | 0 | n/a |
-| 008-02-0001 | en | substantial-drafting | pending | 9 | 0 | n/a |
+| 008-02-0001 | tr | substantial-drafting | complete | 9 | 0 | 2026-05-29 |
+| 008-02-0001 | en | substantial-drafting | complete | 9 | 0 | 2026-05-29 |
 
-Booklet 001-01-0004 was added in the v2.0.0 cycle as a full AI draft and then human-reviewed by the author, so its human review state is `complete` and it ships at `release` status in v2.0.0. Booklet 008-01-0001 was drafted bilingually in the v2.1.0 cycle at `substantial-drafting` level, human-reviewed by the author, and promoted to `release` status, so its review state is `complete`. Booklet 008-02-0001 was drafted bilingually after the v2.1.0 release at `substantial-drafting` level and remains at `paired` status with human review `pending`, awaiting the author's review before any promotion to release. Eighteen booklets in [`CATALOG.md`](../CATALOG.md) remain at `planned` status and have no AI disclosure yet because no booklet-level AI-assisted drafting work has been committed for them.
+Booklet 001-01-0004 was added in the v2.0.0 cycle as a full AI draft and then human-reviewed by the author, so its human review state is `complete` and it ships at `release` status in v2.0.0. Booklet 008-01-0001 was drafted bilingually in the v2.1.0 cycle at `substantial-drafting` level, human-reviewed by the author, and promoted to `release` status, so its review state is `complete`. Booklet 008-02-0001 was drafted bilingually after the v2.1.0 release at `substantial-drafting` level, human-reviewed by the author, and promoted to `release` status in v2.2.0, so its review state is `complete`. Eighteen booklets in [`CATALOG.md`](../CATALOG.md) remain at `planned` status and have no AI disclosure yet because no booklet-level AI-assisted drafting work has been committed for them.
 
 ## Citation discipline summary
 
 | Metric | Value |
 |---|---|
-| Booklets at `release` status | 12 |
-| Booklets at `paired` status | 1 |
+| Booklets at `release` status | 13 |
+| Booklets at `paired` status | 0 |
 | Booklets at `draft` status | 0 |
 | Booklets at `planned` status | 18 |
 | Total verified citation declarations across all disclosed language files | 240 |
-| Unique bilingual citation sets across released booklets | 111 |
+| Unique bilingual citation sets across released booklets | 120 |
 | Total fabricated citations across all disclosed language files | 0 |
 | Fabrication rate, fabricated divided by verified plus fabricated | 0% |
 
@@ -64,9 +64,9 @@ Booklet 001-01-0004 was added in the v2.0.0 cycle as a full AI draft and then hu
 
 | State | Count |
 |---|---|
-| complete | 24 |
+| complete | 26 |
 | partial | 0 |
-| pending | 2 |
+| pending | 0 |
 
 The CI workflow refuses release booklet frontmatter that declares pending human review, fabricated citations, missing citation counts, stale placeholder DOI examples, broken bilingual pairs, or inconsistent catalog counts. See [`.github/workflows/ci.yml`](../.github/workflows/ci.yml) and [`scripts/validate-repo.mjs`](../scripts/validate-repo.mjs).
 
@@ -81,7 +81,7 @@ The CI workflow refuses release booklet frontmatter that declares pending human 
 | 2026-05-24 | v1.1.1 release | Metadata hygiene patch. Booklet disclosure content unchanged; the aggregate is re-affirmed for the v1.1.1 tag. |
 | 2026-05-29 | v2.0.0 release | Booklet 001-01-0004 (CLAUDE.md and standing-instruction discipline) added at full-draft level, human-reviewed by the author, and promoted to `release` status. The aggregate now covers disclosed booklets at all statuses, and the verified and fabricated citation labels were generalized from released to all disclosed language files. |
 | 2026-05-29 | v2.1.0 release | Booklet 008-01-0001 (Reproducible Quantitative Workflows) drafted bilingually at `substantial-drafting` level, human-reviewed by the author, and promoted to `release` status. Nine verified citations per language file, motivated by the Anthropic 2026 coding-agents survey. Aggregate verified declarations rise from 204 to 222, and the released catalog grows from eleven to twelve booklets. |
-| 2026-05-29 | 008-02-0001 paired, pre-release | Booklet 008-02-0001 (Statistical Test Selection with AI Consultation Discipline) drafted bilingually at `substantial-drafting` level, nine verified citations per language file, zero fabricated. Status `paired`, human review `pending`. Not part of any release yet. Aggregate verified declarations rise from 222 to 240. The booklet awaits the author's human review before any promotion to release. |
+| 2026-05-29 | v2.2.0 release | Booklet 008-02-0001 (Statistical Test Selection with AI Consultation Discipline) drafted bilingually at `substantial-drafting` level, human-reviewed by the author, and promoted to `release` status. Nine verified citations per language file, zero fabricated. The released catalog grows from twelve to thirteen booklets, the second Data Analysis booklet, motivated by the Anthropic 2026 survey's named fear of selective reporting. Aggregate verified declarations rose from 222 to 240. |
 
 ---
 

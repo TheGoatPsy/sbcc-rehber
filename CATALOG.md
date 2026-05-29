@@ -1,6 +1,6 @@
 # Catalog
 
-This catalog lists every booklet in `claude-code-for-social-scientists`, grouped by category, with a stable identifier of the form `KKK-AA-SSSS` (category, subcategory, serial), a short description in English and Turkish, and a status. The full long-term catalog targets thirty-one booklets across twelve categories. The v1.0 target is the **ten core booklets** marked with `[v1.0]` in the tables below. Booklet 001-01-0004 ships at `release` status in v2.0.0, and booklet 008-01-0001 (Reproducible Quantitative Workflows) at `release` status in v2.1.0 after human review, motivated by the empirical finding that quantitative data analysis is the dominant social-science use of coding agents, bringing the released total to twelve. The remaining booklets are scheduled for later releases, with 008-02-0001 already drafted bilingually at `paired` status and awaiting human review. See [`meta/roadmap.md`](./meta/roadmap.md) for the phase plan and release timing.
+This catalog lists every booklet in `claude-code-for-social-scientists`, grouped by category, with a stable identifier of the form `KKK-AA-SSSS` (category, subcategory, serial), a short description in English and Turkish, and a status. The full long-term catalog targets thirty-one booklets across twelve categories. The v1.0 target is the **ten core booklets** marked with `[v1.0]` in the tables below. Booklet 001-01-0004 ships at `release` status in v2.0.0, booklet 008-01-0001 (Reproducible Quantitative Workflows) at `release` status in v2.1.0, and booklet 008-02-0001 (Statistical Test Selection with AI Consultation Discipline) at `release` status in v2.2.0, all after human review and all motivated by the empirical finding that quantitative data analysis is the dominant social-science use of coding agents, bringing the released total to thirteen. The remaining eighteen booklets are scheduled for later releases. See [`meta/roadmap.md`](./meta/roadmap.md) for the phase plan and release timing.
 
 ## Status legend
 
@@ -11,7 +11,7 @@ This catalog lists every booklet in `claude-code-for-social-scientists`, grouped
 | `paired` | Both `tr.md` and `en.md` drafted, not yet included in a public release |
 | `release` | Human-reviewed, version-tagged, included in a public release |
 
-The repository now contains twelve booklets at `release` status. Both Turkish and English files are complete, human-reviewed, and citation-audited. Ten are the v1.0.0 core booklets, the eleventh, 001-01-0004, was added and human-reviewed for the v2.0.0 release, and the twelfth, 008-01-0001, was added and human-reviewed for the v2.1.0 release. Eighteen booklets remain at `planned` status as of 2026-05-29, and one, 008-02-0001 (Statistical Test Selection with AI Consultation Discipline), is at `paired` status, drafted bilingually and awaiting human review before release. The v1.1.x releases add ten companion Claude Code project skills that turn the booklets into repeatable workflows, installable through the `social-cc-plugin` pip package or the Claude Code plugin system.
+The repository now contains thirteen booklets at `release` status. Both Turkish and English files are complete, human-reviewed, and citation-audited. Ten are the v1.0.0 core booklets, the eleventh, 001-01-0004, was added and human-reviewed for the v2.0.0 release, the twelfth, 008-01-0001, for the v2.1.0 release, and the thirteenth, 008-02-0001, for the v2.2.0 release. Eighteen booklets remain at `planned` status as of 2026-05-29. The v1.1.x releases add ten companion Claude Code project skills that turn the booklets into repeatable workflows, installable through the `social-cc-plugin` pip package or the Claude Code plugin system.
 
 ---
 
@@ -92,7 +92,7 @@ Reproducible workflows, statistical test selection, qualitative coding, mixed-me
 | Identifier | Title (EN) | Title (TR) | Status |
 |---|---|---|---|
 | 008-01-0001 | Reproducible Quantitative Workflows | Yeniden Üretilebilir Nicel İş Akışları | `release` |
-| 008-02-0001 | Statistical Test Selection with AI Consultation Discipline | Yapay Zekâ Danışma Disipliniyle İstatistiksel Test Seçimi | `paired` |
+| 008-02-0001 | Statistical Test Selection with AI Consultation Discipline | Yapay Zekâ Danışma Disipliniyle İstatistiksel Test Seçimi | `release` |
 | 008-03-0001 | Qualitative Coding with AI Assistance and Human Oversight | Yapay Zekâ Yardımı ve İnsan Gözetimiyle Nitel Kodlama | `planned` |
 
 ## 009 — Ethics and IRB / Etik ve IRB
@@ -136,8 +136,8 @@ When tools fail, when papers disagree, when reviewers ask the wrong question.
 
 | Status | Count |
 |---|---|
-| `release` | 12 |
-| `paired` | 1 |
+| `release` | 13 |
+| `paired` | 0 |
 | `draft` | 0 |
 | `planned` | 18 |
 | **Total catalog** | **31** |
@@ -172,4 +172,4 @@ See [`CONTRIBUTING.md`](./CONTRIBUTING.md). The short version. Open an issue wit
 
 ---
 
-**Last updated:** 2026-05-29 (booklet 008-02-0001, Statistical Test Selection with AI Consultation Discipline, drafted bilingually at `paired` status, awaiting human review before release; continues the data-analysis category prioritized after the Anthropic 2026 coding-agents survey. Earlier the same day: v2.1.0 release with booklet 008-01-0001 at `release` status after human review, and v2.0.0 release with audit and CI hardening, booklet 001-01-0004 promoted to release, companion website, and JOSE paper)
+**Last updated:** 2026-05-29 (v2.2.0 release: booklet 008-02-0001, Statistical Test Selection with AI Consultation Discipline, promoted to `release` status after human review, the second Data Analysis booklet, continuing the category prioritized after the Anthropic 2026 coding-agents survey. Earlier the same day: v2.1.0 release with booklet 008-01-0001, and v2.0.0 release with audit and CI hardening, booklet 001-01-0004 promoted to release, companion website, and JOSE paper)

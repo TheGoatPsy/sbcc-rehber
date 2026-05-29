@@ -6,6 +6,23 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 Citations of this work should use the Zenodo concept DOI [10.5281/zenodo.20289687](https://doi.org/10.5281/zenodo.20289687), which always resolves to the latest version. Version-specific DOIs are listed below.
 
+## [2.2.0] - 2026-05-29
+
+Minor release. A second Data Analysis booklet, added after human review, on the discipline of statistical test selection when an analysis agent can run any test instantly.
+
+### Added
+
+- Booklet 008-02-0001, "Statistical Test Selection with AI Consultation Discipline," a bilingual Data Analysis booklet at `release` status, human-reviewed by the author. Nine independently verified citations, zero fabricated, full Turkish and English parity. It treats test selection as an inferential commitment that demands consultation discipline. Pre-specify the primary test, report the full specification space through multiverse analysis, verify a test's assumptions against the raw output rather than the agent's narration, and keep the test decision with the human. Three newly verified citations enter the bibliography: Wicherts et al. (2016) on the degrees-of-freedom checklist, Steegen et al. (2016) on multiverse analysis, and Silberzahn et al. (2018) on the many-analysts study. The released catalog grows from twelve to thirteen booklets, the second of the data analysis category.
+
+### Changed
+
+- The catalog, the AI disclosure aggregate, and the roadmap were updated for the new release. Aggregate verified citation declarations across disclosed language files rise from 222 to 240, and human-reviewed language files from 24 to 26.
+
+### Zenodo
+
+- Concept DOI: [10.5281/zenodo.20289687](https://doi.org/10.5281/zenodo.20289687) (resolves to the latest released version).
+- Version DOI for v2.2.0: minted by Zenodo after this release is published and recorded here afterward.
+
 ## [2.1.0] - 2026-05-29
 
 Minor release. The first Data Analysis booklet, added after human review, motivated by survey evidence on how social scientists actually use coding agents.

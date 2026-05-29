@@ -4,7 +4,7 @@ The public phase plan for `claude-code-for-social-scientists`. Dates are targets
 
 ## Current baseline
 
-The current public release is `v2.1.0`, released on 2026-05-29. It builds on the ten v1.0 core booklets in Turkish and English, all at `release` status, all human-reviewed, and all carrying complete AI-disclosure frontmatter, plus ten companion Claude Code project skills and a distribution surface (the `social-cc-plugin` pip package and a native Claude Code plugin manifest). v2.0.0 adds an audit-driven correctness and CI hardening pass, version-independent release tooling, a first expansion booklet promoted to `release` status after human review (001-01-0004), a companion MkDocs website, and a Journal of Open Source Education paper. The v2.1.0 release then added booklet 008-01-0001 (Reproducible Quantitative Workflows) at `release` status after human review, opening the data analysis category prioritized by the Anthropic 2026 coding-agents survey. The repository is a booklet plus project-skill methodology package.
+The current public release is `v2.2.0`, released on 2026-05-29. It builds on the ten v1.0 core booklets in Turkish and English, all at `release` status, all human-reviewed, and all carrying complete AI-disclosure frontmatter, plus ten companion Claude Code project skills and a distribution surface (the `social-cc-plugin` pip package and a native Claude Code plugin manifest). v2.0.0 adds an audit-driven correctness and CI hardening pass, version-independent release tooling, a first expansion booklet promoted to `release` status after human review (001-01-0004), a companion MkDocs website, and a Journal of Open Source Education paper. The v2.1.0 release then added booklet 008-01-0001 (Reproducible Quantitative Workflows) and v2.2.0 added booklet 008-02-0001 (Statistical Test Selection with AI Consultation Discipline), both at `release` status after human review, building out the data analysis category prioritized by the Anthropic 2026 coding-agents survey. The repository is a booklet plus project-skill methodology package.
 
 ## v0.1.0-alpha, scaffold
 
@@ -90,7 +90,7 @@ The current public release is `v2.1.0`, released on 2026-05-29. It builds on the
 **Scope.**
 
 - GitHub Discussions enabled with moderation guidelines.
-- Approximately ten additional booklets drafted, drawn from categories 008, 002, 005, and 006. The data analysis category (008) is prioritized following the Anthropic 2026 coding-agents survey, which finds that quantitative data analysis is the dominant social-science use of coding agents. Booklet 008-01-0001 (Reproducible Quantitative Workflows) shipped at `release` status in v2.1.0, and booklet 008-02-0001 (Statistical Test Selection with AI Consultation Discipline) is drafted bilingually at `paired` status, awaiting human review before release.
+- Approximately ten additional booklets drafted, drawn from categories 008, 002, 005, and 006. The data analysis category (008) is prioritized following the Anthropic 2026 coding-agents survey, which finds that quantitative data analysis is the dominant social-science use of coding agents. Booklets 008-01-0001 (Reproducible Quantitative Workflows) and 008-02-0001 (Statistical Test Selection with AI Consultation Discipline) shipped at `release` status in v2.1.0 and v2.2.0 respectively, the first two of the data analysis category.
 - First external contributors merged.
 - Turkish and English translation review iterations integrated.
 
