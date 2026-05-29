@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="./assets/banner.svg" alt="Claude Code for Social Scientists — Sosyal Bilimciler İçin Claude Code Rehberi banner. Yazar Onour Impram, ORCID 0000-0003-1076-3928, Zenodo concept DOI 10.5281/zenodo.20289687, çift lisans Apache 2.0 ve CC-BY-NC-SA 4.0, v2.2.0.">
+  <img src="./assets/banner.svg" alt="Claude Code for Social Scientists — Sosyal Bilimciler İçin Claude Code Rehberi banner. Yazar Onour Impram, ORCID 0000-0003-1076-3928, Zenodo concept DOI 10.5281/zenodo.20289687, çift lisans Apache 2.0 ve CC-BY-NC-SA 4.0, v2.3.0.">
 </p>
 
 # Sosyal Bilimciler İçin Claude Code Rehberi
 
 Anthropic Claude Code'u araştırmada, eğitimde ve akademik yazımda kullanmak isteyen sosyal bilimciler için iki dilli, açık kaynak bir rehber. İngilizce konuşulan dünyanın dışında çalışan araştırmacılara, içeride çalışanlara da seslenmek üzere, bu araçları gerçek akademik üretim sürecinde kullanan bir klinik psikolog ve doktora adayı tarafından yazılıyor.
 
-> **Durum.** v2.2.0 release. On üç yayınlanmış broşür Türkçe ve İngilizce tamamlandı, insan incelemesinden geçti ve atıf denetimi yapıldı. Ayrıca broşürleri yeniden kullanılabilir iş akışlarına çeviren on companion Claude Code project skill bulunur. v2.2.0, ikinci Veri Analizi broşürünü (Yapay Zekâ Danışma Disipliniyle İstatistiksel Test Seçimi) ekler. Bir ajanın her testi anında çalıştırabildiği ortamda test seçimi disiplinini ele alan bu broşür, anketin adını koyduğu seçici raporlama kaygısına doğrudan yanıt verir. Skills, pip (`social-cc-plugin`) ya da Claude Code eklentisi olarak kurulur.
+> **Durum.** v2.3.0 release. On üç yayınlanmış broşür Türkçe ve İngilizce tamamlandı, insan incelemesinden geçti ve atıf denetimi yapıldı. Ayrıca broşürleri yeniden kullanılabilir iş akışlarına çeviren on companion Claude Code project skill bulunur. v2.3.0, on üç broşürün tamamının ve Türkçe README ile CONTRIBUTING dosyalarının Türkçesini yazarın kendi sesiyle yeniden yazar. Değişiklik yalnızca metin düzeyinde, tam iki dilli parite korundu, her atıf yerinde. Skills, pip (`social-cc-plugin`) ya da Claude Code eklentisi olarak kurulur.
 
 > **EN readers.** The English version is in [`README.md`](./README.md). Every booklet has a `tr.md` and an `en.md` side by side. A CI check enforces this pairing on every commit.
 
@@ -98,7 +98,7 @@ Her broşürün `KKK-AA-SSSS` biçiminde sabit bir kimliği vardır.
 
 ## Project Skills
 
-v2.2.0 yüzeyi [`.claude/skills/`](./.claude/skills/) altında on Claude Code project skill içerir. Broşürler teoriyi, pedagojiyi ve akademik çerçeveyi taşır. Skills katmanı ise tekrarlanabilir iş akışlarını, denetim listelerini ve güvenli çalışma sınırlarını taşır.
+v2.3.0 yüzeyi [`.claude/skills/`](./.claude/skills/) altında on Claude Code project skill içerir. Broşürler teoriyi, pedagojiyi ve akademik çerçeveyi taşır. Skills katmanı ise tekrarlanabilir iş akışlarını, denetim listelerini ve güvenli çalışma sınırlarını taşır.
 
 | Skill | Tamamlayıcı broşürler | Amaç |
 |---|---|---|
@@ -141,7 +141,7 @@ Bu çalışma şu kanallarla kayıt altına alınmıştır.
 
 ## Yol haritası
 
-Halka açık faz planı için [`meta/roadmap.md`](./meta/roadmap.md) dosyasına bakınız. Mevcut sürüm v2.2.0. v2.1.0'a kadar yayınlanan on iki broşür ve on companion project skill üzerine ikinci Veri Analizi broşürünü (Yapay Zekâ Danışma Disipliniyle İstatistiksel Test Seçimi) ekler. Tam otuz broşürlük katalog, canlı laboratuvar, konferans atıfları ve eğitim materyali kullanımını içeren sonraki büyük kilometre taşı v3.0 için hedeflenmektedir.
+Halka açık faz planı için [`meta/roadmap.md`](./meta/roadmap.md) dosyasına bakınız. Mevcut sürüm v2.3.0. On üç broşürün tamamının ve Türkçe README ile CONTRIBUTING dosyalarının Türkçesi, yazarın kendi sesiyle yeniden yazıldı. Değişiklik yalnızca metin düzeyinde, tam iki dilli parite korundu, her atıf yerinde. Yeni broşür eklenmedi. Tam otuz broşürlük katalog, canlı laboratuvar, konferans atıfları ve eğitim materyali kullanımını içeren sonraki büyük kilometre taşı v3.0 için hedeflenmektedir.
 
 ## Katkıda bulunma
 

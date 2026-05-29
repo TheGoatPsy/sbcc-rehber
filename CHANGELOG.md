@@ -6,6 +6,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 Citations of this work should use the Zenodo concept DOI [10.5281/zenodo.20289687](https://doi.org/10.5281/zenodo.20289687), which always resolves to the latest version. Version-specific DOIs are listed below.
 
+## [2.3.0] - 2026-05-29
+
+Minor release. A Turkish-language quality revision: the Turkish prose of all thirteen booklets, plus README.tr and CONTRIBUTING.tr, was rewritten in the author's native academic voice, replacing translation-shaped Turkish with natural native Turkish.
+
+### Changed
+
+- The Turkish prose of all thirteen released booklets and both Turkish-language README and CONTRIBUTING files was rewritten in the author's native voice. The change is prose only. Frontmatter, every section heading, every DOI, all inline citations, code blocks, and footer links are unchanged. Bilingual parity is preserved: each booklet keeps an equal section count and an identical DOI set across Turkish and English. No booklet was added or removed, and no citation count changed (240 verified declarations, zero fabricated, twenty-six human-reviewed language files, all unchanged).
+- Small meaning-fidelity fixes were made against the English ground truth: a section-4 sentence inversion in booklet 001-01-0001, a pattern-versus-decision terminology drift in 003-01-0001, and a dropped predicate in README.tr.
+- The companion website Turkish was corrected as well: ASCII-downgraded diacritics were restored and the copy was rewritten in the author's voice.
+
+### Zenodo
+
+- Concept DOI: [10.5281/zenodo.20289687](https://doi.org/10.5281/zenodo.20289687) (resolves to the latest released version).
+- Version DOI for v2.3.0: minted on GitHub release, recorded post-publication.
+
 ## [2.2.0] - 2026-05-29
 
 Minor release. A second Data Analysis booklet, added after human review, on the discipline of statistical test selection when an analysis agent can run any test instantly.
