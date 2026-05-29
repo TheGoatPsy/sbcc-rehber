@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="./assets/banner.svg" alt="Claude Code for Social Scientists — Sosyal Bilimciler İçin Claude Code Rehberi banner. Yazar Onour Impram, ORCID 0000-0003-1076-3928, Zenodo concept DOI 10.5281/zenodo.20289687, çift lisans Apache 2.0 ve CC-BY-NC-SA 4.0, v2.0.0.">
+  <img src="./assets/banner.svg" alt="Claude Code for Social Scientists — Sosyal Bilimciler İçin Claude Code Rehberi banner. Yazar Onour Impram, ORCID 0000-0003-1076-3928, Zenodo concept DOI 10.5281/zenodo.20289687, çift lisans Apache 2.0 ve CC-BY-NC-SA 4.0, v2.1.0.">
 </p>
 
 # Sosyal Bilimciler İçin Claude Code Rehberi
 
 Anthropic Claude Code'u araştırmada, eğitimde ve akademik yazımda kullanmak isteyen sosyal bilimciler için iki dilli, açık kaynak bir rehber. İngilizce konuşulan dünyanın dışında çalışan araştırmacılara, içeride çalışanlara da seslenmek üzere, bu araçları gerçek akademik üretim sürecinde kullanan bir klinik psikolog ve doktora adayı tarafından yazılıyor.
 
-> **Durum.** v2.0.0 release. On çekirdek broşür Türkçe ve İngilizce tamamlandı, insan incelemesinden geçti ve atıf denetimi yapıldı. Ayrıca broşürleri yeniden kullanılabilir iş akışlarına çeviren on companion Claude Code project skill eklendi. v2.0.0, denetim odaklı bir doğruluk ve CI sertleştirme turu, insan incelemesinden geçmiş ilk genişleme broşürü, bir companion web sitesi ve bir Journal of Open Source Education makalesi ekler. Skills, pip (`social-cc-plugin`) ya da Claude Code eklentisi olarak kurulur.
+> **Durum.** v2.1.0 release. On iki yayınlanmış broşür Türkçe ve İngilizce tamamlandı, insan incelemesinden geçti ve atıf denetimi yapıldı. Ayrıca broşürleri yeniden kullanılabilir iş akışlarına çeviren on companion Claude Code project skill bulunur. v2.1.0, ilk Veri Analizi broşürünü (Yeniden Üretilebilir Nicel İş Akışları) ekler. Gerekçe, nicel veri analizinin coding agent kullanımının baskın sosyal bilim kullanımı olduğunu gösteren anket kanıtıdır. Skills, pip (`social-cc-plugin`) ya da Claude Code eklentisi olarak kurulur.
 
 > **EN readers.** The English version is in [`README.md`](./README.md). Every booklet has a `tr.md` and an `en.md` side by side. A CI check enforces this pairing on every commit.
 
@@ -98,7 +98,7 @@ Her broşürün `KKK-AA-SSSS` biçiminde sabit bir kimliği vardır.
 
 ## Project Skills
 
-v2.0.0 yüzeyi [`.claude/skills/`](./.claude/skills/) altında on Claude Code project skill içerir. Broşürler teori, pedagoji ve akademik çerçeveyi taşır. Skills katmanı tekrar edilebilir iş akışlarını, denetim listelerini ve güvenli çalışma sınırlarını taşır.
+v2.1.0 yüzeyi [`.claude/skills/`](./.claude/skills/) altında on Claude Code project skill içerir. Broşürler teori, pedagoji ve akademik çerçeveyi taşır. Skills katmanı tekrar edilebilir iş akışlarını, denetim listelerini ve güvenli çalışma sınırlarını taşır.
 
 | Skill | Tamamlayıcı broşürler | Amaç |
 |---|---|---|
@@ -141,7 +141,7 @@ Bu çalışma şu kanallarla kayıt altına alınmıştır.
 
 ## Yol haritası
 
-Halka açık faz planı için [`meta/roadmap.md`](./meta/roadmap.md) dosyasına bakınız. Mevcut sürüm v2.0.0. On çekirdek broşür ve on companion project skill üzerine denetim odaklı bir doğruluk ve CI sertleştirme turu, insan incelemesinden geçmiş ilk genişleme broşürü, bir companion web sitesi ve bir Journal of Open Source Education makalesi ekler. Tam otuz broşürlük katalog, canlı laboratuvar, konferans atıfları ve eğitim materyali kullanımını içeren sonraki büyük kilometre taşı v3.0 için hedeflenmektedir.
+Halka açık faz planı için [`meta/roadmap.md`](./meta/roadmap.md) dosyasına bakınız. Mevcut sürüm v2.1.0. v2.0.0'a kadar yayınlanan on bir broşür ve on companion project skill üzerine ilk Veri Analizi broşürünü (Yeniden Üretilebilir Nicel İş Akışları) ekler. Tam otuz broşürlük katalog, canlı laboratuvar, konferans atıfları ve eğitim materyali kullanımını içeren sonraki büyük kilometre taşı v3.0 için hedeflenmektedir.
 
 ## Katkıda bulunma
 

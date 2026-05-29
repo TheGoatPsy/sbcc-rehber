@@ -6,6 +6,25 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 Citations of this work should use the Zenodo concept DOI [10.5281/zenodo.20289687](https://doi.org/10.5281/zenodo.20289687), which always resolves to the latest version. Version-specific DOIs are listed below.
 
+## [2.1.0] - 2026-05-29
+
+Minor release. The first Data Analysis booklet, added after human review, motivated by survey evidence on how social scientists actually use coding agents.
+
+### Added
+
+- Booklet 008-01-0001, "Reproducible Quantitative Workflows," a bilingual Data Analysis booklet at `release` status, human-reviewed by the author. Nine independently verified citations, zero fabricated, full Turkish and English parity. It treats the discipline of keeping an autonomous analysis agent reproducible and honest, a response to the selective-reporting and quality-erosion concerns recorded in Anthropic's 2026 survey of coding agents in the social sciences. The released catalog grows from eleven to twelve booklets, and the data analysis category is opened.
+- A citation to the Anthropic 2026 coding-agents survey (Lyttelton, Massenkoff, and Wilmers) in the Journal of Open Source Education paper and its bibliography.
+
+### Changed
+
+- The Journal of Open Source Education paper draft was refreshed from stale v1.1.1 figures (ten booklets, 188 declarations) to the current release baseline (twelve booklets, 222 declarations), and the README bilingual rationale in both languages now cites the survey.
+- The roadmap prioritizes the data analysis category (008) following the survey, and corrects a stale label that had described booklet 001-01-0004 as a draft after it shipped at release in v2.0.0.
+
+### Zenodo
+
+- Concept DOI: [10.5281/zenodo.20289687](https://doi.org/10.5281/zenodo.20289687) (resolves to the latest released version).
+- Version DOI for v2.1.0: minted by Zenodo after this release is published and recorded here afterward.
+
 ## [2.0.0] - 2026-05-29
 
 Major release. An audit-driven correctness and hardening pass, the first content-expansion booklet, version-independent repository tooling, and a companion website and academic paper. The ten v1.0 booklets are unchanged in scholarly content.
